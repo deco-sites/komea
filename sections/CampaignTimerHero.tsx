@@ -74,7 +74,7 @@ export interface Props {
 
 export default function CampaignTimerHero({ hideSection, campaignTimer, title, titleTextProps, text, textProps, cta = [], image, use, video, mediaPosition, backgroundImage, invertPlacement = false }: Props) {
     if (hideSection) return <></>
-    return <div class={`relative min-h-[550px] lg:min-h-screen flex ${mediaPosition == "bellow" && 'flex-col items-center'} justify-center flex-wrap py-5 gap-y-8 px-7 ${invertPlacement && 'flex-row-reverse'}`}>
+    return <div class={`relative min-h-screen flex ${mediaPosition == "bellow" && 'flex-col items-center'} justify-center flex-wrap py-5 gap-y-8 px-7 ${invertPlacement && 'flex-row-reverse'}`}>
         <div class="max-w-[1280px] flex flex-col justify-center">
             {title && <AnimateOnShow animation="animate-pop-up">
                 <div class="text-2xl lg:text-5xl font-semibold text-center leading-[120%] w-full" dangerouslySetInnerHTML={{ __html: title }} style={{ ...titleTextProps }} />

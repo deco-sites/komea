@@ -119,7 +119,7 @@ function CampaignTimer({
                     </div>
                     <div class="flex flex-wrap gap-8 lg:gap-16 items-center justify-center lg:justify-normal">
                         <div id={`${id}::counter`}>
-                            <div class="flex text-center text-5xl lg:text-[78px] auto-cols-max items-center gap-4" style={{ color: numbersColor }}>
+                            <div class="flex text-center text-5xl lg:text-[78px] auto-cols-max items-center lg:gap-4" style={{ color: numbersColor }}>
                                 <TimeComponent id={id} label={labels?.days} time="days" {...{ labelsColor, numbersColor }} /> <span class="pt-7">:</span>
                                 <TimeComponent id={id} label={labels?.hours} time="hours" {...{ labelsColor, numbersColor }} /> <span class="pt-7">:</span>
                                 <TimeComponent id={id} label={labels?.minutes} time="minutes" {...{ labelsColor, numbersColor }} /> <span class="pt-7">:</span>

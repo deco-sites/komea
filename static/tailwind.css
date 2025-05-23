@@ -3493,9 +3493,6 @@ details.collapse summary::-webkit-details-marker {
 .min-h-\[42px\] {
   min-height: 42px;
 }
-.min-h-\[550px\] {
-  min-height: 550px;
-}
 .min-h-\[76px\] {
   min-height: 76px;
 }
@@ -3505,6 +3502,9 @@ details.collapse summary::-webkit-details-marker {
 .min-h-min {
   min-height: -moz-min-content;
   min-height: min-content;
+}
+.min-h-screen {
+  min-height: 100vh;
 }
 .w-1 {
   width: 0.25rem;
@@ -4861,10 +4861,6 @@ details.collapse summary::-webkit-details-marker {
     max-height: 600px;
   }
 
-  .lg\:min-h-screen {
-    min-height: 100vh;
-  }
-
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -4931,6 +4927,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:gap-20 {
     gap: 5rem;
+  }
+
+  .lg\:gap-4 {
+    gap: 1rem;
   }
 
   .lg\:gap-6 {

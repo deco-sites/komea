@@ -3,45 +3,102 @@
   "path": "/",
   "sections": [
     {
-      "__resolveType": "site/sections/CampaignTimerHero.tsx",
-      "hideSection": false,
-      "campaignTimer": {
-        "expiresAt": "2025-05-26T15:00:00.000Z",
-        "expiredText": "<p style=\"text-align: justify\">Expired!</p>",
-        "expiredTextProps": {},
-        "labels": {
-          "days": "Dias",
-          "hours": "Horas",
-          "minutes": "Minutos",
-          "seconds": "Segundos"
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/CampaignTimerHero.tsx",
+            "hideSection": false,
+            "campaignTimer": {
+              "expiresAt": "2025-05-26T15:00:00.000Z",
+              "expiredText": "<p style=\"text-align: justify\">Expired!</p>",
+              "expiredTextProps": {},
+              "labels": {
+                "days": "Dias",
+                "hours": "Horas",
+                "minutes": "Minutos",
+                "seconds": "Segundos"
+              },
+              "labelsColor": "#ffffff",
+              "numbersColor": "#ffffff"
+            },
+            "title": "<p style=\"text-align: center\"><span>O FIM ESTÁ </span></p><p style=\"text-align: center\"><span>PRÓXIMO</span></p>",
+            "titleTextProps": {
+              "fontFamily": "Lektorat Display",
+              "letterSpacing": "2.41px",
+              "fontWeight": "750",
+              "color": "rgba(209, 202, 189, 1)",
+              "fontSize": "48px"
+            },
+            "backgroundImage": {
+              "src": "https://assets.decocache.com/komea/ef7d5b85-87a3-4048-85a7-314712345bc6/campaign-timer-bg.svg"
+            },
+            "text": "<p style=\"text-align: center\"><span>O jeito de vender online vai mudar</span></p>",
+            "textProps": {
+              "color": "#ffffff",
+              "fontSize": "22px",
+              "fontWeight": "500"
+            },
+            "image": {
+              "src": "https://assets.decocache.com/komea/071206ed-914b-43c4-9090-f394ab363493/komea-loja-integrada-logo.svg",
+              "width": 260,
+              "height": 88
+            },
+            "use": "image",
+            "mediaPosition": "bellow"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
         },
-        "labelsColor": "#ffffff",
-        "numbersColor": "#ffffff"
-      },
-      "title": "<p style=\"text-align: center\"><span>O FIM ESTÁ </span></p><p style=\"text-align: center\"><span>PRÓXIMO</span></p>",
-      "titleTextProps": {
-        "fontFamily": "Lektorat Display",
-        "letterSpacing": "2.41px",
-        "fontWeight": "750",
-        "color": "rgba(209, 202, 189, 1)",
-        "fontSize": "100px"
-      },
-      "backgroundImage": {
-        "src": "https://assets.decocache.com/komea/ef7d5b85-87a3-4048-85a7-314712345bc6/campaign-timer-bg.svg"
-      },
-      "text": "<p style=\"text-align: center\"><span>O jeito de vender online vai mudar</span></p>",
-      "textProps": {
-        "color": "#ffffff",
-        "fontSize": "22px",
-        "fontWeight": "500"
-      },
-      "image": {
-        "src": "https://assets.decocache.com/komea/071206ed-914b-43c4-9090-f394ab363493/komea-loja-integrada-logo.svg",
-        "width": 260,
-        "height": 88
-      },
-      "use": "image",
-      "mediaPosition": "bellow"
+        {
+          "value": {
+            "__resolveType": "site/sections/CampaignTimerHero.tsx",
+            "hideSection": false,
+            "campaignTimer": {
+              "expiresAt": "2025-05-26T15:00:00.000Z",
+              "expiredText": "<p style=\"text-align: justify\">Expired!</p>",
+              "expiredTextProps": {},
+              "labels": {
+                "days": "Dias",
+                "hours": "Horas",
+                "minutes": "Minutos",
+                "seconds": "Segundos"
+              },
+              "labelsColor": "#ffffff",
+              "numbersColor": "#ffffff"
+            },
+            "title": "<p style=\"text-align: center\"><span>O FIM ESTÁ </span></p><p style=\"text-align: center\"><span>PRÓXIMO</span></p>",
+            "titleTextProps": {
+              "fontFamily": "Lektorat Display",
+              "letterSpacing": "2.41px",
+              "fontWeight": "750",
+              "color": "rgba(209, 202, 189, 1)",
+              "fontSize": "100px"
+            },
+            "backgroundImage": {
+              "src": "https://assets.decocache.com/komea/ef7d5b85-87a3-4048-85a7-314712345bc6/campaign-timer-bg.svg"
+            },
+            "text": "<p style=\"text-align: center\"><span>O jeito de vender online vai mudar</span></p>",
+            "textProps": {
+              "color": "#ffffff",
+              "fontSize": "22px",
+              "fontWeight": "500"
+            },
+            "image": {
+              "src": "https://assets.decocache.com/komea/071206ed-914b-43c4-9090-f394ab363493/komea-loja-integrada-logo.svg",
+              "width": 260,
+              "height": 88
+            },
+            "use": "image",
+            "mediaPosition": "bellow"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
     }
   ],
   "__resolveType": "website/pages/Page.tsx",

@@ -1,42 +1,51 @@
 {
-    "name": "Home",
-    "path": "/",
-    "sections": [
-      {
-        "__resolveType": "Header"
+  "name": "Home",
+  "path": "/",
+  "sections": [
+    {
+      "__resolveType": "site/sections/CampaignTimerHero.tsx",
+      "hideSection": false,
+      "campaignTimer": {
+        "expiresAt": "2025-05-26T15:00:00.000Z",
+        "expiredText": "<p style=\"text-align: justify\">Expired!</p>",
+        "expiredTextProps": {},
+        "labels": {
+          "days": "Dias",
+          "hours": "Horas",
+          "minutes": "Minutos",
+          "seconds": "Segundos"
+        },
+        "labelsColor": "#ffffff",
+        "numbersColor": "#ffffff"
       },
-      {
-        "__resolveType": "site/sections/Hero.tsx",
-        "title": "<p>Click here to tweak this text however you want.</p>",
-        "cta": [],
-        "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away."
+      "title": "<p style=\"text-align: center\"><span>O FIM ESTÁ </span></p><p style=\"text-align: center\"><span>PRÓXIMO</span></p>",
+      "titleTextProps": {
+        "fontFamily": "Lektorat Display",
+        "letterSpacing": "2.41px",
+        "fontWeight": "750",
+        "color": "rgba(209, 202, 189, 1)",
+        "fontSize": "100px"
       },
-      {
-        "__resolveType": "site/sections/Logos.tsx"
+      "backgroundImage": {
+        "src": "https://assets.decocache.com/komea/ef7d5b85-87a3-4048-85a7-314712345bc6/campaign-timer-bg.svg"
       },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx"
+      "text": "<p style=\"text-align: center\"><span>O jeito de vender online vai mudar</span></p>",
+      "textProps": {
+        "color": "#ffffff",
+        "fontSize": "22px",
+        "fontWeight": "500"
       },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx",
-        "placement": "right"
+      "image": {
+        "src": "https://assets.decocache.com/komea/071206ed-914b-43c4-9090-f394ab363493/komea-loja-integrada-logo.svg",
+        "width": 260,
+        "height": 88
       },
-      {
-        "__resolveType": "site/sections/BlogPosts.tsx"
-      },
-      {
-        "__resolveType": "site/sections/Testimonials.tsx",
-        "arrows": true
-      },
-      {
-        "__resolveType": "site/sections/Faq.tsx"
-      },
-      {
-        "__resolveType": "Footer"
-      }
-    ],
-    "__resolveType": "website/pages/Page.tsx",
-    "seo": {
-      "__resolveType": "website/sections/Seo/SeoV2.tsx"
+      "use": "image",
+      "mediaPosition": "bellow"
     }
+  ],
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
   }
+}

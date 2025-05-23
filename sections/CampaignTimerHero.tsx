@@ -90,7 +90,7 @@ export default function CampaignTimerHero({ hideSection, campaignTimer, title, t
             </AnimateOnShow>
         </div>
 
-        {use && <AnimateOnShow animation="animate-fade-left" divClass="flex items-center">
+        {use && <AnimateOnShow animation={mediaPosition == "bellow" ? "animate-fade-down" : "animate-fade-left"} divClass="flex items-center">
             {use == "image" && image?.src && <Image
                 src={image.src}
                 alt={image.alt || "figure"}

@@ -80,7 +80,7 @@ export interface Props {
 }
 
 export default function ({ title, titleTextProps, video, sectionProps, bottomImage, bottomText, bottomTextProps, backgroundMedia }: Props) {
-  return <div style={{ ...sectionProps, background: backgroundMedia?.color }} class="relative">
+  return <div style={{ ...sectionProps}} class="relative">
     <div class="max-w-[1280px] mx-auto flex flex-col items-center">
       <div dangerouslySetInnerHTML={{ __html: title || "" }} class="w-full" style={{ ...titleTextProps }} />
 
@@ -131,17 +131,18 @@ export default function ({ title, titleTextProps, video, sectionProps, bottomIma
       <div dangerouslySetInnerHTML={{ __html: bottomText || "" }} class="w-full mt-[60px]" style={{ ...bottomTextProps }} />
     </div>
 
+    {backgroundMedia?.color && <div style={{ background: backgroundMedia.color }} class="absolute top-0 left-0 h-full w-full -z-50" />}
     {backgroundMedia?.use == "image" && backgroundMedia.image?.src && <Image
       src={backgroundMedia.image.src}
       alt={backgroundMedia.image.alt || "background image"}
       width={backgroundMedia.image.width || 1277}
       height={backgroundMedia.image.height || 630}
-      class="absolute -z-50 top-0 left-0 h-full w-full object-cover"
+      class="absolute -z-40 top-0 left-0 h-full w-full object-cover"
       style={{height: backgroundMedia.bleeding && `${backgroundMedia.bleeding + 100}%`}}
       loading={backgroundMedia.lcp ? "eager" : "lazy"}
     />}
     {backgroundMedia?.use == "video" && backgroundMedia.video && <video width={1280} height={720} autoPlay playsInline muted loading={backgroundMedia.lcp ? "eager" : "lazy"} loop
-      class="object-cover absolute -z-50 top-0 left-0 h-full w-full"
+      class="object-cover absolute -z-40 top-0 left-0 h-full w-full"
       style={{height: backgroundMedia.bleeding && `${backgroundMedia.bleeding + 100}%`}}>
       <source src={backgroundMedia.video} type="video/mp4" />
     </video>}

@@ -1,1 +1,54 @@
-{"sections":[{"__resolveType":"site/sections/myHero.tsx","name":"works!"}],"__resolveType":"website/pages/Page.tsx","name":"Landing","path":"/landing"}
+{
+  "sections": [
+    {
+      "__resolveType": "site/sections/VideoSection.tsx",
+      "title": "<p style=\"text-align: center\"><span>O FIM ESTÁ PRÓXIMO</span></p>",
+      "titleTextProps": {
+        "fontWeight": "750",
+        "color": "rgba(209, 202, 189, 1)",
+        "letterSpacing": "2.41px",
+        "fontFamily": "Lektorat Display",
+        "fontSize": "62px"
+      },
+      "sectionProps": {
+        "paddingTop": "120px"
+      },
+      "video": {
+        "src": "https://www.youtube.com/embed/pTd0Dwp73qg?si=NVAKqLSbpexsHBUo",
+        "use": "embed",
+        "playButton": {
+          "src": "https://assets.decocache.com/komea/45481003-99d4-439c-adad-660c40eb43f1/play-button.svg"
+        },
+        "width": "927px",
+        "height": "546px",
+        "thumbnailImage": {
+          "width": 927,
+          "height": 546,
+          "src": "https://assets.decocache.com/komea/a5ababdd-fba2-4281-a3db-16c62b1b655b/video-thumbnail.svg"
+        }
+      },
+      "bottomImage": {
+        "src": "https://assets.decocache.com/komea/071206ed-914b-43c4-9090-f394ab363493/komea-loja-integrada-logo.svg"
+      },
+      "backgroundMedia": {
+        "image": {
+          "src": "https://assets.decocache.com/komea/c9d0c296-6dfa-4897-9a1d-a9f76b73dce4/video-section-background.svg"
+        },
+        "lcp": true,
+        "color": "",
+        "use": "image"
+      },
+      "bottomText": "<p style=\"text-align: center\"><span>Visite nosso estande durante o VTEX Day</span></p><p style=\"text-align: center\"><span>nos dias 02 e 03 de junho.&nbsp;</span></p>",
+      "bottomTextProps": {
+        "color": "#ffffff",
+        "fontWeight": "500",
+        "fontSize": "22px",
+        "letterSpacing": "-0.5px",
+        "lineHeight": "125%"
+      }
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx",
+  "name": "Landing",
+  "path": "/landing"
+}

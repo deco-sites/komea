@@ -2,15 +2,6 @@
   "__resolveType": "site/sections/Header.tsx",
   "navigation": {
     "links": [],
-    "buttons": [],
-    "mobileButtons": [],
-    "asideMenuButtons": []
-  },
-  "dropdownMenus": {
-    "menus": []
-  },
-  "headerMessage": {
-    "cta": []
-  },
-  "campaignTimer": {}
+    "buttons": []
+  }
 }

@@ -244,7 +244,7 @@ export default function HeroV3({ title, text, textProps, bulletPoints, cta = [],
           ))}
         </div>}
 
-        {hubspotForm?.show && <div class="pt-5 md:pt-10 max-w-[792px] w-full mx-auto">
+        {hubspotForm?.show && <div class="max-w-[792px] w-full mx-auto">
           <label >
             {hubspotForm?.inputLabel && <p
               class={`bg-info-content rounded-tl-xl rounded-tr-xl py-1.5 pl-2.5 lg:pl-4 text-sm lg:text-base text-primary inline-block ${hubspotForm?.inputLabelWidth == 'full' ? "w-full text-center px-1" : "pr-12"}`}

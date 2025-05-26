@@ -76,28 +76,56 @@
         "use": "image",
         "placement": "above"
       },
-      "cta": [
-        {
-          "type": "Button",
-          "size": "Large",
-          "openModal": "Talk to specialist",
-          "href": "linkhere",
-          "text": "Baixar o pdf aqui",
-          "textColor": "rgba(0, 38, 33, 1)",
-          "backgroundColor": "rgba(238, 252, 88, 1)",
-          "borderColor": "rgba(238, 252, 88, 1)",
-          "customProps": {
-            "height": "65px",
-            "borderRadius": "100px",
-            "fontSize": "22px",
-            "fontWeight": "600"
-          }
-        }
-      ],
+      "cta": [],
       "ctaPlacement": "center",
       "container": {
         "marginBottom": "120px",
         "marginTop": "140px"
+      },
+      "hubspotForm": {
+        "show": true,
+        "region": "na1",
+        "portalId": "7112881",
+        "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d",
+        "buttonColor": "#EEFC58",
+        "buttonTextColor": "#002621",
+        "errorMessageColor": "#F57E77",
+        "inputLabelColor": "#FAFAF5",
+        "inputLabelBackgroundColor": "#44656A",
+        "modal": {
+          "title": "<p style=\"text-align: center\"><span>E-mail confirmado!</span></p>",
+          "titleTextProps": {
+            "fontFamily": "Lektorat Display",
+            "fontSize": "45px",
+            "letterSpacing": "-1px",
+            "fontWeight": "750",
+            "color": "#002621"
+          },
+          "text": "<p style=\"text-align: center\"><span>Em breve você receberá o conteúdo que</span></p><p style=\"text-align: center\"><span>antecipa o fim (e o recomeço). fique atento</span></p><p style=\"text-align: center\"><span>a sua caixa de entrada</span></p>",
+          "textProps": {
+            "color": "#5F6E82",
+            "fontWeight": "500",
+            "letterSpacing": "-1px",
+            "lineHeight": "125%",
+            "fontSize": "22px"
+          },
+          "cta": [
+            {
+              "type": "Button",
+              "size": "Large",
+              "text": "Retomar a navegação",
+              "textColor": "#002621",
+              "backgroundColor": "#EEFC58",
+              "borderColor": "#EEFC58",
+              "customProps": {
+                "height": "50px",
+                "fontWeight": "500",
+                "letterSpacing": "-1px",
+                "borderRadius": "100px"
+              }
+            }
+          ]
+        }
       }
     }
   ],

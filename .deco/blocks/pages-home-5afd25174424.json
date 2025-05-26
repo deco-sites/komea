@@ -27,22 +27,22 @@
               "fontFamily": "Lektorat Display",
               "letterSpacing": "2.41px",
               "fontWeight": "750",
-              "color": "rgba(209, 202, 189, 1)",
+              "color": "#ffffff",
               "fontSize": "48px"
             },
             "backgroundImage": {
-              "src": "https://assets.decocache.com/komea/ef7d5b85-87a3-4048-85a7-314712345bc6/campaign-timer-bg.svg"
+              "src": "https://assets.decocache.com/komea/2124d728-9ea0-4164-b7d9-f8b0f872d901/bg-MOBILE.svg"
             },
-            "text": "<p style=\"text-align: center\"><span>O jeito de vender online vai mudar</span></p>",
+            "text": "<p style=\"text-align: center\">Pelo menos, o fim do jeito clássico<br>de vender online</p>",
             "textProps": {
               "color": "#ffffff",
-              "fontSize": "22px",
+              "fontSize": "16px",
               "fontWeight": "500"
             },
             "image": {
-              "src": "https://assets.decocache.com/komea/071206ed-914b-43c4-9090-f394ab363493/komea-loja-integrada-logo.svg",
-              "width": 260,
-              "height": 88
+              "src": "https://assets.decocache.com/komea/b352a0c5-16b9-4f6a-a952-bcae78f4cfd7/logo-komea.svg",
+              "width": 130,
+              "height": 43
             },
             "use": "image",
             "mediaPosition": "bellow"
@@ -74,22 +74,24 @@
               "fontFamily": "Lektorat Display",
               "letterSpacing": "2.41px",
               "fontWeight": "750",
-              "color": "rgba(209, 202, 189, 1)",
-              "fontSize": "100px"
+              "color": "#ffffff",
+              "fontSize": "100px",
+              "lineHeight": "1.2"
             },
             "backgroundImage": {
-              "src": "https://assets.decocache.com/komea/ef7d5b85-87a3-4048-85a7-314712345bc6/campaign-timer-bg.svg"
+              "src": "https://assets.decocache.com/komea/656e43a6-3131-47a6-900b-987a8dab250c/bg2.svg"
             },
-            "text": "<p style=\"text-align: center\"><span>O jeito de vender online vai mudar</span></p>",
+            "text": "<p style=\"text-align: center\">Pelo menos, o fim do jeito clássico<br>de vender online</p>",
             "textProps": {
               "color": "#ffffff",
               "fontSize": "22px",
-              "fontWeight": "500"
+              "fontWeight": "400",
+              "lineHeight": "1.2"
             },
             "image": {
-              "src": "https://assets.decocache.com/komea/071206ed-914b-43c4-9090-f394ab363493/komea-loja-integrada-logo.svg",
-              "width": 260,
-              "height": 88
+              "src": "https://assets.decocache.com/komea/b352a0c5-16b9-4f6a-a952-bcae78f4cfd7/logo-komea.svg",
+              "width": 226,
+              "height": 76
             },
             "use": "image",
             "mediaPosition": "bellow"

@@ -27,7 +27,7 @@
               "fontFamily": "Lektorat Display",
               "letterSpacing": "2.41px",
               "fontWeight": "750",
-              "color": "rgba(209, 202, 189, 1)",
+              "color": "#ffffff",
               "fontSize": "48px"
             },
             "backgroundImage": {
@@ -40,7 +40,7 @@
               "fontWeight": "500"
             },
             "image": {
-              "src": "https://assets.decocache.com/komea/071206ed-914b-43c4-9090-f394ab363493/komea-loja-integrada-logo.svg",
+              "src": "https://assets.decocache.com/komea/b352a0c5-16b9-4f6a-a952-bcae78f4cfd7/logo-komea.svg",
               "width": 130,
               "height": 43
             },
@@ -74,7 +74,7 @@
               "fontFamily": "Lektorat Display",
               "letterSpacing": "2.41px",
               "fontWeight": "750",
-              "color": "rgba(209, 202, 189, 1)",
+              "color": "#ffffff",
               "fontSize": "100px",
               "lineHeight": "1.2"
             },
@@ -89,7 +89,7 @@
               "lineHeight": "1.2"
             },
             "image": {
-              "src": "https://assets.decocache.com/komea/071206ed-914b-43c4-9090-f394ab363493/komea-loja-integrada-logo.svg",
+              "src": "https://assets.decocache.com/komea/b352a0c5-16b9-4f6a-a952-bcae78f4cfd7/logo-komea.svg",
               "width": 226,
               "height": 76
             },

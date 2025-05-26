@@ -126,6 +126,13 @@
             }
           ]
         }
+      },
+      "text": "<p style=\"text-align: center\"><span>Cadastre seu e-mail para baixar</span></p>",
+      "textProps": {
+        "color": "#FFFFFF",
+        "fontSize": "22px",
+        "fontWeight": "500",
+        "letterSpacing": "-1px"
       }
     }
   ],

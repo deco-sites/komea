@@ -73,10 +73,22 @@
           "width": 226,
           "height": 173
         },
-        "use": "image",
         "placement": "above"
       },
-      "cta": [],
+      "cta": [
+        {
+          "type": "Only text",
+          "size": "Large",
+          "text": "Quer saber mais sobre a Komea? ",
+          "textColor": "#FFFFFF",
+          "customProps": {
+            "fontWeight": "600",
+            "letterSpacing": "-1px",
+            "fontSize": "22px"
+          },
+          "underlineText": "Clique aqui"
+        }
+      ],
       "ctaPlacement": "center",
       "container": {
         "marginBottom": "120px",

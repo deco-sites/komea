@@ -121,7 +121,59 @@
       }
     },
     {
-      "__resolveType": "site/sections/StickyImage.tsx"
+      "__resolveType": "site/sections/StickyImage.tsx",
+      "image": {
+        "src": "https://assets.decocache.com/komea/019bd2bb-adae-443d-b14e-f8748ecfdf69/mobile-sticky-image.svg"
+      },
+      "folds": [
+        {
+          "textPosition": "Left",
+          "icon": {
+            "src": "https://assets.decocache.com/komea/f815710b-3faf-4a7a-8d42-6d9736c1c2a9/statistics-icon.svg"
+          },
+          "title": "<p><span style=\"color: #ffffff\">Crie produtos</span></p><p><span>conversando</span></p>",
+          "titleTextProps": {
+            "color": "#EEFC58",
+            "fontFamily": "Lektorat Display",
+            "fontSize": "40px",
+            "lineHeight": "115%",
+            "fontWeight": "750",
+            "letterSpacing": "-1px"
+          },
+          "text": "<p><span>Você fala o nome e mostra a imagem.  </span></p><p><span>A Komea sugere categoria, descrição </span></p><p><span>com SEO e publica em diferentes canais.</span></p>",
+          "textProps": {
+            "color": "#9F9F9F",
+            "fontWeight": "500",
+            "letterSpacing": "-0.5px",
+            "lineHeight": "125%"
+          }
+        },
+        {
+          "textPosition": "Right",
+          "icon": {
+            "src": "https://assets.decocache.com/komea/f815710b-3faf-4a7a-8d42-6d9736c1c2a9/statistics-icon.svg"
+          },
+          "title": "<p><span>Receba insight </span></p><p><span style=\"color: #ffffff\">direto no app</span></p>",
+          "titleTextProps": {
+            "color": "#EEFC58",
+            "fontFamily": "Lektorat Display",
+            "fontSize": "40px",
+            "lineHeight": "115%",
+            "fontWeight": "750",
+            "letterSpacing": "-1px"
+          },
+          "text": "<p><span>Você fala o nome e mostra a imagem.  </span></p><p><span>A Komea sugere categoria, descrição </span></p><p><span>com SEO e publica em diferentes canais.</span></p>",
+          "textProps": {
+            "color": "#9F9F9F",
+            "fontWeight": "500",
+            "letterSpacing": "-0.5px",
+            "lineHeight": "125%"
+          }
+        }
+      ],
+      "backgroundMedia": {
+        "backgroundColor": "#00363A"
+      }
     }
   ],
   "seo": {

@@ -20,10 +20,11 @@ export interface CustomProps {
   fontWeight?: string;
 }
 
-/** @title {{text}} */
+/** @title {{text}} {{underlineText}}*/
 export interface Props {
   href?: string;
   text?: string;
+  underlineText?: string;
   /** @format color-input */
   textColor?: string;
   /** @format color-input */
@@ -87,7 +88,7 @@ const openModalFunction = (modal: string, planId: string) => {
 };
 
 
-export default function CTA({ href = "", text, textColor, backgroundColor, iconGap, borderColor, size = "Medium", type = "Button", singleLine = false, showIcon = false, openModal, createStorePlanId, customIcon, customProps}: Props) {
+export default function CTA({ href = "", text, underlineText, textColor, backgroundColor, iconGap, borderColor, size = "Medium", type = "Button", singleLine = false, showIcon = false, openModal, createStorePlanId, customIcon, customProps}: Props) {
   const sizeClasses = {
     "Large": "py-4 px-8 text-base font-semibold border",
     "Medium": "py-2 px-8 text-sm font-semibold leading-[171%] border",
@@ -109,6 +110,7 @@ export default function CTA({ href = "", text, textColor, backgroundColor, iconG
     href={openModal ? undefined : href}
     target={href.includes("http") ? "_blank" : "_self"}>
     {text}
+    <span class="underline">{underlineText}</span>
     {showIcon && ( customIcon?.src 
       ? <Image src={customIcon.src} width={customIcon.width || 20} height={customIcon.height || 20} alt={customIcon.alt || "button icon"} /> 
       : <svg xmlns="http://www.w3.org/2000/svg" width={iconSizes[size]} height={iconSizes[size]} viewBox="0 0 24 25" fill="none" class="inline-block">

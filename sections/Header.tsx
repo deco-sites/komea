@@ -19,19 +19,20 @@ const onChange = () => {
 };
 
 const onLoad = (backgroundColor?: string, noScrollBackgroundColor?: string) => {
+  let lastScrollValue = 0;
+  const headerContainer = document.querySelector("#headerContainer") as HTMLElement;
+  const headerHeight = (headerContainer.parentElement as HTMLElement).offsetHeight;
+
   globalThis.addEventListener("scroll", () => {
-    const headerContainer = document.querySelector("#headerContainer") as HTMLElement;
-    if (globalThis.scrollY > 0 && headerContainer) {
-      headerContainer.style.background = backgroundColor || 'transparent';
-      headerContainer.classList.add("lg:!py-5");
-      headerContainer.style.background = backgroundColor || "";
-
-    
-    }
-    else {
-      headerContainer.style.background = noScrollBackgroundColor || 'transparent';
-      headerContainer.classList.remove("lg:!py-5");
-
+    if (headerContainer) {
+      if (globalThis.scrollY > lastScrollValue && globalThis.scrollY > headerHeight) {
+        headerContainer.style.transform = 'translateY(-100%)';
+        headerContainer.style.pointerEvents = "none";
+      } else {
+        headerContainer.style.transform = 'translateY(0)'
+        headerContainer.style.pointerEvents = "auto"
+      }
+      lastScrollValue = globalThis.scrollY;
     }
   });
 };
@@ -103,7 +104,7 @@ export interface MenuLink extends Link {
 }
 
 export interface Navigation {
-  links: Link[];
+  links?: Link[];
   /** @format color-input */
   linksBorderColor?: string;
   /** @format color-input */
@@ -111,9 +112,9 @@ export interface Navigation {
   /** @format color-input */
   textHoverColor?: string;
   linksTextProps?: MenuTitleTextProps;
-  buttons: CTAProps[];
-  mobileButtons: CTAProps[];
-  asideMenuButtons: CTAProps[];
+  buttons?: CTAProps[];
+  mobileButtons?: CTAProps[];
+  asideMenuButtons?: CTAProps[];
 }
 
 /** @title {{title}} */
@@ -181,7 +182,8 @@ export default function Header({ logo = {
   <header>
     {headerMessage?.show && <div class="h-16" />}
     {campaignTimer?.show && <div class="h-[76px]" />}
-    <div class="fixed top-0 left-0 w-full z-50 justify-center ">
+    <div class="h-[92px] lg:h-28"/>
+    <div id="headerContainer" class="fixed top-0 left-0 w-full z-50 justify-center transition-transform duration-300 ease-in-out">
       
       {headerMessage?.show && <div class="h-16 w-full bg-primary text-primary-content px-1 lg:px-11 py-2 flex items-center justify-center gap-1" style={{background: headerMessage?.backgroundColor}}>
         <p class="text-xs lg:text-2xl text-center font-semibold leading-[120%] flex items-center justify-center">
@@ -199,7 +201,7 @@ export default function Header({ logo = {
         <CampaignTimer {...campaignTimer} labelsColor={campaignTimer.labelsColor} numbersColor={campaignTimer.numbersColor} />
       </div>}
 
-      <nav id="headerContainer" class="drawer drawer-end top-0 left-0 bg-primary-content transition-all duration-300 ease-in-out py-4 lg:py-7 " style={{background: noScrollBackgroundColor || 'transparent'}} >
+      <nav class="drawer drawer-end top-0 left-0 bg-primary-content py-4 lg:py-7 " style={{background: backgroundColor || 'transparent'}} >
         <input id="mobile-drawer-nav" type="checkbox" class="drawer-toggle" />
 
         {/* main content */}
@@ -207,7 +209,7 @@ export default function Header({ logo = {
 
           <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, backgroundColor, noScrollBackgroundColor) }} />
 
-          <a href={logo.href || "/"} class="w-28 h-5 md:w-auto md:h-10 flex items-center">
+          <a href={logo.href || "/"} class="flex items-center">
             <Image src={logo.src || ""} width={logo.width || 257} height={logo.height || 40} alt={logo.alt || "header logo"} />
           </a>
           
@@ -323,7 +325,7 @@ export default function Header({ logo = {
                 </div>
               </div>
               )})}
-                {navigation?.links.map((link) => (<li class="border-b border-neutral last:border-none" style={{ borderColor: navigation.linksBorderColor }} hx-on={`mouseleave: this.children[0].style.color='${navigation.textColor}'`} >
+                {navigation?.links?.map((link) => (<li class="border-b border-neutral last:border-none" style={{ borderColor: navigation.linksBorderColor }} hx-on={`mouseleave: this.children[0].style.color='${navigation.textColor}'`} >
                   <a href={link.url} aria-label={link.label} 
                     class="text-primary hover:text-accent hover:bg-transparent  text-base font-semibold flex justify-between py-6 rounded-none" 
                     style={{ color: navigation.textColor, ...navigation.linksTextProps }} 

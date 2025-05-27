@@ -3439,9 +3439,6 @@ details.collapse summary::-webkit-details-marker {
 .h-2 {
   height: 0.5rem;
 }
-.h-5 {
-  height: 1.25rem;
-}
 .h-8 {
   height: 2rem;
 }
@@ -3456,6 +3453,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .h-\[76px\] {
   height: 76px;
+}
+.h-\[92px\] {
+  height: 92px;
 }
 .h-full {
   height: 100%;
@@ -3529,9 +3529,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-2 {
   width: 0.5rem;
-}
-.w-28 {
-  width: 7rem;
 }
 .w-8 {
   width: 2rem;
@@ -4926,10 +4923,6 @@ details.collapse summary::-webkit-details-marker {
     display: none;
   }
 
-  .md\:h-10 {
-    height: 2.5rem;
-  }
-
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -5020,6 +5013,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:h-28 {
+    height: 7rem;
   }
 
   .lg\:max-h-\[600px\] {
@@ -5148,11 +5145,6 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:p-\[60px\] {
     padding: 60px;
-  }
-
-  .lg\:\!py-5 {
-    padding-top: 1.25rem !important;
-    padding-bottom: 1.25rem !important;
   }
 
   .lg\:px-0 {

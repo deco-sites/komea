@@ -3,6 +3,37 @@
   "path": "/app",
   "sections": [
     {
+      "__resolveType": "site/sections/Header.tsx",
+      "campaignTimer": {},
+      "logo": {
+        "src": "https://assets.decocache.com/komea/b352a0c5-16b9-4f6a-a952-bcae78f4cfd7/logo-komea.svg",
+        "width": 180,
+        "height": 60
+      },
+      "hideAsideMenu": true,
+      "navigation": {
+        "buttons": [
+          {
+            "type": "Button",
+            "openModal": "Talk to specialist",
+            "text": "Seja um dos primeiros a testar",
+            "textColor": "#002426",
+            "backgroundColor": "#ECF488",
+            "borderColor": "#ECF488",
+            "customProps": {
+              "borderRadius": "100px",
+              "height": "48px"
+            }
+          }
+        ]
+      },
+      "backgroundColor": "#00363A",
+      "noScrollBackgroundColor": "#00363A",
+      "headerMessage": {
+        "show": false
+      }
+    },
+    {
       "__resolveType": "site/sections/HeroV3.tsx",
       "hubspotForm": {
         "modal": {
@@ -55,7 +86,8 @@
         "fontWeight": "500",
         "color": "#00363A",
         "lineHeight": "125%"
-      }
+      },
+      "lcp": true
     },
     {
       "__resolveType": "site/sections/VideoSection.tsx",

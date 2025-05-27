@@ -23,7 +23,9 @@
             "customProps": {
               "borderRadius": "100px",
               "height": "48px"
-            }
+            },
+            "glowColor1": "#ACB82E99",
+            "glowColor2": "#EEFC5880"
           }
         ]
       },
@@ -117,6 +119,9 @@
         "use": "image",
         "postition": "top"
       }
+    },
+    {
+      "__resolveType": "site/sections/StickyImage.tsx"
     }
   ],
   "seo": {

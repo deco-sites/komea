@@ -3603,6 +3603,9 @@ details.collapse summary::-webkit-details-marker {
 .max-w-6xl {
   max-width: 72rem;
 }
+.max-w-\[1120px\] {
+  max-width: 1120px;
+}
 .max-w-\[1220px\] {
   max-width: 1220px;
 }
@@ -3611,12 +3614,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .max-w-\[1280px\] {
   max-width: 1280px;
-}
-.max-w-\[1288px\] {
-  max-width: 1288px;
-}
-.max-w-\[1305px\] {
-  max-width: 1305px;
 }
 .max-w-\[139px\] {
   max-width: 139px;
@@ -4253,9 +4250,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .p-8 {
   padding: 2rem;
-}
-.p-\[30px\] {
-  padding: 30px;
 }
 .px-0 {
   padding-left: 0px;

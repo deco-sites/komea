@@ -205,7 +205,7 @@ export default function Header({ logo = {
         <input id="mobile-drawer-nav" type="checkbox" class="drawer-toggle" />
 
         {/* main content */}
-        <div class="drawer-content mx-auto w-full lg:px-0 px-4 py-0 flex gap-8 items-center justify-between max-w-[1305px]">
+        <div class="drawer-content mx-auto w-full lg:px-0 px-4 py-0 flex gap-8 items-center justify-between max-w-[1120px]">
 
           <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, backgroundColor, noScrollBackgroundColor) }} />
 

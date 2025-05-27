@@ -69,11 +69,12 @@
       },
       "media": {
         "image": {
-          "src": "https://assets.decocache.com/komea/7e3fc954-db08-4906-9eca-5f28bfc768c2/newspaper.svg",
-          "width": 226,
-          "height": 173
+          "src": "https://assets.decocache.com/komea/071206ed-914b-43c4-9090-f394ab363493/komea-loja-integrada-logo.svg",
+          "width": 260,
+          "height": 87
         },
-        "placement": "above"
+        "placement": "bellow",
+        "use": "image"
       },
       "cta": [
         {
@@ -92,7 +93,7 @@
       "ctaPlacement": "center",
       "container": {
         "marginBottom": "120px",
-        "marginTop": "140px"
+        "paddingTop": "170px"
       },
       "hubspotForm": {
         "show": true,

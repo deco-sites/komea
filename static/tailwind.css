@@ -5127,8 +5127,8 @@ details.collapse summary::-webkit-details-marker {
     gap: 88px;
   }
 
-  .lg\:gap-y-10 {
-    row-gap: 2.5rem;
+  .lg\:gap-y-20 {
+    row-gap: 5rem;
   }
 
   .lg\:overflow-visible {

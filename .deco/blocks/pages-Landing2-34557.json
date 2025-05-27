@@ -48,7 +48,8 @@
         },
         "use": "image",
         "bleeding": 15,
-        "customHeight": "65vw"
+        "customHeight": "105%",
+        "postition": "bottom"
       },
       "textProps": {
         "fontWeight": "500",
@@ -81,7 +82,8 @@
           "width": 1261,
           "height": 777
         },
-        "use": "image"
+        "use": "image",
+        "postition": "top"
       }
     }
   ],

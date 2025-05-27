@@ -38,7 +38,8 @@
         "lcp": true,
         "color": "#000000",
         "use": "image",
-        "bleeding": 12
+        "bleeding": 12,
+        "customHeight": "112%"
       },
       "bottomText": "<p style=\"text-align: center\"><span>Visite nosso estande durante o VTEX Day</span></p><p style=\"text-align: center\"><span>nos dias 02 e 03 de junho.&nbsp;</span></p>",
       "bottomTextProps": {

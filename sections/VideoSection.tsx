@@ -82,9 +82,9 @@ export interface Props {
 export default function ({ title, titleTextProps, video, sectionProps, bottomImage, bottomText, bottomTextProps, backgroundMedia }: Props) {
   return <div style={{ ...sectionProps}} class="relative">
     <div class="max-w-[1280px] mx-auto flex flex-col items-center">
-      <div dangerouslySetInnerHTML={{ __html: title || "" }} class="w-full" style={{ ...titleTextProps }} />
+      {title && <div dangerouslySetInnerHTML={{ __html: title }} class="w-full mb-[60px]" style={{ ...titleTextProps }} />}
 
-      <div class="relative rounded-[33px] overflow-hidden mt-[60px] cursor-pointer flex justify-center group" hx-on:click={useScript(onClick, video?.use == "embed")}
+      <div class="relative rounded-[33px] overflow-hidden cursor-pointer flex justify-center group" hx-on:click={useScript(onClick, video?.use == "embed")}
         style={{ width: video?.width, height: video?.height}}>
         {video?.use == "video" && video?.src && <video width={"100%"} height={"100%"} autoPlay playsInline muted loading="lazy" loop
           class="object-cover mx-auto hidden"
@@ -96,7 +96,7 @@ export default function ({ title, titleTextProps, video, sectionProps, bottomIma
           height={"100%"}
           src={video?.src}
           frameborder="0"
-          class="hidden"
+          class={`${video.thumbnailImage?.src && 'hidden'}`}
           style={{ width: video.width || "1280px", height: video.height || "720px" }}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
         />}
@@ -128,7 +128,7 @@ export default function ({ title, titleTextProps, video, sectionProps, bottomIma
         class="mt-[60px]"
       />}
 
-      <div dangerouslySetInnerHTML={{ __html: bottomText || "" }} class="w-full mt-[60px]" style={{ ...bottomTextProps }} />
+      {bottomText && <div dangerouslySetInnerHTML={{ __html: bottomText}} class="w-full mt-[60px]" style={{ ...bottomTextProps }} />}
     </div>
 
     {backgroundMedia?.color && <div style={{ background: backgroundMedia.color }} class="absolute top-0 left-0 h-full w-full -z-50" />}

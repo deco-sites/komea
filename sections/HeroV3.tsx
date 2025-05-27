@@ -232,10 +232,10 @@ export default function HeroV3({ title, text, textProps, bulletPoints, cta = [],
         alt={container?.backgroundMedia.image.alt || "background image"}
         width={container?.backgroundMedia.image.width || 1277}
         height={container?.backgroundMedia.image.height || 630}
-        class="absolute -z-50 top-0 left-0 h-full w-full object-cover"
+        class={`absolute -z-50 top-0 left-0 h-full w-full object-cover ${backgroundMediaPlacement[container.backgroundMedia.postition || 'center']}`}
       />}
       {container?.backgroundMedia?.use == "video" && container?.backgroundMedia.video && <video width={1280} height={720} autoPlay playsInline muted loading="lazy" loop
-        class="object-cover absolute -z-50 top-0 left-0 h-full w-full">
+        class={`object-cover absolute -z-50 top-0 left-0 h-full w-full ${backgroundMediaPlacement[container.backgroundMedia.postition || 'center']}`}>
         <source src={container?.backgroundMedia.video} type="video/mp4" />
       </video>}
     </div>

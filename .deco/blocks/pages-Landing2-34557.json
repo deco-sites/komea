@@ -55,6 +55,34 @@
         "color": "#00363A",
         "lineHeight": "125%"
       }
+    },
+    {
+      "__resolveType": "site/sections/VideoSection.tsx",
+      "video": {
+        "src": "https://www.youtube.com/embed/h8t1cSSudVQ?si=rFb31GzR0tNFQRtZ",
+        "use": "embed",
+        "width": "990px",
+        "height": "558px",
+        "thumbnailImage": {
+          "src": "https://assets.decocache.com/komea/a5ababdd-fba2-4281-a3db-16c62b1b655b/video-thumbnail.svg"
+        },
+        "playButton": {
+          "src": "https://assets.decocache.com/komea/45481003-99d4-439c-adad-660c40eb43f1/play-button.svg"
+        }
+      },
+      "sectionProps": {
+        "paddingTop": "80px",
+        "paddingBottom": "124px"
+      },
+      "backgroundMedia": {
+        "color": "#D1CABD",
+        "image": {
+          "src": "https://assets.decocache.com/komea/66b297b8-28ba-4309-b97a-1af27f99ffa6/yellow-circles-2.svg",
+          "width": 1261,
+          "height": 777
+        },
+        "use": "image"
+      }
     }
   ],
   "seo": {

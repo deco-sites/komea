@@ -211,7 +211,7 @@ export default function HeroV3({ title, text, textProps, bulletPoints, cta = [],
 
         {hubspotForm?.show && <HubspotForm {...hubspotForm} />}
 
-        {cta.length > 0 && <div class={`flex flex-wrap gap-4 mt-auto ${placement[ctaPlacement || "left"]}`}>
+        {cta.length > 0 && <div class={`flex flex-wrap gap-4 mt-auto pt-2 ${placement[ctaPlacement || "left"]}`}>
           {cta.map(cta => (
             <CTA {...cta} />
           ))}

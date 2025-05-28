@@ -1,5 +1,5 @@
 import { useScript } from "@deco/deco/hooks";
-import type { ImageWidget } from "apps/admin/widgets.ts";
+import type { ImageWidget, RichText } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 
 export interface IImage {
@@ -23,7 +23,7 @@ export interface CustomProps {
 /** @title {{text}} {{underlineText}}*/
 export interface Props {
   href?: string;
-  text?: string;
+  text?: RichText;
   underlineText?: string;
   /** @format color-input */
   textColor?: string;
@@ -115,8 +115,10 @@ export default function CTA({ href = "", text, underlineText, textColor, glowCol
       : { color: textColor, border: 'none', padding: 0, gap:iconGap, ...customProps }}
     href={openModal ? undefined : href}
     target={href.includes("http") ? "_blank" : "_self"}>
-    {text}
-    <span class="underline">{underlineText}</span>
+    
+      {text && <div dangerouslySetInnerHTML={{__html: text}}/>}
+      <span class="underline ">{underlineText}</span>
+    
     {showIcon && ( customIcon?.src 
       ? <Image src={customIcon.src} width={customIcon.width || 20} height={customIcon.height || 20} alt={customIcon.alt || "button icon"} /> 
       : <svg xmlns="http://www.w3.org/2000/svg" width={iconSizes[size]} height={iconSizes[size]} viewBox="0 0 24 25" fill="none" class="inline-block">

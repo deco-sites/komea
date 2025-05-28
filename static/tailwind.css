@@ -3530,9 +3530,6 @@ details.collapse summary::-webkit-details-marker {
 .w-8 {
   width: 2rem;
 }
-.w-\[312px\] {
-  width: 312px;
-}
 .w-\[316px\] {
   width: 316px;
 }
@@ -4420,8 +4417,14 @@ details.collapse summary::-webkit-details-marker {
 .text-\[13px\] {
   font-size: 13px;
 }
+.text-\[14px\] {
+  font-size: 14px;
+}
 .text-\[15px\] {
   font-size: 15px;
+}
+.text-\[26px\] {
+  font-size: 26px;
 }
 .text-\[30px\] {
   font-size: 30px;
@@ -4641,6 +4644,11 @@ details.collapse summary::-webkit-details-marker {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .transition-transform {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -4648,6 +4656,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .duration-300 {
   transition-duration: 300ms;
+}
+.duration-500 {
+  transition-duration: 500ms;
 }
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -4905,10 +4916,6 @@ details.collapse summary::-webkit-details-marker {
     display: flex;
   }
 
-  .md\:hidden {
-    display: none;
-  }
-
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -4993,6 +5000,10 @@ details.collapse summary::-webkit-details-marker {
     margin-top: 60px;
   }
 
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -5019,6 +5030,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:w-2\/5 {
     width: 40%;
+  }
+
+  .lg\:w-\[312px\] {
+    width: 312px;
   }
 
   .lg\:w-\[40\%\] {
@@ -5152,6 +5167,11 @@ details.collapse summary::-webkit-details-marker {
     padding-right: 4rem;
   }
 
+  .lg\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
   .lg\:py-14 {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
@@ -5216,6 +5236,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:text-\[14px\] {
     font-size: 14px;
+  }
+
+  .lg\:text-\[40px\] {
+    font-size: 40px;
   }
 
   .lg\:text-\[56px\] {

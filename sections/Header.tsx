@@ -168,6 +168,7 @@ export interface Nav {
   asideMenuBackgroundColor?: string;
   /** @format color-input */
   asideMenuCloseIconColor?: string;
+  headerWhiteSpace?: string;
   headerMessage?: HeaderMessage;
   campaignTimer?: CampaignTimer;
 }
@@ -175,14 +176,14 @@ export default function Header({ logo = {
   src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/67120bcd-936a-4ea5-a760-02ed5c4a3d04",
   alt: "Logo",
 },
-  barsColor, asideMenuTopBackgroundColor, asideMenuBackgroundColor, noScrollBackgroundColor, backgroundColor, dropdownMenus = {menus: []}, asideMenuCloseIconColor, headerMessage, campaignTimer, hideAsideMenu = false,
+  barsColor, asideMenuTopBackgroundColor, asideMenuBackgroundColor, headerWhiteSpace, noScrollBackgroundColor, backgroundColor, dropdownMenus = {menus: []}, asideMenuCloseIconColor, headerMessage, campaignTimer, hideAsideMenu = false,
   navigation, asideMenuOnlyMobile, hideSection }: Nav) {
   if (hideSection) return <></>
   return (
   <header>
     {headerMessage?.show && <div class="h-16" />}
     {campaignTimer?.show && <div class="h-[76px]" />}
-    <div class="h-[92px] lg:h-28"/>
+    <div class="h-[92px] lg:h-28" style={{height: headerWhiteSpace}}/>
     <div id="headerContainer" class="fixed top-0 left-0 w-full z-50 justify-center transition-transform duration-300 ease-in-out">
       
       {headerMessage?.show && <div class="h-16 w-full bg-primary text-primary-content px-1 lg:px-11 py-2 flex items-center justify-center gap-1" style={{background: headerMessage?.backgroundColor}}>
@@ -252,21 +253,7 @@ export default function Header({ logo = {
           </ul>
 
           <div class="items-center justify-between">
-            <ul class="flex md:hidden justify-end gap-4" >
-            <div class="flex items-center gap-4">
-              {navigation?.mobileButtons?.map(cta => (
-                  <div class="flex items-center"><CTA {...cta} /></div>
-              ))}
-            </div>
-              {!hideAsideMenu && <label htmlFor="mobile-drawer-nav" class={`btn btn-ghost drawer-button px-0`}>
-                {/* <Icon id="Bars3" size={25} strokeWidth={0.1} class="text-primary fill-current" style={{color: barsColor}} /> */}
-                <svg xmlns="http://www.w3.org/2000/svg" size={25} width={25} viewBox="0 0 20 20"  class="fill-current" style={{color: barsColor}}>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 5.00033C2.5 4.54009 2.8731 4.16699 3.33333 4.16699H16.6667C17.1269 4.16699 17.5 4.54009 17.5 5.00033C17.5 5.46056 17.1269 5.83366 16.6667 5.83366H3.33333C2.8731 5.83366 2.5 5.46056 2.5 5.00033ZM2.5 10.0003C2.5 9.54009 2.8731 9.16699 3.33333 9.16699H16.6667C17.1269 9.16699 17.5 9.54009 17.5 10.0003C17.5 10.4606 17.1269 10.8337 16.6667 10.8337H3.33333C2.8731 10.8337 2.5 10.4606 2.5 10.0003ZM2.5 15.0003C2.5 14.5401 2.8731 14.167 3.33333 14.167H16.6667C17.1269 14.167 17.5 14.5401 17.5 15.0003C17.5 15.4606 17.1269 15.8337 16.6667 15.8337H3.33333C2.8731 15.8337 2.5 15.4606 2.5 15.0003Z" />
-                </svg>
-
-              </label>}
-            </ul>
-            <ul class="hidden md:flex justify-end gap-7 flex-wrap">
+            <ul class="flex justify-end gap-7 flex-wrap">
             {navigation?.buttons?.map(cta => (
                 <div class="flex items-center"><CTA {...cta} /></div>
             ))}

@@ -121,6 +121,47 @@
       }
     },
     {
+      "__resolveType": "site/sections/HeroV3.tsx",
+      "hubspotForm": {
+        "modal": {}
+      },
+      "title": {
+        "text": "<p style=\"text-align: center\"><span style=\"color: #ffffff\">São múltiplos especialistas</span></p><p style=\"text-align: center\">no seu bolso</p>",
+        "color": "#EEFC58",
+        "font": "Lektorat Display",
+        "fontWeight": "750",
+        "letterSpacing": "-1px",
+        "lineHeight": "100%"
+      },
+      "sectionBackground": {
+        "backgroundColor": "linear-gradient(180deg, #001D1F , #00363A );"
+      },
+      "text": "<p style=\"text-align: center\"><span>Com a Komea, você tem agentes de IA especializados em<br>cuidar das tarefas chatas e repetitivas do seu negócio.</span></p>",
+      "textProps": {
+        "color": "#ffffff",
+        "lineHeight": "125%",
+        "letterSpacing": "-1px",
+        "fontSize": "16px"
+      },
+      "cta": [
+        {
+          "type": "Button",
+          "size": "Large",
+          "text": "Seja um dos primeiros a testar",
+          "textColor": "#00363A",
+          "backgroundColor": "#ECF488",
+          "borderColor": "#ECF488",
+          "customProps": {
+            "height": "48px",
+            "borderRadius": "100px"
+          },
+          "glowColor1": "#ACB82E99",
+          "glowColor2": "#EEFC5880"
+        }
+      ],
+      "ctaPlacement": "center"
+    },
+    {
       "__resolveType": "site/sections/StickyImage.tsx",
       "image": {
         "src": "https://assets.decocache.com/komea/019bd2bb-adae-443d-b14e-f8748ecfdf69/mobile-sticky-image.svg"

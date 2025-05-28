@@ -35,6 +35,8 @@ export interface Fold {
   text?: RichText;
   textProps?: TextProps;
   textPosition?: 'Left' | 'Right';
+  image?: IImage;
+
 }
 
 export interface Props {
@@ -44,10 +46,10 @@ export interface Props {
   sectionProps?: SectionProps;
 }
 
-export default function StickyImage({ image, folds, sectionProps, backgroundMedia }: Props) {
+export default function StickyImage({ image, folds = [], sectionProps, backgroundMedia }: Props) {
   return <div class="flex justify-center gap-20" style={{ ...sectionProps, background: backgroundMedia?.backgroundColor }}>
     <div class="w-[312px]">
-      {folds?.map(fold => (
+      {folds.map(fold => (
         <div class="h-screen flex flex-col justify-center">
           {fold.textPosition == "Left" && <div>
             <div class="flex flex-col gap-3">
@@ -61,12 +63,14 @@ export default function StickyImage({ image, folds, sectionProps, backgroundMedi
     </div>
 
     <div>
-      {image?.src && <div class="sticky h-screen top-0 flex items-center"><Image
-        src={image.src}
-        alt={image.alt || "Sticky image"}
-        width={image.width || 336}
-        height={image.height || 690}
-      /></div>}
+      <div class="sticky h-screen top-0 flex items-center">
+        {folds[0].image?.src && <Image
+          src={folds[0].image.src}
+          alt={folds[0].image.alt || "Sticky image"}
+          width={folds[0].image.width || 336}
+          height={folds[0].image.height || 690}
+        />}
+      </div>
     </div>
 
     <div class="w-[312px]">

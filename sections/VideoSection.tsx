@@ -70,6 +70,7 @@ export interface IVideo {
 }
 
 export interface Props {
+  hideSection?: boolean;
   title?: RichText;
   titleTextProps?: TextProps;
   video?: IVideo;
@@ -80,7 +81,8 @@ export interface Props {
   sectionProps?: SectionProps;
 }
 
-export default function ({ title, titleTextProps, video, sectionProps, bottomImage, bottomText, bottomTextProps, backgroundMedia }: Props) {
+export default function ({ hideSection = false, title, titleTextProps, video, sectionProps, bottomImage, bottomText, bottomTextProps, backgroundMedia }: Props) {
+  if (hideSection) return <></>
   const backgroundMediaPlacement = {
     "top": "object-top",
     "center": "",

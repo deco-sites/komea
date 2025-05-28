@@ -157,9 +157,8 @@ export default function HubspotForm(hubspotForm : Props) {
                     .${hubspostFormId} .hs-form-private {
                         position: relative;
                         display: flex; /* flex */
-                        flex-wrap: wrap !important;
                         justify-content: space-between; /* justify-between */
-                        padding: 12px;
+                        padding: 8px;
                         font-size: 1rem; /* text-base */
                         /*border: 1px solid #EBEBEB;*/
                         --tw-border-opacity: 1;
@@ -219,7 +218,7 @@ export default function HubspotForm(hubspotForm : Props) {
                         color: ${hubspotForm?.buttonTextColor};
                         padding: 0px 18px 0px 18px;
                         height: 100%;
-                        font-size: 18px;
+                        font-size: 14px;
                         font-style: normal;
                         font-weight: 500;
                         cursor: pointer;
@@ -258,6 +257,10 @@ export default function HubspotForm(hubspotForm : Props) {
                                                                 }
                 
                                                                 @media (min-width: 768px) {
+                                                                    .${hubspostFormId} .hs-form-private {
+                                                                      padding: 12px;
+                                                                    }
+
                                                                     .${hubspostFormId} .hs-input {
                                                                         width: auto;
                                                                         flex-grow: 1;

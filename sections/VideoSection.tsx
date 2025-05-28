@@ -87,8 +87,8 @@ export default function ({ title, titleTextProps, video, sectionProps, bottomIma
     "bottom": "object-bottom"
   }
   return <div style={{ ...sectionProps}} class="relative">
-    <div class="max-w-[1280px] mx-auto flex flex-col items-center">
-      {title && <div dangerouslySetInnerHTML={{ __html: title }} class="w-full mb-[60px]" style={{ ...titleTextProps }} />}
+    <div class="max-w-[1280px] mx-auto flex flex-col items-center px-7 lg:px-0">
+      {title && <div dangerouslySetInnerHTML={{ __html: title }} class="w-full mb-10 lg:mb-[60px]" style={{ ...titleTextProps }} />}
 
       <div class="relative rounded-[33px] overflow-hidden cursor-pointer flex justify-center group" hx-on:click={useScript(onClick, video?.use == "embed")}
         style={{ width: video?.width, height: video?.height}}>
@@ -134,7 +134,7 @@ export default function ({ title, titleTextProps, video, sectionProps, bottomIma
         class="mt-[60px]"
       />}
 
-      {bottomText && <div dangerouslySetInnerHTML={{ __html: bottomText}} class="w-full mt-[60px]" style={{ ...bottomTextProps }} />}
+      {bottomText && <div dangerouslySetInnerHTML={{ __html: bottomText}} class="w-full mt-10 lg:mt-[60px]" style={{ ...bottomTextProps }} />}
     </div>
 
     {backgroundMedia?.color && <div style={{ background: backgroundMedia.color }} class="absolute top-0 left-0 h-full w-full -z-50" />}

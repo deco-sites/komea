@@ -128,6 +128,7 @@
               "font": "Lektorat Display",
               "letterSpacing": "-1px",
               "fontSize": "26px",
+              "lineHeight": "100%",
               "fontWeight": "750"
             },
             "sectionBackground": {
@@ -185,13 +186,13 @@
                   "fontWeight": "750",
                   "color": "#002621"
                 },
-                "text": "<p style=\"text-align: center\"><span>Em breve você receberá o conteúdo que</span></p><p style=\"text-align: center\"><span>antecipa o fim (e o recomeço). fique atento</span></p><p style=\"text-align: center\"><span>a sua caixa de entrada</span></p>",
+                "text": "<p style=\"text-align: center\">Em breve você receberá o conteúdo que</p><p style=\"text-align: center\">antecipa o fim (e o recomeço). Confira sua caixa de entrada.</p>",
                 "textProps": {
                   "color": "#5F6E82",
                   "fontWeight": "500",
                   "letterSpacing": "-1px",
                   "lineHeight": "125%",
-                  "fontSize": "22px"
+                  "fontSize": "16px"
                 },
                 "cta": [
                   {

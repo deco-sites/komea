@@ -8,6 +8,14 @@
         {
           "value": {
             "__resolveType": "site/sections/CampaignTimerHero.tsx",
+            "title": "<p style=\"text-align: center\"><span>O FIM ESTÁ </span></p><p style=\"text-align: center\"><span>PRÓXIMO</span></p>",
+            "titleTextProps": {
+              "fontFamily": "Lektorat Display",
+              "letterSpacing": "2.41px",
+              "fontWeight": "750",
+              "color": "#ffffff",
+              "fontSize": "48px"
+            },
             "hideSection": false,
             "campaignTimer": {
               "expiresAt": "2025-06-02T02:59:00.000Z",
@@ -21,14 +29,6 @@
               },
               "labelsColor": "#ffffff",
               "numbersColor": "#ffffff"
-            },
-            "title": "<p style=\"text-align: center\"><span>O FIM ESTÁ </span></p><p style=\"text-align: center\"><span>PRÓXIMO</span></p>",
-            "titleTextProps": {
-              "fontFamily": "Lektorat Display",
-              "letterSpacing": "2.41px",
-              "fontWeight": "750",
-              "color": "#ffffff",
-              "fontSize": "48px"
             },
             "backgroundImage": {
               "src": "https://assets.decocache.com/komea/320929e8-94cd-4347-8003-212337cf8dff/bg-MOBILE2.svg"
@@ -55,6 +55,15 @@
         {
           "value": {
             "__resolveType": "site/sections/CampaignTimerHero.tsx",
+            "title": "<p style=\"text-align: center\"><span>O FIM ESTÁ </span></p><p style=\"text-align: center\"><span>PRÓXIMO</span></p>",
+            "titleTextProps": {
+              "fontFamily": "Lektorat Display",
+              "letterSpacing": "2.41px",
+              "fontWeight": "750",
+              "color": "#ffffff",
+              "fontSize": "100px",
+              "lineHeight": "1.2"
+            },
             "hideSection": false,
             "campaignTimer": {
               "expiredText": "<p style=\"text-align: justify\">Expired!</p>",
@@ -68,15 +77,6 @@
               "labelsColor": "#ffffff",
               "numbersColor": "#ffffff",
               "expiresAt": "2025-06-02T02:59:00.000Z"
-            },
-            "title": "<p style=\"text-align: center\"><span>O FIM ESTÁ </span></p><p style=\"text-align: center\"><span>PRÓXIMO</span></p>",
-            "titleTextProps": {
-              "fontFamily": "Lektorat Display",
-              "letterSpacing": "2.41px",
-              "fontWeight": "750",
-              "color": "#ffffff",
-              "fontSize": "100px",
-              "lineHeight": "1.2"
             },
             "backgroundImage": {
               "src": "https://assets.decocache.com/komea/656e43a6-3131-47a6-900b-987a8dab250c/bg2.svg"
@@ -95,6 +95,369 @@
             },
             "use": "image",
             "mediaPosition": "bellow"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/VideoSection.tsx",
+            "title": "<p style=\"text-align: center\"><span>O FIM ESTÁ PRÓXIMO</span></p>",
+            "titleTextProps": {
+              "fontFamily": "Lektorat Display",
+              "letterSpacing": "-0.64px",
+              "fontWeight": "750",
+              "color": "#ffffff",
+              "fontSize": "32px"
+            },
+            "sectionProps": {
+              "paddingTop": "60px",
+              "paddingBottom": "20px"
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/pTd0Dwp73qg?si=NVAKqLSbpexsHBUo",
+              "use": "embed",
+              "playButton": {
+                "src": "https://assets.decocache.com/komea/45481003-99d4-439c-adad-660c40eb43f1/play-button.svg",
+                "width": 60,
+                "height": 60
+              },
+              "width": "100%",
+              "thumbnailImage": {
+                "width": 927,
+                "height": 546,
+                "src": "https://assets.decocache.com/komea/a5ababdd-fba2-4281-a3db-16c62b1b655b/video-thumbnail.svg"
+              },
+              "height": "212px"
+            },
+            "bottomImage": {},
+            "backgroundMedia": {
+              "image": {
+                "src": "https://assets.decocache.com/komea/cf49cd59-7e27-4caa-8cd4-fe44f4795e98/video-section-background.svg"
+              },
+              "lcp": true,
+              "color": "#000000",
+              "use": "image",
+              "bleeding": 12,
+              "customHeight": "112%"
+            },
+            "bottomText": "<p style=\"text-align: center\"><span>Visite nosso estande durante o VTEX Day</span></p><p style=\"text-align: center\"><span>nos dias 02 e 03 de junho.&nbsp;</span></p>",
+            "bottomTextProps": {
+              "color": "#ffffff",
+              "fontWeight": "500",
+              "fontSize": "14px",
+              "letterSpacing": "-0.5px",
+              "lineHeight": "125%"
+            },
+            "hideSection": true
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/VideoSection.tsx",
+            "title": "<p style=\"text-align: center\"><span>O FIM ESTÁ PRÓXIMO</span></p>",
+            "titleTextProps": {
+              "fontFamily": "Lektorat Display",
+              "letterSpacing": "2.41px",
+              "fontWeight": "750",
+              "color": "#ffffff",
+              "fontSize": "62px"
+            },
+            "sectionProps": {
+              "paddingTop": "120px",
+              "paddingBottom": "20px"
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/pTd0Dwp73qg?si=NVAKqLSbpexsHBUo",
+              "use": "embed",
+              "playButton": {
+                "src": "https://assets.decocache.com/komea/45481003-99d4-439c-adad-660c40eb43f1/play-button.svg"
+              },
+              "width": "927px",
+              "height": "546px",
+              "thumbnailImage": {
+                "width": 927,
+                "height": 546,
+                "src": "https://assets.decocache.com/komea/a5ababdd-fba2-4281-a3db-16c62b1b655b/video-thumbnail.svg"
+              }
+            },
+            "bottomImage": {},
+            "backgroundMedia": {
+              "image": {
+                "src": "https://assets.decocache.com/komea/cf49cd59-7e27-4caa-8cd4-fe44f4795e98/video-section-background.svg"
+              },
+              "lcp": true,
+              "color": "#000000",
+              "use": "image",
+              "bleeding": 12,
+              "customHeight": "112%"
+            },
+            "bottomText": "<p style=\"text-align: center\"><span>Visite nosso estande durante o VTEX Day</span></p><p style=\"text-align: center\"><span>nos dias 02 e 03 de junho.&nbsp;</span></p>",
+            "bottomTextProps": {
+              "color": "#ffffff",
+              "fontWeight": "500",
+              "fontSize": "22px",
+              "letterSpacing": "-0.5px",
+              "lineHeight": "125%"
+            },
+            "hideSection": true
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV3.tsx",
+            "title": {
+              "text": "<p style=\"text-align: center\"><span>Receba o jornal informativo</span></p><p style=\"text-align: center\"><span>e saiba mais sobre a Komea</span></p>",
+              "color": "#ffffff",
+              "font": "Lektorat Display",
+              "letterSpacing": "-1px",
+              "fontSize": "26px",
+              "fontWeight": "750"
+            },
+            "text": "<p style=\"text-align: center\">Cadastre seu e-mail para receber</p>",
+            "textProps": {
+              "color": "#FFFFFF",
+              "fontSize": "16px",
+              "fontWeight": "500",
+              "letterSpacing": "-1px"
+            },
+            "sectionBackground": {
+              "backgroundColor": "#000000",
+              "image": {
+                "src": "https://assets.decocache.com/komea/41223b47-85ef-4ae1-a65d-b29194c57fb0/star-mobile-2.svg"
+              },
+              "use": "image",
+              "postition": "top"
+            },
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/komea/b352a0c5-16b9-4f6a-a952-bcae78f4cfd7/logo-komea.svg",
+                "width": 390,
+                "height": 163
+              },
+              "placement": "bellow",
+              "use": "image"
+            },
+            "cta": [
+              {
+                "type": "Only text",
+                "size": "Large",
+                "text": "<p>Quer saber mais sobre a Komea?</p><p><u>Clique aqui</u></p>",
+                "textColor": "#FFFFFF",
+                "customProps": {
+                  "fontWeight": "600",
+                  "letterSpacing": "-1px",
+                  "fontSize": "18px"
+                },
+                "href": "/app"
+              }
+            ],
+            "ctaPlacement": "center",
+            "container": {
+              "marginBottom": "120px",
+              "paddingTop": "105px"
+            },
+            "hubspotForm": {
+              "show": true,
+              "region": "na1",
+              "portalId": "7112881",
+              "formId": "c523fa9d-0ad7-460a-9852-9870204c40ab",
+              "buttonColor": "#EEFC58",
+              "buttonTextColor": "#002621",
+              "errorMessageColor": "#F57E77",
+              "inputLabelColor": "#FAFAF5",
+              "inputLabelBackgroundColor": "#44656A",
+              "modal": {
+                "title": "<p style=\"text-align: center\"><span>E-mail confirmado!</span></p>",
+                "titleTextProps": {
+                  "fontFamily": "Lektorat Display",
+                  "fontSize": "45px",
+                  "letterSpacing": "-1px",
+                  "fontWeight": "750",
+                  "color": "#002621"
+                },
+                "text": "<p style=\"text-align: center\"><span>Em breve você receberá o conteúdo que</span></p><p style=\"text-align: center\"><span>antecipa o fim (e o recomeço). fique atento</span></p><p style=\"text-align: center\"><span>a sua caixa de entrada</span></p>",
+                "textProps": {
+                  "color": "#5F6E82",
+                  "fontWeight": "500",
+                  "letterSpacing": "-1px",
+                  "lineHeight": "125%",
+                  "fontSize": "22px"
+                },
+                "cta": [
+                  {
+                    "type": "Button",
+                    "size": "Large",
+                    "text": "Retomar a navegação",
+                    "textColor": "#002621",
+                    "backgroundColor": "Transparent",
+                    "borderColor": "#002621",
+                    "customProps": {
+                      "height": "50px",
+                      "fontWeight": "500",
+                      "letterSpacing": "-1px",
+                      "borderRadius": "100px"
+                    }
+                  },
+                  {
+                    "type": "Button",
+                    "size": "Large",
+                    "text": "Saber mais sobre a Komea",
+                    "textColor": "#002621",
+                    "backgroundColor": "#EEFC58",
+                    "borderColor": "#EEFC58",
+                    "customProps": {
+                      "height": "50px",
+                      "fontWeight": "500",
+                      "letterSpacing": "-1px",
+                      "borderRadius": "100px"
+                    },
+                    "href": "/app"
+                  }
+                ]
+              }
+            },
+            "hideSection": true
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/HeroV3.tsx",
+            "title": {
+              "text": "<p style=\"text-align: center\"><span>Receba o jornal informativo</span></p><p style=\"text-align: center\"><span>e saiba mais sobre a Komea</span></p>",
+              "color": "#ffffff",
+              "font": "Lektorat Display",
+              "letterSpacing": "-3px",
+              "fontSize": "62px",
+              "fontWeight": "750"
+            },
+            "text": "<p style=\"text-align: center\"><span>Cadastre seu e-mail para baixar</span></p>",
+            "textProps": {
+              "color": "#FFFFFF",
+              "fontSize": "22px",
+              "fontWeight": "500",
+              "letterSpacing": "-1px"
+            },
+            "sectionBackground": {
+              "backgroundColor": "#000000",
+              "image": {
+                "src": "https://assets.decocache.com/komea/f6983b02-8aa1-4987-9675-45db863d6069/Star-8.svg"
+              },
+              "use": "image",
+              "postition": "top"
+            },
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/komea/b352a0c5-16b9-4f6a-a952-bcae78f4cfd7/logo-komea.svg",
+                "width": 260,
+                "height": 87
+              },
+              "placement": "bellow",
+              "use": "image"
+            },
+            "cta": [
+              {
+                "type": "Only text",
+                "size": "Large",
+                "text": "Quer saber mais sobre a Komea? ",
+                "textColor": "#FFFFFF",
+                "customProps": {
+                  "fontWeight": "600",
+                  "letterSpacing": "-1px",
+                  "fontSize": "22px"
+                },
+                "underlineText": "Clique aqui",
+                "href": "/app"
+              }
+            ],
+            "ctaPlacement": "center",
+            "container": {
+              "marginBottom": "120px",
+              "paddingTop": "170px"
+            },
+            "hubspotForm": {
+              "show": true,
+              "region": "na1",
+              "portalId": "7112881",
+              "formId": "c523fa9d-0ad7-460a-9852-9870204c40ab",
+              "buttonColor": "#EEFC58",
+              "buttonTextColor": "#002621",
+              "errorMessageColor": "#F57E77",
+              "inputLabelColor": "#FAFAF5",
+              "inputLabelBackgroundColor": "#44656A",
+              "modal": {
+                "title": "<p style=\"text-align: center\"><span>E-mail confirmado!</span></p>",
+                "titleTextProps": {
+                  "fontFamily": "Lektorat Display",
+                  "fontSize": "45px",
+                  "letterSpacing": "-1px",
+                  "fontWeight": "750",
+                  "color": "#002621"
+                },
+                "text": "<p style=\"text-align: center\"><span>Em breve você receberá o conteúdo que</span></p><p style=\"text-align: center\"><span>antecipa o fim (e o recomeço). fique atento</span></p><p style=\"text-align: center\"><span>a sua caixa de entrada</span></p>",
+                "textProps": {
+                  "color": "#5F6E82",
+                  "fontWeight": "500",
+                  "letterSpacing": "-1px",
+                  "lineHeight": "125%",
+                  "fontSize": "22px"
+                },
+                "cta": [
+                  {
+                    "type": "Button",
+                    "size": "Large",
+                    "text": "Retomar a navegação",
+                    "textColor": "#002621",
+                    "backgroundColor": "Transparent",
+                    "borderColor": "#002621",
+                    "customProps": {
+                      "height": "50px",
+                      "fontWeight": "500",
+                      "letterSpacing": "-1px",
+                      "borderRadius": "100px"
+                    }
+                  },
+                  {
+                    "type": "Button",
+                    "size": "Large",
+                    "text": "Saber mais sobre a Komea",
+                    "textColor": "#002621",
+                    "backgroundColor": "#EEFC58",
+                    "borderColor": "#EEFC58",
+                    "customProps": {
+                      "height": "50px",
+                      "fontWeight": "500",
+                      "letterSpacing": "-1px",
+                      "borderRadius": "100px"
+                    },
+                    "href": "/app"
+                  }
+                ]
+              }
+            },
+            "hideSection": true
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

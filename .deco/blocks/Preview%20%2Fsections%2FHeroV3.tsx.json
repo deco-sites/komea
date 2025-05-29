@@ -1,3 +1,27 @@
 {
-  "__resolveType": "site/sections/HeroV3.tsx"
+  "__resolveType": "site/sections/HeroV3.tsx",
+  "bulletPoints": {
+    "items": []
+  },
+  "cta": [],
+  "ctaPlacement": "left",
+  "media": {
+    "placement": "right"
+  },
+  "hubspotForm": {
+    "buttonWidth": "min",
+    "inputLabelWidth": "min",
+    "modal": {
+      "media": {
+        "use": "image"
+      },
+      "cta": []
+    }
+  },
+  "container": {
+    "backgroundMedia": {
+      "use": "image",
+      "postition": "top"
+    }
+  }
 }

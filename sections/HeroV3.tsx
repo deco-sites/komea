@@ -114,6 +114,7 @@ export interface sectionBackgroundMedia extends BackgroundMedia {
 }
 
 export interface Props {
+  hideSection?: boolean;
   title?: Title;
   distanceBetweenTitleAndText?: string;
   text?: RichText;
@@ -155,7 +156,8 @@ export function HeroMedia({ media }: { media?: Media }) {
   </>
 }
 
-export default function HeroV3({ title, text, textProps, bulletPoints, cta = [], media, hubspotForm, distanceBetweenTitleAndText, container, ctaPlacement, sectionBackground, lcp, floatingImage }: Props) {
+export default function HeroV3({ hideSection, title, text, textProps, bulletPoints, cta = [], media, hubspotForm, distanceBetweenTitleAndText, container, ctaPlacement, sectionBackground, lcp, floatingImage }: Props) {
+  if (hideSection) return <></>;
   const placement = {
     "left": "justify-start",
     "center": "justify-center",

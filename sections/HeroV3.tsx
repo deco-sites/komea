@@ -50,9 +50,9 @@ export interface Title {
 }
 
 export interface TextProps {
-  fontFamily?: string;
   /** @format color-input */
   color?: string;
+  fontFamily?: string;
   fontSize?: string;
   fontWeight?: string;
   letterSpacing?: string;

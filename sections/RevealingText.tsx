@@ -62,7 +62,7 @@ export interface Props {
 
 export default function RevealingText({ lines = [], backgroundMedia }: Props) {
   const rootId = useId();
-  return <div id={rootId} class="bg-purple-400 relative min-h-[240vh]" style={{ height: `${lines.length * (180 - lines.length * 10)}vh` }}>
+  return <div id={rootId} class="relative min-h-[240vh]" style={{ height: `${lines.length * (185 - lines.length * 10)}vh` }} >
     <script
       type="module"
       dangerouslySetInnerHTML={{ __html: useScript(onLoad, rootId, lines) }}

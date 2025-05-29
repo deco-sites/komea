@@ -509,7 +509,11 @@
                 "glowColor2": "#EEFC5880"
               }
             ],
-            "ctaPlacement": "center"
+            "ctaPlacement": "center",
+            "container": {
+              "paddingTop": "124px",
+              "paddingBottom": "64px"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

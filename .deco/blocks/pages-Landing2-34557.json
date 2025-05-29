@@ -343,7 +343,7 @@
                 }
               },
               {
-                "text": "<p><span>sem resultado.</span></p>",
+                "text": "<p>sem resultado.</p>",
                 "textProps": {
                   "fontWeight": "600",
                   "fontSize": "32px",
@@ -353,29 +353,11 @@
                 "color": "#ffffff"
               },
               {
-                "text": "<p>Em vez de painéis complexos, a Komea funciona como</p>",
+                "text": "<p style=\"text-align: center\">Em vez de painéis complexos, a Komea funciona como uma</p><p style=\"text-align: center\">conversa: o lojista diz o que precisa e os agentes fazem,</p><p style=\"text-align: center\">explicam e mostram prévias antes de publicar.</p>",
                 "textProps": {
-                  "fontWeight": "500",
+                  "fontWeight": "600",
                   "fontSize": "14px",
-                  "letterSpacing": "-0.3px",
-                  "marginTop": "22px"
-                },
-                "color": "#ffffff"
-              },
-              {
-                "text": "<p><span>uma conversa: o lojista diz o que precisa e os agentes</span></p>",
-                "textProps": {
-                  "fontWeight": "500",
-                  "fontSize": "14px",
-                  "letterSpacing": "-0.3px"
-                },
-                "color": "#ffffff"
-              },
-              {
-                "text": "<p><span>fazem, explicam e mostram prévias antes de publicar.</span></p>",
-                "textProps": {
-                  "fontWeight": "500",
-                  "fontSize": "14px",
+                  "marginTop": "22px",
                   "letterSpacing": "-0.3px"
                 },
                 "color": "#ffffff"
@@ -414,29 +396,11 @@
                 }
               },
               {
-                "text": "<p><span>Em vez de painéis complexos, a Komea funciona como uma</span></p>",
+                "text": "<p style=\"text-align: center\">Em vez de painéis complexos, a Komea funciona como uma</p><p style=\"text-align: center\">conversa: o lojista diz o que precisa e os agentes fazem,</p><p style=\"text-align: center\">explicam e mostram prévias antes de publicar.</p>",
                 "textProps": {
                   "fontWeight": "500",
                   "fontSize": "16px",
                   "marginTop": "22px",
-                  "letterSpacing": "-0.3px"
-                },
-                "color": "#ffffff"
-              },
-              {
-                "text": "<p><span>conversa: o lojista diz o que precisa e os agentes fazem,</span></p>",
-                "textProps": {
-                  "fontWeight": "500",
-                  "fontSize": "16px",
-                  "letterSpacing": "-0.3px"
-                },
-                "color": "#ffffff"
-              },
-              {
-                "text": "<p><span>explicam e mostram prévias antes de publicar.</span></p>",
-                "textProps": {
-                  "fontWeight": "500",
-                  "fontSize": "16px",
                   "letterSpacing": "-0.3px"
                 },
                 "color": "#ffffff"

@@ -43,6 +43,7 @@ export interface TextProps {
   fontSize?: string;
   fontWeight?: string;
   letterSpacing?: string;
+  lineHeight?: string;
   marginTop?: string;
 }
 

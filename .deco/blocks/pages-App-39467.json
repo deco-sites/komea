@@ -253,9 +253,7 @@
                 "src": "https://assets.decocache.com/komea/a5ababdd-fba2-4281-a3db-16c62b1b655b/video-thumbnail.svg"
               },
               "playButton": {
-                "src": "https://assets.decocache.com/komea/45481003-99d4-439c-adad-660c40eb43f1/play-button.svg",
-                "width": 48,
-                "height": 48
+                "src": "https://assets.decocache.com/komea/45481003-99d4-439c-adad-660c40eb43f1/play-button.svg"
               }
             },
             "sectionProps": {
@@ -291,9 +289,7 @@
                 "src": "https://assets.decocache.com/komea/a5ababdd-fba2-4281-a3db-16c62b1b655b/video-thumbnail.svg"
               },
               "playButton": {
-                "src": "https://assets.decocache.com/komea/45481003-99d4-439c-adad-660c40eb43f1/play-button.svg",
-                "width": 100,
-                "height": 100
+                "src": "https://assets.decocache.com/komea/45481003-99d4-439c-adad-660c40eb43f1/play-button.svg"
               }
             },
             "sectionProps": {
@@ -509,11 +505,7 @@
                 "glowColor2": "#EEFC5880"
               }
             ],
-            "ctaPlacement": "center",
-            "container": {
-              "paddingTop": "124px",
-              "paddingBottom": "64px"
-            }
+            "ctaPlacement": "center"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -887,6 +879,185 @@
             },
             "backgroundMedia": {
               "backgroundColor": "linear-gradient(to bottom, #002E31, #012224)"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/BulletPointsHero.tsx",
+            "texts": [
+              {
+                "text": "<p><span>Um time de agentes</span></p>",
+                "textProps": {
+                  "fontWeight": "750",
+                  "fontFamily": "Lektorat Display",
+                  "fontSize": "32px",
+                  "letterSpacing": "-0.3px",
+                  "color": "#00363A",
+                  "lineHeight": "100%"
+                }
+              },
+              {
+                "text": "<p><span>que evolui com você</span></p>",
+                "textProps": {
+                  "fontWeight": "750",
+                  "fontFamily": "Lektorat Display",
+                  "fontSize": "32px",
+                  "letterSpacing": "-0.3px",
+                  "color": "#00363A",
+                  "lineHeight": "100%"
+                },
+                "markdownColor": "#EEFC58",
+                "markdownHorizontalScale": "105%",
+                "markdownHorizontalPosition": "1.5%",
+                "markdownVerticalScale": "120%",
+                "markdownVerticalPosition": "8%"
+              }
+            ],
+            "bulletPoints": {
+              "items": [
+                {
+                  "text": "Aprendem com o seu negócio"
+                },
+                {
+                  "text": "Tomam iniciativa para sugerir melhorias"
+                },
+                {
+                  "text": "Executam ações com base em dados reais"
+                },
+                {
+                  "text": "Escalam com você — sem exigir equipe ou conhecimento técnico"
+                }
+              ],
+              "textProps": {
+                "color": "#00363A",
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "letterSpacing": "-0.3px"
+              },
+              "bulletPointsIcon": {
+                "src": "https://assets.decocache.com/komea/615b1b6b-1f76-4b73-bda0-43ee870521e7/yellow-power-icon.svg"
+              }
+            },
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Small",
+                "openModal": "Talk to specialist",
+                "text": "<p><span>Seja um dos primeiros a testar</span></p>",
+                "textColor": "#00363A",
+                "backgroundColor": "#EEFC58",
+                "borderColor": "#EEFC58",
+                "customProps": {
+                  "height": "48px",
+                  "borderRadius": "100px"
+                }
+              }
+            ],
+            "container": {
+              "backgroundColor": "linear-gradient(217.97deg, #D1CABD 21.92%, #D8C186 76.48%);",
+              "backgroundMedia": {
+                "image": {}
+              }
+            },
+            "sectionBackground": {
+              "image": {},
+              "backgroundColor": "linear-gradient(to bottom, #012224, #001D1F)"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/BulletPointsHero.tsx",
+            "texts": [
+              {
+                "text": "<p><span>Um time de agentes</span></p>",
+                "textProps": {
+                  "fontWeight": "750",
+                  "fontFamily": "Lektorat Display",
+                  "fontSize": "62px",
+                  "letterSpacing": "-0.3px",
+                  "color": "#00363A",
+                  "lineHeight": "100%"
+                }
+              },
+              {
+                "text": "<p><span>que evolui com você</span></p>",
+                "textProps": {
+                  "fontWeight": "750",
+                  "fontFamily": "Lektorat Display",
+                  "fontSize": "62px",
+                  "letterSpacing": "-0.3px",
+                  "color": "#00363A",
+                  "lineHeight": "100%"
+                },
+                "markdownColor": "#EEFC58",
+                "markdownHorizontalPosition": "-0.5%",
+                "markdownVerticalScale": "50%",
+                "markdownVerticalPosition": "20%"
+              }
+            ],
+            "bulletPoints": {
+              "items": [
+                {
+                  "text": "Aprendem com o seu negócio"
+                },
+                {
+                  "text": "Tomam iniciativa para sugerir melhorias"
+                },
+                {
+                  "text": "Executam ações com base em dados reais"
+                },
+                {
+                  "text": "Escalam com você — sem exigir equipe ou conhecimento técnico"
+                }
+              ],
+              "textProps": {
+                "color": "#00363A",
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "letterSpacing": "-0.3px"
+              },
+              "bulletPointsIcon": {
+                "src": "https://assets.decocache.com/komea/615b1b6b-1f76-4b73-bda0-43ee870521e7/yellow-power-icon.svg"
+              }
+            },
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Small",
+                "openModal": "Talk to specialist",
+                "text": "<p><span>Seja um dos primeiros a testar</span></p>",
+                "textColor": "#00363A",
+                "backgroundColor": "#EEFC58",
+                "borderColor": "#EEFC58",
+                "customProps": {
+                  "height": "48px",
+                  "borderRadius": "100px"
+                }
+              }
+            ],
+            "container": {
+              "backgroundColor": "linear-gradient(217.97deg, #D1CABD 21.92%, #D8C186 76.48%);",
+              "backgroundMedia": {
+                "image": {}
+              }
+            },
+            "sectionBackground": {
+              "image": {},
+              "backgroundColor": "linear-gradient(to bottom, #012224, #001D1F)"
             }
           },
           "rule": {

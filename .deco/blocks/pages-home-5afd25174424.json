@@ -110,10 +110,17 @@
             "__resolveType": "site/sections/VideoSection.tsx",
             "title": "<p style=\"text-align: center\"><span>O FIM ESTÁ PRÓXIMO</span></p>",
             "titleTextProps": {
+<<<<<<< HEAD
               "fontFamily": "Lektorat Display",
               "letterSpacing": "-0.64px",
               "fontWeight": "750",
               "color": "#ffffff",
+=======
+              "fontWeight": "750",
+              "color": "#ffffff",
+              "letterSpacing": "-0.64px",
+              "fontFamily": "Lektorat Display",
+>>>>>>> main
               "fontSize": "32px"
             },
             "sectionProps": {
@@ -167,10 +174,17 @@
             "__resolveType": "site/sections/VideoSection.tsx",
             "title": "<p style=\"text-align: center\"><span>O FIM ESTÁ PRÓXIMO</span></p>",
             "titleTextProps": {
+<<<<<<< HEAD
               "fontFamily": "Lektorat Display",
               "letterSpacing": "2.41px",
               "fontWeight": "750",
               "color": "#ffffff",
+=======
+              "fontWeight": "750",
+              "color": "#ffffff",
+              "letterSpacing": "2.41px",
+              "fontFamily": "Lektorat Display",
+>>>>>>> main
               "fontSize": "62px"
             },
             "sectionProps": {

@@ -1,7 +1,107 @@
 {
-  "name": "Landing",
-  "path": "/landing",
+  "name": "Home",
+  "path": "/",
   "sections": [
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/CampaignTimerHero.tsx",
+            "campaignTimer": {
+              "expiresAt": "2025-06-02T02:59:00.000Z",
+              "expiredText": "<p style=\"text-align: justify\">Expired!</p>",
+              "expiredTextProps": {},
+              "labels": {
+                "days": "Dias",
+                "hours": "Horas",
+                "minutes": "Minutos",
+                "seconds": "Segundos"
+              },
+              "labelsColor": "#ffffff",
+              "numbersColor": "#ffffff"
+            },
+            "title": "<p style=\"text-align: center\"><span>O FIM ESTÁ </span></p><p style=\"text-align: center\"><span>PRÓXIMO</span></p>",
+            "titleTextProps": {
+              "fontFamily": "Lektorat Display",
+              "letterSpacing": "2.41px",
+              "fontWeight": "750",
+              "color": "#ffffff",
+              "fontSize": "48px"
+            },
+            "hideSection": false,
+            "backgroundImage": {
+              "src": "https://assets.decocache.com/komea/320929e8-94cd-4347-8003-212337cf8dff/bg-MOBILE2.svg"
+            },
+            "text": "<p style=\"text-align: center\">Pelo menos, o fim do jeito clássico<br>de vender online</p>",
+            "textProps": {
+              "color": "#ffffff",
+              "fontSize": "16px",
+              "fontWeight": "500"
+            },
+            "image": {
+              "src": "https://assets.decocache.com/komea/b352a0c5-16b9-4f6a-a952-bcae78f4cfd7/logo-komea.svg",
+              "width": 130,
+              "height": 43
+            },
+            "use": "image",
+            "mediaPosition": "bellow"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/CampaignTimerHero.tsx",
+            "campaignTimer": {
+              "expiredText": "<p style=\"text-align: justify\">Expired!</p>",
+              "expiredTextProps": {},
+              "labels": {
+                "days": "Dias",
+                "hours": "Horas",
+                "minutes": "Minutos",
+                "seconds": "Segundos"
+              },
+              "labelsColor": "#ffffff",
+              "numbersColor": "#ffffff",
+              "expiresAt": "2025-06-02T02:59:00.000Z"
+            },
+            "title": "<p style=\"text-align: center\"><span>O FIM ESTÁ </span></p><p style=\"text-align: center\"><span>PRÓXIMO</span></p>",
+            "titleTextProps": {
+              "fontFamily": "Lektorat Display",
+              "letterSpacing": "2.41px",
+              "fontWeight": "750",
+              "color": "#ffffff",
+              "fontSize": "100px",
+              "lineHeight": "1.2"
+            },
+            "hideSection": false,
+            "backgroundImage": {
+              "src": "https://assets.decocache.com/komea/656e43a6-3131-47a6-900b-987a8dab250c/bg2.svg"
+            },
+            "text": "<p style=\"text-align: center\">Pelo menos, o fim do jeito clássico<br>de vender online</p>",
+            "textProps": {
+              "color": "#ffffff",
+              "fontSize": "22px",
+              "fontWeight": "400",
+              "lineHeight": "1.2"
+            },
+            "image": {
+              "src": "https://assets.decocache.com/komea/b352a0c5-16b9-4f6a-a952-bcae78f4cfd7/logo-komea.svg",
+              "width": 226,
+              "height": 76
+            },
+            "use": "image",
+            "mediaPosition": "bellow"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
@@ -10,10 +110,10 @@
             "__resolveType": "site/sections/VideoSection.tsx",
             "title": "<p style=\"text-align: center\"><span>O FIM ESTÁ PRÓXIMO</span></p>",
             "titleTextProps": {
+              "fontFamily": "Lektorat Display",
+              "letterSpacing": "-0.64px",
               "fontWeight": "750",
               "color": "#ffffff",
-              "letterSpacing": "-0.64px",
-              "fontFamily": "Lektorat Display",
               "fontSize": "32px"
             },
             "sectionProps": {
@@ -54,7 +154,8 @@
               "fontSize": "14px",
               "letterSpacing": "-0.5px",
               "lineHeight": "125%"
-            }
+            },
+            "hideSection": true
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -66,10 +167,10 @@
             "__resolveType": "site/sections/VideoSection.tsx",
             "title": "<p style=\"text-align: center\"><span>O FIM ESTÁ PRÓXIMO</span></p>",
             "titleTextProps": {
+              "fontFamily": "Lektorat Display",
+              "letterSpacing": "2.41px",
               "fontWeight": "750",
               "color": "#ffffff",
-              "letterSpacing": "2.41px",
-              "fontFamily": "Lektorat Display",
               "fontSize": "62px"
             },
             "sectionProps": {
@@ -108,7 +209,8 @@
               "fontSize": "22px",
               "letterSpacing": "-0.5px",
               "lineHeight": "125%"
-            }
+            },
+            "hideSection": true
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -128,8 +230,14 @@
               "font": "Lektorat Display",
               "letterSpacing": "-1px",
               "fontSize": "26px",
-              "lineHeight": "100%",
               "fontWeight": "750"
+            },
+            "text": "<p style=\"text-align: center\">Cadastre seu e-mail para receber</p>",
+            "textProps": {
+              "color": "#FFFFFF",
+              "fontSize": "16px",
+              "fontWeight": "500",
+              "letterSpacing": "-1px"
             },
             "sectionBackground": {
               "backgroundColor": "#000000",
@@ -186,13 +294,13 @@
                   "fontWeight": "750",
                   "color": "#002621"
                 },
-                "text": "<p style=\"text-align: center\">Em breve você receberá o conteúdo que</p><p style=\"text-align: center\">antecipa o fim (e o recomeço). Confira sua caixa de entrada.</p>",
+                "text": "<p style=\"text-align: center\"><span>Em breve você receberá o conteúdo que</span></p><p style=\"text-align: center\"><span>antecipa o fim (e o recomeço). fique atento</span></p><p style=\"text-align: center\"><span>a sua caixa de entrada</span></p>",
                 "textProps": {
                   "color": "#5F6E82",
                   "fontWeight": "500",
                   "letterSpacing": "-1px",
                   "lineHeight": "125%",
-                  "fontSize": "16px"
+                  "fontSize": "22px"
                 },
                 "cta": [
                   {
@@ -227,13 +335,7 @@
                 ]
               }
             },
-            "text": "<p style=\"text-align: center\">Cadastre seu e-mail para receber</p>",
-            "textProps": {
-              "color": "#FFFFFF",
-              "fontSize": "16px",
-              "fontWeight": "500",
-              "letterSpacing": "-1px"
-            }
+            "hideSection": true
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -250,6 +352,13 @@
               "letterSpacing": "-3px",
               "fontSize": "62px",
               "fontWeight": "750"
+            },
+            "text": "<p style=\"text-align: center\"><span>Cadastre seu e-mail para baixar</span></p>",
+            "textProps": {
+              "color": "#FFFFFF",
+              "fontSize": "22px",
+              "fontWeight": "500",
+              "letterSpacing": "-1px"
             },
             "sectionBackground": {
               "backgroundColor": "#000000",
@@ -348,13 +457,7 @@
                 ]
               }
             },
-            "text": "<p style=\"text-align: center\"><span>Cadastre seu e-mail para baixar</span></p>",
-            "textProps": {
-              "color": "#FFFFFF",
-              "fontSize": "22px",
-              "fontWeight": "500",
-              "letterSpacing": "-1px"
-            }
+            "hideSection": true
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -363,5 +466,8 @@
       ]
     }
   ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
   "__resolveType": "website/pages/Page.tsx"
 }

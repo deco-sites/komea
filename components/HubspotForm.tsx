@@ -246,9 +246,10 @@ export default function HubspotForm(hubspotForm : Props) {
                                                         
                                                         .${hubspostFormId} .hs-error-msg {
                                                             position: absolute;
-                                                            top: 77px;
+                                                            top: 68px;
+                                                            font-size: 14px;
                                                             left: 24px;
-                                                            max-width: 50%;
+                                                            max-width: 100%;
                                                             color: ${hubspotForm?.errorMessageColor}
                                                             }
                                                             
@@ -256,17 +257,25 @@ export default function HubspotForm(hubspotForm : Props) {
                                                                 display: none;
                                                                 }
                 
-                                                                @media (min-width: 768px) {
-                                                                    .${hubspostFormId} .hs-form-private {
-                                                                      padding: 12px;
-                                                                    }
+                    @media (min-width: 768px) {
+                      .${hubspostFormId} .hs-form-private {
+                        padding: 12px;
+                      }
 
-                                                                    .${hubspostFormId} .hs-input {
-                                                                        width: auto;
-                                                                        flex-grow: 1;
-                                                                        font-size: 1rem; /* text-base */
-                                                                        }
-                                                                        `
+                      .${hubspostFormId} .hs-input {
+                        width: auto;
+                        flex-grow: 1;
+                        font-size: 1rem; /* text-base */
+                      }
+                      
+                      .${hubspostFormId} .hs-error-msg {
+                                                            top: 77px;
+                                                            font-size: 16px;
+                                                            left: 24px;
+                                                            max-width: 100%;
+                                                            }
+                    }
+    `
     }} />
           </div>
 }

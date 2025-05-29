@@ -185,7 +185,7 @@
                   "use": "image"
                 }
               },
-              "show": true,
+              "show": false,
               "region": "na1",
               "portalId": "7112881",
               "formId": "51bbcad7-31d8-4a8f-ba76-845a10da854d",
@@ -230,7 +230,22 @@
               "color": "#00363A",
               "lineHeight": "125%"
             },
-            "lcp": true
+            "lcp": true,
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Small",
+                "openModal": "Talk to specialist",
+                "text": "<p><span>Entre na lista de espera</span></p>",
+                "textColor": "#ffffff",
+                "backgroundColor": "#00363A",
+                "borderColor": "#00363A",
+                "customProps": {
+                  "height": "48px",
+                  "borderRadius": "100px"
+                }
+              }
+            ]
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

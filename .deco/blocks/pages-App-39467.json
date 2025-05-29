@@ -685,6 +685,9 @@
         {
           "value": {
             "__resolveType": "site/sections/CarouselV2.tsx",
+            "backgroundMedia": {
+              "backgroundColor": "linear-gradient(to bottom, #002E31, #012224)"
+            },
             "slides": [
               {
                 "icon": {
@@ -782,9 +785,6 @@
               "arrowsBackgroundColor": "#EEFC58",
               "arrowsDisableColor": "#1b4549",
               "arrowsDisableBackgroundColor": "rgba(238, 252, 88, 0.3)"
-            },
-            "backgroundMedia": {
-              "backgroundColor": "linear-gradient(to bottom, #002E31, #012224)"
             }
           },
           "rule": {
@@ -795,6 +795,9 @@
         {
           "value": {
             "__resolveType": "site/sections/CarouselV2.tsx",
+            "backgroundMedia": {
+              "backgroundColor": "linear-gradient(to bottom, #002E31, #012224)"
+            },
             "slides": [
               {
                 "icon": {
@@ -892,9 +895,6 @@
               "arrowsBackgroundColor": "#EEFC58",
               "arrowsDisableColor": "#1b4549",
               "arrowsDisableBackgroundColor": "rgba(238, 252, 88, 0.3)"
-            },
-            "backgroundMedia": {
-              "backgroundColor": "linear-gradient(to bottom, #002E31, #012224)"
             }
           },
           "rule": {
@@ -1081,6 +1081,78 @@
           }
         }
       ]
+    },
+    {
+      "__resolveType": "site/sections/Footer.tsx",
+      "subscribe": {},
+      "title": {
+        "text": "<p style=\"text-align: center\"><span>Use todo potencial da Loja</span></p><p style=\"text-align: center\"><span>Integrada com Komea</span></p>",
+        "color": "#00363A",
+        "fontWeight": "750",
+        "font": "Lektorat Display",
+        "letterSpacing": "-0.3px"
+      },
+      "text": "<p style=\"text-align: center\"><span>A Komea é um </span><strong><span>lançamento exclusivo para clientes da Loja Integrada.</span></strong><span></span></p><p style=\"text-align: center\"><span>Se você já tem sua loja, entre na lista de espera</span></p><p style=\"text-align: center\"><span>e ative seus agentes de IA.</span></p>",
+      "textProps": {
+        "color": "#00363A",
+        "fontWeight": "500"
+      },
+      "cta": [
+        {
+          "type": "Button",
+          "size": "Small",
+          "openModal": "Talk to specialist",
+          "text": "<p><span>Entre na lista de espera</span></p>",
+          "textColor": "#00363A",
+          "backgroundColor": "#EEFC58",
+          "borderColor": "#EEFC58",
+          "customProps": {
+            "height": "48px",
+            "borderRadius": "100px"
+          }
+        }
+      ],
+      "ctaPlacement": "center",
+      "media": {
+        "image": {
+          "src": "https://assets.decocache.com/komea/f69a3164-25fe-4b1c-9e22-bf112ec11f1c/Big-Komea-logo.svg",
+          "width": 1120,
+          "height": 213
+        },
+        "use": "image"
+      },
+      "backgroundMedia": {
+        "image": {},
+        "backgroundColor": "linear-gradient(113.01deg, #E4F808 -20.04%, #BAFFFE 54.12%, #F1F987 95.81%)"
+      },
+      "socialMedias": [
+        {
+          "logo": {
+            "src": "https://assets.decocache.com/komea/056017e4-dad5-400e-8585-233be41564df/instagram-green-logo.svg",
+            "alt": "Instagram logo"
+          },
+          "href": "https://www.instagram.com/lojaintegrada/"
+        },
+        {
+          "logo": {
+            "src": "https://assets.decocache.com/komea/91eab96f-c6a4-4472-8e32-47d8e707ee02/youtube-green-logo.svg",
+            "alt": "youtube logo"
+          },
+          "href": "https://www.youtube.com/@LojaIntegrada"
+        },
+        {
+          "logo": {
+            "src": "https://assets.decocache.com/komea/23a05d41-214c-404f-aa78-278d13ab1904/tiktok-green-logo.svg",
+            "alt": "tik tok logo"
+          },
+          "href": "https://www.tiktok.com/@lojaintegrada"
+        }
+      ],
+      "ctaFloatingImage": {
+        "src": "https://assets.decocache.com/komea/233398b3-ff44-47ca-9bd7-279a20c94257/bee.svg",
+        "horizontalPosition": "-16px",
+        "verticalPosition": "-20px"
+      }
     }
   ],
   "seo": {

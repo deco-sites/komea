@@ -242,7 +242,8 @@
                 "borderColor": "#00363A",
                 "customProps": {
                   "height": "48px",
-                  "borderRadius": "100px"
+                  "borderRadius": "100px",
+                  "fontSize": "14px"
                 }
               }
             ]

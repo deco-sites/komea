@@ -257,7 +257,7 @@ function Carousel(props: Props) {
                 divClass="min-h-min flex flex-col items-center w-full relative" 
                 style={{animationDuration: '700ms'}}
                 animation="animate-fade-up50"
-                delay={500}>
+                delay={200}>
                     {title?.text && title.text.length > 8 && <AnimateOnShow
                         animation="animate-fade-up50"
                         divClass={`text-5xl lg:text-[70px] leading-[120%] ${caption ? 'mb-4' : 'mb-12 lg:mb-[120px]'}`}>

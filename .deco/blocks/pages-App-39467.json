@@ -292,8 +292,8 @@
               },
               "playButton": {
                 "src": "https://assets.decocache.com/komea/45481003-99d4-439c-adad-660c40eb43f1/play-button.svg",
-                "width": 128,
-                "height": 128
+                "width": 100,
+                "height": 100
               }
             },
             "sectionProps": {

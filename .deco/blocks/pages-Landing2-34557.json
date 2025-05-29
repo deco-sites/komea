@@ -318,6 +318,142 @@
       "variants": [
         {
           "value": {
+            "__resolveType": "site/sections/RevealingText.tsx",
+            "backgroundMedia": {
+              "backgroundColor": "radial-gradient(79.77% 109.18% at 50% 0%, #001D1F 0%, #00363A 73.85%, #004D53 100%);"
+            },
+            "lines": [
+              {
+                "text": "<p>Empreender não deveria</p>",
+                "color": "#ffffff",
+                "textProps": {
+                  "fontSize": "32px",
+                  "fontWeight": "600",
+                  "letterSpacing": "-1px"
+                }
+              },
+              {
+                "text": "<p><span>ser sinônimo de correria</span></p>",
+                "color": "#ffffff",
+                "textProps": {
+                  "fontSize": "32px",
+                  "fontWeight": "600",
+                  "letterSpacing": "-1px",
+                  "marginTop": "0"
+                }
+              },
+              {
+                "text": "<p><span>sem resultado.</span></p>",
+                "textProps": {
+                  "fontWeight": "600",
+                  "fontSize": "32px",
+                  "marginTop": "0",
+                  "letterSpacing": "-1px"
+                },
+                "color": "#ffffff"
+              },
+              {
+                "text": "<p>Em vez de painéis complexos, a Komea funciona como</p>",
+                "textProps": {
+                  "fontWeight": "500",
+                  "fontSize": "14px",
+                  "letterSpacing": "-0.3px",
+                  "marginTop": "22px"
+                },
+                "color": "#ffffff"
+              },
+              {
+                "text": "<p><span>uma conversa: o lojista diz o que precisa e os agentes</span></p>",
+                "textProps": {
+                  "fontWeight": "500",
+                  "fontSize": "14px",
+                  "letterSpacing": "-0.3px"
+                },
+                "color": "#ffffff"
+              },
+              {
+                "text": "<p><span>fazem, explicam e mostram prévias antes de publicar.</span></p>",
+                "textProps": {
+                  "fontWeight": "500",
+                  "fontSize": "14px",
+                  "letterSpacing": "-0.3px"
+                },
+                "color": "#ffffff"
+              }
+            ]
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/RevealingText.tsx",
+            "backgroundMedia": {
+              "backgroundColor": "radial-gradient(79.77% 109.18% at 50% 0%, #001D1F 0%, #00363A 73.85%, #004D53 100%);"
+            },
+            "lines": [
+              {
+                "text": "<p><span>Empreender não deveria ser sinônimo</span></p>",
+                "color": "#ffffff",
+                "textProps": {
+                  "fontSize": "40px",
+                  "fontWeight": "600",
+                  "letterSpacing": "-1px"
+                }
+              },
+              {
+                "text": "<p><span>de correria sem resultado.</span></p>",
+                "color": "#ffffff",
+                "textProps": {
+                  "fontSize": "40px",
+                  "fontWeight": "600",
+                  "letterSpacing": "-1px",
+                  "marginTop": "0"
+                }
+              },
+              {
+                "text": "<p><span>Em vez de painéis complexos, a Komea funciona como uma</span></p>",
+                "textProps": {
+                  "fontWeight": "500",
+                  "fontSize": "16px",
+                  "marginTop": "22px",
+                  "letterSpacing": "-0.3px"
+                },
+                "color": "#ffffff"
+              },
+              {
+                "text": "<p><span>conversa: o lojista diz o que precisa e os agentes fazem,</span></p>",
+                "textProps": {
+                  "fontWeight": "500",
+                  "fontSize": "16px",
+                  "letterSpacing": "-0.3px"
+                },
+                "color": "#ffffff"
+              },
+              {
+                "text": "<p><span>explicam e mostram prévias antes de publicar.</span></p>",
+                "textProps": {
+                  "fontWeight": "500",
+                  "fontSize": "16px",
+                  "letterSpacing": "-0.3px"
+                },
+                "color": "#ffffff"
+              }
+            ]
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
             "__resolveType": "site/sections/HeroV3.tsx",
             "hubspotForm": {
               "modal": {}
@@ -419,6 +555,9 @@
         {
           "value": {
             "__resolveType": "site/sections/StickyImage.tsx",
+            "backgroundMedia": {
+              "backgroundColor": "linear-gradient(180deg, #012b2e , #00363A , #00363A , #002E31 );"
+            },
             "image": {
               "src": "https://assets.decocache.com/komea/019bd2bb-adae-443d-b14e-f8748ecfdf69/mobile-sticky-image.svg"
             },
@@ -482,9 +621,6 @@
                 "use": "image"
               }
             ],
-            "backgroundMedia": {
-              "backgroundColor": "linear-gradient(180deg, #012b2e , #00363A , #00363A , #002E31 );"
-            },
             "foldsHeight": "440px",
             "bulletPoints": {}
           },
@@ -496,6 +632,9 @@
         {
           "value": {
             "__resolveType": "site/sections/StickyImage.tsx",
+            "backgroundMedia": {
+              "backgroundColor": "linear-gradient(180deg, #012b2e , #00363A , #00363A , #002E31 );"
+            },
             "image": {
               "src": "https://assets.decocache.com/komea/019bd2bb-adae-443d-b14e-f8748ecfdf69/mobile-sticky-image.svg"
             },
@@ -514,7 +653,7 @@
                   "letterSpacing": "-1px",
                   "fontSize": "40px"
                 },
-                "text": "<p><span>Você fala o nome e mostra a imagem.  </span></p><p><span>A Komea sugere categoria, descrição </span></p><p><span>com SEO e publica em diferentes canais.</span></p>",
+                "text": "<p><span>Você fala o nome e mostra a imagem. </span></p><p><span>A Komea sugere categoria, descrição </span></p><p><span>com SEO e publica em diferentes canais.</span></p>",
                 "textProps": {
                   "color": "#9F9F9F",
                   "fontWeight": "500",
@@ -552,10 +691,7 @@
                 "video": {},
                 "use": "image"
               }
-            ],
-            "backgroundMedia": {
-              "backgroundColor": "linear-gradient(180deg, #012b2e , #00363A , #00363A , #002E31 );"
-            }
+            ]
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

@@ -165,8 +165,8 @@ function SliderItem({ slide, id }: {
     id: string;
 }) {
     const { title, caption, captionTextProps, image, video, use = "image", cta = [], icon, backgroundColor } = slide;
-    return (<div id={id} class={`relative w-full rounded-md lg:rounded-lg flex flex-col group overflow-hidden z-10 `} style={{background: backgroundColor}}>
-        <div class="p-6 lg:p-8 flex flex-col gap-2.5 lg:gap-3 min-h-[282px]">
+    return (<div id={id} class={`relative w-full rounded-md lg:rounded-lg flex flex-col group overflow-hidden z-10 `} >
+        <div class="p-6 lg:p-8 flex flex-col gap-2.5 lg:gap-3 min-h-[282px]" style={{background: backgroundColor}}>
             {icon?.src && <Image 
                 src={icon.src}
                 alt={icon.alt || "icon"}
@@ -248,7 +248,7 @@ function Carousel(props: Props) {
     if (props.hideSection) return <></>
     const { id, title, caption, captionTextProps, slides, paddingBottom, paddingTop, arrows, cta = [], backgroundMedia } = { ...props };
     const carouselId = useId();
-    return (<div id={id} style={{paddingTop: paddingTop, paddingBottom: paddingBottom, background: backgroundMedia?.backgroundColor}} class="relative" 
+    return (<div id={id} style={{paddingTop: paddingTop, paddingBottom: paddingBottom, background: backgroundMedia?.backgroundColor}} class="relative overflow-hidden" 
         hx-on:click={useScript(refreshArrowsVisibility, {...arrows})} 
         hx-on:touchend={useScript(refreshArrowsVisibility, {...arrows})}>
         {/* <input type="text" value="0" /> */}

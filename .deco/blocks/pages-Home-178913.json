@@ -8,15 +8,6 @@
         {
           "value": {
             "__resolveType": "site/sections/CampaignTimerHero.tsx",
-            "title": "<p style=\"text-align: center\"><span>O FIM ESTÁ </span></p><p style=\"text-align: center\"><span>PRÓXIMO</span></p>",
-            "titleTextProps": {
-              "fontFamily": "Lektorat Display",
-              "letterSpacing": "2.41px",
-              "fontWeight": "750",
-              "color": "#ffffff",
-              "fontSize": "48px"
-            },
-            "hideSection": false,
             "campaignTimer": {
               "expiresAt": "2025-06-02T02:59:00.000Z",
               "expiredText": "<p style=\"text-align: justify\">Expired!</p>",
@@ -30,6 +21,15 @@
               "labelsColor": "#ffffff",
               "numbersColor": "#ffffff"
             },
+            "title": "<p style=\"text-align: center\"><span>O FIM ESTÁ </span></p><p style=\"text-align: center\"><span>PRÓXIMO</span></p>",
+            "titleTextProps": {
+              "fontFamily": "Lektorat Display",
+              "letterSpacing": "2.41px",
+              "fontWeight": "750",
+              "color": "#ffffff",
+              "fontSize": "48px"
+            },
+            "hideSection": false,
             "backgroundImage": {
               "src": "https://assets.decocache.com/komea/320929e8-94cd-4347-8003-212337cf8dff/bg-MOBILE2.svg"
             },
@@ -55,16 +55,6 @@
         {
           "value": {
             "__resolveType": "site/sections/CampaignTimerHero.tsx",
-            "title": "<p style=\"text-align: center\"><span>O FIM ESTÁ </span></p><p style=\"text-align: center\"><span>PRÓXIMO</span></p>",
-            "titleTextProps": {
-              "fontFamily": "Lektorat Display",
-              "letterSpacing": "2.41px",
-              "fontWeight": "750",
-              "color": "#ffffff",
-              "fontSize": "100px",
-              "lineHeight": "1.2"
-            },
-            "hideSection": false,
             "campaignTimer": {
               "expiredText": "<p style=\"text-align: justify\">Expired!</p>",
               "expiredTextProps": {},
@@ -78,6 +68,16 @@
               "numbersColor": "#ffffff",
               "expiresAt": "2025-06-02T02:59:00.000Z"
             },
+            "title": "<p style=\"text-align: center\"><span>O FIM ESTÁ </span></p><p style=\"text-align: center\"><span>PRÓXIMO</span></p>",
+            "titleTextProps": {
+              "fontFamily": "Lektorat Display",
+              "letterSpacing": "2.41px",
+              "fontWeight": "750",
+              "color": "#ffffff",
+              "fontSize": "100px",
+              "lineHeight": "1.2"
+            },
+            "hideSection": false,
             "backgroundImage": {
               "src": "https://assets.decocache.com/komea/656e43a6-3131-47a6-900b-987a8dab250c/bg2.svg"
             },
@@ -466,8 +466,8 @@
       ]
     }
   ],
-  "__resolveType": "website/pages/Page.tsx",
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
-  }
+  },
+  "__resolveType": "website/pages/Page.tsx"
 }

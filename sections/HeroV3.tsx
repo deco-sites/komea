@@ -115,7 +115,6 @@ export interface sectionBackgroundMedia extends BackgroundMedia {
 
 export interface Props {
   hideSection?: boolean;
-  hideSection?: boolean;
   title?: Title;
   distanceBetweenTitleAndText?: string;
   text?: RichText;

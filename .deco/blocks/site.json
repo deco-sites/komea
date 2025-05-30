@@ -6,7 +6,8 @@
     "noIndexing": false,
     "titleTemplate": "komea",
     "favicon": "https://assets.decocache.com/komea/9e3d2340-fce9-41a8-a896-6ee07711c257/favicon.svg",
-    "descriptionTemplate": "%s"
+    "descriptionTemplate": "%s",
+    "image": "https://assets.decocache.com/komea/3e2b63a6-5ff0-48bd-8543-a875f420c6e9/komea.png"
   },
   "global": [
     {

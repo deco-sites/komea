@@ -1,4 +1,5 @@
 export const CSS = `
+#waitlist-form {
 .hs-form-field {
     color: #00363A;
     font-weight: 500;
@@ -163,5 +164,6 @@ ul.inputs-list.multi-container {
 
 .hs-error-msg.hs-main-font-element {
     display: none;
+}
 }
 `;

@@ -11,6 +11,9 @@
   "global": [
     {
       "__resolveType": "htmx/sections/htmx.tsx"
+    },
+    {
+      "__resolveType": "site/sections/CustomGTM.tsx"
     }
   ],
   "routes": [

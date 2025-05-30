@@ -19,7 +19,7 @@
               "buttons": [
                 {
                   "type": "Button",
-                  "openModal": "Talk to specialist",
+                  "openModal": "Komea wait list",
                   "text": "Seja um dos primeiros a testar",
                   "textColor": "#002426",
                   "backgroundColor": "#ECF488",
@@ -57,14 +57,14 @@
             "logo": {
               "src": "https://assets.decocache.com/komea/b352a0c5-16b9-4f6a-a952-bcae78f4cfd7/logo-komea.svg",
               "width": 180,
-              "height": 60
+              "height": 60,
+              "href": "komea logo"
             },
             "hideAsideMenu": true,
             "navigation": {
               "buttons": [
                 {
                   "type": "Button",
-                  "openModal": "Talk to specialist",
                   "text": "Seja um dos primeiros a testar",
                   "textColor": "#002426",
                   "backgroundColor": "#ECF488",
@@ -74,7 +74,8 @@
                     "height": "48px"
                   },
                   "glowColor1": "#ACB82E99",
-                  "glowColor2": "#EEFC5880"
+                  "glowColor2": "#EEFC5880",
+                  "openModal": "Komea wait list"
                 }
               ]
             },
@@ -160,7 +161,8 @@
                 "customProps": {
                   "height": "48px",
                   "borderRadius": "100px"
-                }
+                },
+                "openModal": "Komea wait list"
               }
             ],
             "ctaPlacement": "center",
@@ -235,7 +237,7 @@
               {
                 "type": "Button",
                 "size": "Small",
-                "openModal": "Talk to specialist",
+                "openModal": "Komea wait list",
                 "text": "<p><span>Entre na lista de espera</span></p>",
                 "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
@@ -378,7 +380,9 @@
                 },
                 "color": "#ffffff"
               }
-            ]
+            ],
+            "speed": 0.6,
+            "scrollAmount": 25
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -470,7 +474,8 @@
                   "borderRadius": "100px"
                 },
                 "glowColor1": "#ACB82E99",
-                "glowColor2": "#EEFC5880"
+                "glowColor2": "#EEFC5880",
+                "openModal": "Komea wait list"
               }
             ],
             "ctaPlacement": "center"
@@ -518,7 +523,8 @@
                   "borderRadius": "100px"
                 },
                 "glowColor1": "#ACB82E99",
-                "glowColor2": "#EEFC5880"
+                "glowColor2": "#EEFC5880",
+                "openModal": "Komea wait list"
               }
             ],
             "ctaPlacement": "center"
@@ -666,7 +672,7 @@
                   "lineHeight": "125%"
                 },
                 "image": {
-                  "src": "https://assets.decocache.com/komea/41c9bdc3-72cf-4c69-85b5-6b347a97619a/komea-mobile-image.svg"
+                  "src": "https://assets.decocache.com/komea/861453f4-672d-4b54-92a6-b646aec44654/tela-teste.svg"
                 },
                 "video": {},
                 "use": "image"
@@ -967,7 +973,7 @@
               {
                 "type": "Button",
                 "size": "Small",
-                "openModal": "Talk to specialist",
+                "openModal": "Komea wait list",
                 "text": "<p><span>Seja um dos primeiros a testar</span></p>",
                 "textColor": "#00363A",
                 "backgroundColor": "#EEFC58",
@@ -1054,7 +1060,7 @@
               {
                 "type": "Button",
                 "size": "Small",
-                "openModal": "Talk to specialist",
+                "openModal": "Komea wait list",
                 "text": "<p><span>Seja um dos primeiros a testar</span></p>",
                 "textColor": "#00363A",
                 "backgroundColor": "#EEFC58",
@@ -1101,7 +1107,7 @@
         {
           "type": "Button",
           "size": "Small",
-          "openModal": "Talk to specialist",
+          "openModal": "Komea wait list",
           "text": "<p><span>Entre na lista de espera</span></p>",
           "textColor": "#00363A",
           "backgroundColor": "#EEFC58",

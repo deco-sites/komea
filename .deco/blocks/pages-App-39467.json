@@ -19,7 +19,7 @@
               "buttons": [
                 {
                   "type": "Button",
-                  "openModal": "Talk to specialist",
+                  "openModal": "Komea wait list",
                   "text": "Seja um dos primeiros a testar",
                   "textColor": "#002426",
                   "backgroundColor": "#ECF488",
@@ -64,7 +64,6 @@
               "buttons": [
                 {
                   "type": "Button",
-                  "openModal": "Talk to specialist",
                   "text": "Seja um dos primeiros a testar",
                   "textColor": "#002426",
                   "backgroundColor": "#ECF488",
@@ -74,7 +73,8 @@
                     "height": "48px"
                   },
                   "glowColor1": "#ACB82E99",
-                  "glowColor2": "#EEFC5880"
+                  "glowColor2": "#EEFC5880",
+                  "openModal": "Komea wait list"
                 }
               ]
             },
@@ -160,7 +160,8 @@
                 "customProps": {
                   "height": "48px",
                   "borderRadius": "100px"
-                }
+                },
+                "openModal": "Komea wait list"
               }
             ],
             "ctaPlacement": "center",
@@ -235,7 +236,7 @@
               {
                 "type": "Button",
                 "size": "Small",
-                "openModal": "Talk to specialist",
+                "openModal": "Komea wait list",
                 "text": "<p><span>Entre na lista de espera</span></p>",
                 "textColor": "#ffffff",
                 "backgroundColor": "#00363A",
@@ -967,7 +968,7 @@
               {
                 "type": "Button",
                 "size": "Small",
-                "openModal": "Talk to specialist",
+                "openModal": "Komea wait list",
                 "text": "<p><span>Seja um dos primeiros a testar</span></p>",
                 "textColor": "#00363A",
                 "backgroundColor": "#EEFC58",
@@ -1054,7 +1055,7 @@
               {
                 "type": "Button",
                 "size": "Small",
-                "openModal": "Talk to specialist",
+                "openModal": "Komea wait list",
                 "text": "<p><span>Seja um dos primeiros a testar</span></p>",
                 "textColor": "#00363A",
                 "backgroundColor": "#EEFC58",
@@ -1101,7 +1102,7 @@
         {
           "type": "Button",
           "size": "Small",
-          "openModal": "Talk to specialist",
+          "openModal": "Komea wait list",
           "text": "<p><span>Entre na lista de espera</span></p>",
           "textColor": "#00363A",
           "backgroundColor": "#EEFC58",

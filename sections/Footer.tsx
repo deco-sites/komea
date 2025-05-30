@@ -82,7 +82,7 @@ export default function Footer({ title, text, textProps, cta = [], ctaPlacement,
 
         {title?.text && <div
           dangerouslySetInnerHTML={{ __html: title.text }}
-          class={`w-full text-[32px] lg:text-[62px] lg:leading-none !text-transparent !bg-clip-text`}
+          class={`w-full text-[32px] pb-1 lg:text-[62px] lg:leading-none !text-transparent !bg-clip-text`}
           style={{ fontSize: title.fontSize, fontFamily: title.font, fontWeight: title.fontWeight, letterSpacing: title.letterSpacing, background: title.color, lineHeight: title.lineHeight }} />}
 
         {text && <div dangerouslySetInnerHTML={{ __html: text }} class="text-sm lg:text-base w-full mt-5 lg:mt-10" style={{ ...textProps }} />}

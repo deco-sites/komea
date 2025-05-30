@@ -345,7 +345,7 @@
                 "text": "<p>Empreender não deveria</p>",
                 "color": "#ffffff",
                 "textProps": {
-                  "fontSize": "32px",
+                  "fontSize": "7.26vw",
                   "fontWeight": "600",
                   "letterSpacing": "-1px"
                 }
@@ -354,7 +354,7 @@
                 "text": "<p><span>ser sinônimo de correria</span></p>",
                 "color": "#ffffff",
                 "textProps": {
-                  "fontSize": "32px",
+                  "fontSize": "7.26vw",
                   "fontWeight": "600",
                   "letterSpacing": "-1px",
                   "marginTop": "0"
@@ -364,17 +364,17 @@
                 "text": "<p>sem resultado.</p>",
                 "textProps": {
                   "fontWeight": "600",
-                  "fontSize": "32px",
+                  "fontSize": "7.26vw",
                   "marginTop": "0",
                   "letterSpacing": "-1px"
                 },
                 "color": "#ffffff"
               },
               {
-                "text": "<p style=\"text-align: center\">Em vez de painéis complexos, a Komea funciona como uma</p><p style=\"text-align: center\">conversa: o lojista diz o que precisa e os agentes fazem,</p><p style=\"text-align: center\">explicam e mostram prévias antes de publicar.</p>",
+                "text": "<p style=\"text-align: center\">Em vez de painéis complexos, a Komea funciona como</p><p style=\"text-align: center\">uma conversa: o lojista diz o que precisa e os agentes </p><p style=\"text-align: center\">fazem, explicam e mostram prévias antes de publicar.</p>",
                 "textProps": {
                   "fontWeight": "600",
-                  "fontSize": "14px",
+                  "fontSize": "3.17vw",
                   "marginTop": "22px",
                   "letterSpacing": "-0.3px"
                 },
@@ -527,7 +527,11 @@
                 "openModal": "Komea wait list"
               }
             ],
-            "ctaPlacement": "center"
+            "ctaPlacement": "center",
+            "container": {
+              "paddingTop": "124px",
+              "marginTop": "0px"
+            }
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -551,9 +555,9 @@
               {
                 "textPosition": "Right",
                 "icon": {
-                  "src": "https://assets.decocache.com/komea/f815710b-3faf-4a7a-8d42-6d9736c1c2a9/statistics-icon.svg",
+                  "src": "https://assets.decocache.com/komea/f9ec2bef-6a39-4942-bc39-b1a7d23740d9/statistics-icon.png",
                   "width": 40,
-                  "height": 0
+                  "height": 40
                 },
                 "title": "<p><span style=\"color: #ffffff\">Crie produtos</span></p><p><span>conversando</span></p>",
                 "titleTextProps": {
@@ -579,7 +583,7 @@
               {
                 "textPosition": "Left",
                 "icon": {
-                  "src": "https://assets.decocache.com/komea/f815710b-3faf-4a7a-8d42-6d9736c1c2a9/statistics-icon.svg",
+                  "src": "https://assets.decocache.com/komea/f9ec2bef-6a39-4942-bc39-b1a7d23740d9/statistics-icon.png",
                   "width": 40,
                   "height": 40
                 },
@@ -628,7 +632,7 @@
               {
                 "textPosition": "Left",
                 "icon": {
-                  "src": "https://assets.decocache.com/komea/f815710b-3faf-4a7a-8d42-6d9736c1c2a9/statistics-icon.svg"
+                  "src": "https://assets.decocache.com/komea/f9ec2bef-6a39-4942-bc39-b1a7d23740d9/statistics-icon.png"
                 },
                 "title": "<p><span style=\"color: #ffffff\">Crie produtos</span></p><p><span>conversando</span></p>",
                 "titleTextProps": {
@@ -653,7 +657,7 @@
               {
                 "textPosition": "Right",
                 "icon": {
-                  "src": "https://assets.decocache.com/komea/f815710b-3faf-4a7a-8d42-6d9736c1c2a9/statistics-icon.svg"
+                  "src": "https://assets.decocache.com/komea/f9ec2bef-6a39-4942-bc39-b1a7d23740d9/statistics-icon.png"
                 },
                 "title": "<p><span>Receba insight </span></p><p><span style=\"color: #ffffff\">direto no app</span></p>",
                 "titleTextProps": {
@@ -698,7 +702,7 @@
               {
                 "icon": {
                   "placement": "Top right",
-                  "src": "https://assets.decocache.com/komea/f815710b-3faf-4a7a-8d42-6d9736c1c2a9/statistics-icon.svg",
+                  "src": "https://assets.decocache.com/komea/f9ec2bef-6a39-4942-bc39-b1a7d23740d9/statistics-icon.png",
                   "width": 44,
                   "height": 44
                 },
@@ -808,7 +812,7 @@
               {
                 "icon": {
                   "placement": "Top right",
-                  "src": "https://assets.decocache.com/komea/f815710b-3faf-4a7a-8d42-6d9736c1c2a9/statistics-icon.svg",
+                  "src": "https://assets.decocache.com/komea/f9ec2bef-6a39-4942-bc39-b1a7d23740d9/statistics-icon.png",
                   "width": 44,
                   "height": 44
                 },
@@ -921,7 +925,7 @@
                 "textProps": {
                   "fontWeight": "750",
                   "fontFamily": "Lektorat Display",
-                  "fontSize": "32px",
+                  "fontSize": "7.26vw",
                   "letterSpacing": "-0.3px",
                   "color": "#00363A",
                   "lineHeight": "100%"
@@ -932,7 +936,7 @@
                 "textProps": {
                   "fontWeight": "750",
                   "fontFamily": "Lektorat Display",
-                  "fontSize": "32px",
+                  "fontSize": "7.26vw",
                   "letterSpacing": "-0.3px",
                   "color": "#00363A",
                   "lineHeight": "100%"
@@ -961,9 +965,9 @@
               ],
               "textProps": {
                 "color": "#00363A",
-                "fontSize": "16px",
                 "fontWeight": "500",
-                "letterSpacing": "-0.3px"
+                "letterSpacing": "-0.3px",
+                "fontSize": "16px"
               },
               "bulletPointsIcon": {
                 "src": "https://assets.decocache.com/komea/615b1b6b-1f76-4b73-bda0-43ee870521e7/yellow-power-icon.svg"
@@ -1089,76 +1093,168 @@
       ]
     },
     {
-      "__resolveType": "site/sections/Footer.tsx",
-      "subscribe": {},
-      "title": {
-        "text": "<p style=\"text-align: center\"><span>Use todo potencial da Loja</span></p><p style=\"text-align: center\"><span>Integrada com Komea</span></p>",
-        "color": "#00363A",
-        "fontWeight": "750",
-        "font": "Lektorat Display",
-        "letterSpacing": "-0.3px"
-      },
-      "text": "<p style=\"text-align: center\"><span>A Komea é um </span><strong><span>lançamento exclusivo para clientes da Loja Integrada.</span></strong><span></span></p><p style=\"text-align: center\"><span>Se você já tem sua loja, entre na lista de espera</span></p><p style=\"text-align: center\"><span>e ative seus agentes de IA.</span></p>",
-      "textProps": {
-        "color": "#00363A",
-        "fontWeight": "500"
-      },
-      "cta": [
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
         {
-          "type": "Button",
-          "size": "Small",
-          "openModal": "Komea wait list",
-          "text": "<p><span>Entre na lista de espera</span></p>",
-          "textColor": "#00363A",
-          "backgroundColor": "#EEFC58",
-          "borderColor": "#EEFC58",
-          "customProps": {
-            "height": "48px",
-            "borderRadius": "100px"
+          "value": {
+            "__resolveType": "site/sections/Footer.tsx",
+            "subscribe": {},
+            "title": {
+              "text": "<p style=\"text-align: center\"><span>Use todo potencial da Loja</span></p><p style=\"text-align: center\"><span>Integrada com Komea</span></p>",
+              "color": "#00363A",
+              "fontWeight": "750",
+              "font": "Lektorat Display",
+              "letterSpacing": "-0.3px",
+              "lineHeight": "100%",
+              "fontSize": "7.26vw"
+            },
+            "text": "<p style=\"text-align: center\">A Komea é um <strong>lançamento exclusivo para clientes da</strong></p><p style=\"text-align: center\"><strong>Loja Integrada. </strong>Se você já tem sua loja, entre na lista </p><p style=\"text-align: center\">de espera e ative seus agentes de IA.</p>",
+            "textProps": {
+              "color": "#00363A",
+              "fontWeight": "500",
+              "fontSize": "3.02vw"
+            },
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Small",
+                "openModal": "Komea wait list",
+                "text": "<p><span>Entre na lista de espera</span></p>",
+                "textColor": "#00363A",
+                "backgroundColor": "#EEFC58",
+                "borderColor": "#EEFC58",
+                "customProps": {
+                  "height": "48px",
+                  "borderRadius": "100px"
+                }
+              }
+            ],
+            "ctaPlacement": "center",
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/komea/f69a3164-25fe-4b1c-9e22-bf112ec11f1c/Big-Komea-logo.svg",
+                "width": 1120,
+                "height": 213
+              },
+              "use": "image"
+            },
+            "backgroundMedia": {
+              "image": {},
+              "backgroundColor": "linear-gradient(113.01deg, #E4F808 -20.04%, #BAFFFE 54.12%, #F1F987 95.81%)"
+            },
+            "socialMedias": [
+              {
+                "logo": {
+                  "src": "https://assets.decocache.com/komea/056017e4-dad5-400e-8585-233be41564df/instagram-green-logo.svg",
+                  "alt": "Instagram logo"
+                },
+                "href": "https://www.instagram.com/lojaintegrada/"
+              },
+              {
+                "logo": {
+                  "src": "https://assets.decocache.com/komea/91eab96f-c6a4-4472-8e32-47d8e707ee02/youtube-green-logo.svg",
+                  "alt": "youtube logo"
+                },
+                "href": "https://www.youtube.com/@LojaIntegrada"
+              },
+              {
+                "logo": {
+                  "src": "https://assets.decocache.com/komea/23a05d41-214c-404f-aa78-278d13ab1904/tiktok-green-logo.svg",
+                  "alt": "tik tok logo"
+                },
+                "href": "https://www.tiktok.com/@lojaintegrada"
+              }
+            ],
+            "ctaFloatingImage": {
+              "src": "https://assets.decocache.com/komea/233398b3-ff44-47ca-9bd7-279a20c94257/bee.svg",
+              "horizontalPosition": "-16px",
+              "verticalPosition": "-20px"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/Footer.tsx",
+            "subscribe": {},
+            "title": {
+              "text": "<p style=\"text-align: center\"><span>Use todo potencial da Loja</span></p><p style=\"text-align: center\"><span>Integrada com Komea</span></p>",
+              "color": "#00363A",
+              "fontWeight": "750",
+              "font": "Lektorat Display",
+              "letterSpacing": "-0.3px",
+              "lineHeight": "100%"
+            },
+            "text": "<p style=\"text-align: center\"><span>A Komea é um </span><strong><span>lançamento exclusivo para clientes da Loja Integrada.</span></strong><span></span></p><p style=\"text-align: center\"><span>Se você já tem sua loja, entre na lista de espera</span></p><p style=\"text-align: center\"><span>e ative seus agentes de IA.</span></p>",
+            "textProps": {
+              "color": "#00363A",
+              "fontWeight": "500"
+            },
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Small",
+                "openModal": "Komea wait list",
+                "text": "<p><span>Entre na lista de espera</span></p>",
+                "textColor": "#00363A",
+                "backgroundColor": "#EEFC58",
+                "borderColor": "#EEFC58",
+                "customProps": {
+                  "height": "48px",
+                  "borderRadius": "100px"
+                }
+              }
+            ],
+            "ctaPlacement": "center",
+            "media": {
+              "image": {
+                "src": "https://assets.decocache.com/komea/f69a3164-25fe-4b1c-9e22-bf112ec11f1c/Big-Komea-logo.svg",
+                "width": 1120,
+                "height": 213
+              },
+              "use": "image"
+            },
+            "backgroundMedia": {
+              "image": {},
+              "backgroundColor": "linear-gradient(113.01deg, #E4F808 -20.04%, #BAFFFE 54.12%, #F1F987 95.81%)"
+            },
+            "socialMedias": [
+              {
+                "logo": {
+                  "src": "https://assets.decocache.com/komea/056017e4-dad5-400e-8585-233be41564df/instagram-green-logo.svg",
+                  "alt": "Instagram logo"
+                },
+                "href": "https://www.instagram.com/lojaintegrada/"
+              },
+              {
+                "logo": {
+                  "src": "https://assets.decocache.com/komea/91eab96f-c6a4-4472-8e32-47d8e707ee02/youtube-green-logo.svg",
+                  "alt": "youtube logo"
+                },
+                "href": "https://www.youtube.com/@LojaIntegrada"
+              },
+              {
+                "logo": {
+                  "src": "https://assets.decocache.com/komea/23a05d41-214c-404f-aa78-278d13ab1904/tiktok-green-logo.svg",
+                  "alt": "tik tok logo"
+                },
+                "href": "https://www.tiktok.com/@lojaintegrada"
+              }
+            ],
+            "ctaFloatingImage": {
+              "src": "https://assets.decocache.com/komea/233398b3-ff44-47ca-9bd7-279a20c94257/bee.svg",
+              "horizontalPosition": "-16px",
+              "verticalPosition": "-20px"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
           }
         }
-      ],
-      "ctaPlacement": "center",
-      "media": {
-        "image": {
-          "src": "https://assets.decocache.com/komea/f69a3164-25fe-4b1c-9e22-bf112ec11f1c/Big-Komea-logo.svg",
-          "width": 1120,
-          "height": 213
-        },
-        "use": "image"
-      },
-      "backgroundMedia": {
-        "image": {},
-        "backgroundColor": "linear-gradient(113.01deg, #E4F808 -20.04%, #BAFFFE 54.12%, #F1F987 95.81%)"
-      },
-      "socialMedias": [
-        {
-          "logo": {
-            "src": "https://assets.decocache.com/komea/056017e4-dad5-400e-8585-233be41564df/instagram-green-logo.svg",
-            "alt": "Instagram logo"
-          },
-          "href": "https://www.instagram.com/lojaintegrada/"
-        },
-        {
-          "logo": {
-            "src": "https://assets.decocache.com/komea/91eab96f-c6a4-4472-8e32-47d8e707ee02/youtube-green-logo.svg",
-            "alt": "youtube logo"
-          },
-          "href": "https://www.youtube.com/@LojaIntegrada"
-        },
-        {
-          "logo": {
-            "src": "https://assets.decocache.com/komea/23a05d41-214c-404f-aa78-278d13ab1904/tiktok-green-logo.svg",
-            "alt": "tik tok logo"
-          },
-          "href": "https://www.tiktok.com/@lojaintegrada"
-        }
-      ],
-      "ctaFloatingImage": {
-        "src": "https://assets.decocache.com/komea/233398b3-ff44-47ca-9bd7-279a20c94257/bee.svg",
-        "horizontalPosition": "-16px",
-        "verticalPosition": "-20px"
-      }
+      ]
     }
   ],
   "seo": {

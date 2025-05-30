@@ -4168,14 +4168,6 @@ details.collapse summary::-webkit-details-marker {
   --tw-bg-opacity: 1;
   background-color: rgb(0 54 58 / var(--tw-bg-opacity));
 }
-.bg-\[\#0D1717\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(13 23 23 / var(--tw-bg-opacity));
-}
-.bg-\[\#C9CFCF\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(201 207 207 / var(--tw-bg-opacity));
-}
 .bg-\[\#EEFC58\] {
   --tw-bg-opacity: 1;
   background-color: rgb(238 252 88 / var(--tw-bg-opacity));
@@ -4405,6 +4397,9 @@ details.collapse summary::-webkit-details-marker {
 .py-\[60px\] {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.pb-1 {
+  padding-bottom: 0.25rem;
 }
 .pb-12 {
   padding-bottom: 3rem;

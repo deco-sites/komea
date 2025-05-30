@@ -469,7 +469,8 @@
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx",
     "description": "O fim do jeito clássico de vender online",
-    "type": "website"
+    "type": "website",
+    "title": "Komea"
   },
   "__resolveType": "website/pages/Page.tsx"
 }

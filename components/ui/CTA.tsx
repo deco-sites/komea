@@ -80,7 +80,7 @@ export default function CTA({ href = "", text, underlineText, textColor, glowCol
     target={href.includes("http") ? "_blank" : "_self"}>
     
       {text && <div dangerouslySetInnerHTML={{__html: text}}/>}
-      <span class="underline ">{underlineText}</span>
+      {underlineText && <span class="underline ">{underlineText}</span>}
     
     {showIcon && ( customIcon?.src 
       ? <Image src={customIcon.src} width={customIcon.width || 20} height={customIcon.height || 20} alt={customIcon.alt || "button icon"} /> 

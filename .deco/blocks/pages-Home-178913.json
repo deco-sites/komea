@@ -125,8 +125,8 @@
               "use": "embed",
               "playButton": {
                 "src": "https://assets.decocache.com/komea/45481003-99d4-439c-adad-660c40eb43f1/play-button.svg",
-                "width": 60,
-                "height": 60
+                "width": 40,
+                "height": 40
               },
               "width": "100%",
               "thumbnailImage": {

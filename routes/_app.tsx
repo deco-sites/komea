@@ -2,6 +2,9 @@ import { asset, Head } from "$fresh/runtime.ts";
 import { defineApp } from "$fresh/server.ts";
 import Theme from "../sections/Theme/Theme.tsx";
 import { Context } from "@deco/deco";
+import CTAForm, { GuaranteedModal, RegisterModal } from "site/components/ui/CTAForm.tsx";
+import { CSS } from "../static/formcss.ts"
+
 export default defineApp(async (_req, ctx) => {
     const revision = await Context.active().release?.revision();
     return (<>
@@ -10,6 +13,9 @@ export default defineApp(async (_req, ctx) => {
 
         {/* Include Icons and manifest */}
         <Head>
+            <style dangerouslySetInnerHTML={{
+                __html: CSS,
+            }} />
             {/* Enable View Transitions API */}
             <style dangerouslySetInnerHTML={{
                 __html: `@view-transition { navigation: auto; }`,
@@ -140,6 +146,9 @@ export default defineApp(async (_req, ctx) => {
 
 
       `}} />
+            <CTAForm />
+            <GuaranteedModal />
+            <RegisterModal />
         </Head>
 
         {/* Rest of Preact tree */}

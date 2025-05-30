@@ -379,7 +379,9 @@
                 },
                 "color": "#ffffff"
               }
-            ]
+            ],
+            "speed": 0.6,
+            "scrollAmount": 25
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",

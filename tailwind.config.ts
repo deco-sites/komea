@@ -94,6 +94,7 @@ export default {
       fontFamily: {
         instrument: ["Instrument Serif", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
+        lektorat: ["Lektorat Display", "sans-serif"],
       },
       screens: {
         "min-1180": "1180px",

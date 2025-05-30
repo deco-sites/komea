@@ -72,7 +72,7 @@ ul.inputs-list.multi-container {
 }
 
 .hs-firstname.hs-fieldtype-text span {
-    font-size: 12px;
+    font-size: 12px !important;
 }
 
 .hs-fieldtype-text .input {
@@ -87,8 +87,12 @@ ul.inputs-list.multi-container {
     border-radius: 8px;
 }
 
+.hs-fieldtype-text .input .hs-input.invalid{
+    border-color: #F57E77;
+}
+
 .hs-dependent-field span{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 100%;
     margin: 0 !important;
@@ -98,7 +102,7 @@ ul.inputs-list.multi-container {
 .hs-dependent-field label {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
 }
 
 .hs-dependent-field input[type="checkbox"] {
@@ -132,10 +136,18 @@ ul.inputs-list.multi-container {
   transform: rotate(45deg);
 }
 
-.hs-submit .actions{
+.hs-submit .actions {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
     align-items: center;
     justify-content: center;
+}
+
+.hs-submit .actions::before {
+    content: '*Campos obrigatórios';
+    font-size: 12px;
+    color: #00363A;
 }
 
 .hs-submit .actions input{
@@ -147,5 +159,9 @@ ul.inputs-list.multi-container {
     border-radius: 1000px;
     text-align: center;
     cursor: pointer;
+}
+
+.hs-error-msg.hs-main-font-element {
+    display: none;
 }
 `;

@@ -5357,10 +5357,6 @@ details.collapse summary::-webkit-details-marker {
     padding: 3rem;
   }
 
-  .lg\:p-20 {
-    padding: 5rem;
-  }
-
   .lg\:p-8 {
     padding: 2rem;
   }
@@ -5388,9 +5384,19 @@ details.collapse summary::-webkit-details-marker {
     padding-right: 4rem;
   }
 
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   .lg\:px-7 {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
+  }
+
+  .lg\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .lg\:py-14 {

@@ -90,8 +90,8 @@ function CTAForm() {
     };
 
     return (
-        <div id="waitlist-form" className="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[60]">
-            <div className="bg-white rounded-[20px] p-6 lg:p-20 w-[90%] lg:w-full max-w-[582px] relative shadow-lg">
+        <div id="waitlist-form" className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[60]">
+            <div className="bg-white rounded-[20px] p-6 lg:px-20 lg:py-10 w-[90%] lg:w-full max-w-[582px] relative shadow-lg">
                 <button id="close-waitlist-modal" className="absolute top-4 right-4"
                     hx-on:click={useScript(closeModal, modalId)}
                 >
@@ -132,7 +132,7 @@ function CTAForm() {
             const formWrapper = document.querySelector('.hbspt-form');
             if (formWrapper) {
                     const allTextFields = document.querySelectorAll('.hs-fieldtype-text input'); 
-
+                    
                     if (allTextFields.length > 0) {
                         allTextFields.forEach(input => {
                             input.addEventListener('focus', function () {
@@ -140,7 +140,7 @@ function CTAForm() {
 
                                 textFieldSpans.forEach(span => {
                                     span.style.fontSize = '12px';
-                                });
+                                });                  
                             });
 
                             input.addEventListener('blur', function () {

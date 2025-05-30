@@ -467,7 +467,9 @@
     }
   ],
   "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "description": "O fim do jeito clássico de vender online",
+    "type": "website"
   },
   "__resolveType": "website/pages/Page.tsx"
 }

@@ -33,7 +33,7 @@ export interface Props {
   borderColor?: string;
   type?: 'Button' | 'Only text';
   size?: 'Large' | 'Medium' | 'Small';
-  openModal?: 'Talk to specialist' | 'Create Store' | 'Customer Advisory Board Modal';
+  openModal?: 'Komea wait list' | 'No Modal';
   createStorePlanId?: string;
   showIcon?: boolean;
   customIcon?: IImage;
@@ -47,47 +47,10 @@ export interface Props {
 }
 
 const openModalFunction = (modal: string, planId: string) => {
-  if(modal == 'Talk to specialist') {
-    const form = document.getElementById("talkToSpecialistPopUpForm") as HTMLElement;
+  if(modal == 'Komea wait list') {
+    const form = document.getElementById("waitlist-form") as HTMLElement;
     form.classList.remove("hidden");
-  
-    const container = document.getElementById("talkToSpecialistFormContainer") as HTMLElement;
-        
-        if (container.children.length == 0) {
-            const script1 = document.createElement('script');
-            script1.setAttribute('charset', 'utf-8');
-            script1.setAttribute('type', 'text/javascript');
-            script1.setAttribute('src', '//js.hsforms.net/forms/embed/v2.js');
-            
-            const script2 = document.createElement('script');
-            script2.textContent = `
-                hbspt.forms.create({
-                    region: "na1",
-                    portalId: "7112881",
-                    formId: "06d3df52-7c37-4749-aa27-5c7744917d89"
-                });
-            `;
-            
-            container.appendChild(script1);
-            container.appendChild(script2);
-        }
-  } else if (modal == 'Create Store') {
-    const getModal = document.getElementById("createStoreModal");
-    const period = null;
-    const coupon = null;
-    if (getModal) {
-        getModal.classList.add("flex");
-        getModal.classList.remove("hidden");
-        getModal.setAttribute("data-planId", planId ?? "");
-        getModal.setAttribute("data-period", period ?? "anual");
-        getModal.setAttribute("data-coupon", coupon ?? "");
-    }
-  } else if (modal == "Customer Advisory Board Modal") {
-    const customerAdvisoryBoardModal = document.getElementById("customerAdvisoryBoardModal") as HTMLElement;
-    const nameInput = customerAdvisoryBoardModal.querySelector('input[name="name"]') as HTMLInputElement;
-    customerAdvisoryBoardModal.style.display = "flex";
-    nameInput.focus();
-  }
+  } 
 
 };
 

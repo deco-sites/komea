@@ -90,7 +90,7 @@ function CTAForm() {
     };
 
     return (
-        <div id="waitlist-form" className="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+        <div id="waitlist-form" className="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[60]">
             <div className="bg-white rounded-[20px] p-6 lg:p-20 w-[90%] lg:w-full max-w-[582px] relative shadow-lg">
                 <button id="close-waitlist-modal" className="absolute top-4 right-4"
                     hx-on:click={useScript(closeModal, modalId)}

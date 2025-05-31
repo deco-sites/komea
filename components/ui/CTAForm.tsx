@@ -87,6 +87,14 @@ function CTAForm() {
     const closeModal = (modalId: string) => {
         const modal = document.getElementById(modalId) as HTMLElement;
         modal?.classList.add("hidden");
+
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'event': 'clique',
+            'custom_section': 'lp-komea:modal-formulario-lista-de-espera',
+            'custom_type': 'botao',
+            'custom_title': 'fechar-modal'
+        });
     };
 
     return (
@@ -131,6 +139,28 @@ function CTAForm() {
         const interval = setInterval(() => {
             const formWrapper = document.querySelector('.hbspt-form');
             if (formWrapper) {
+                    const getSubmitButton = document.querySelector(".hs-submit .hs-button");
+                        if (getSubmitButton) {
+                            getSubmitButton.addEventListener('click', () => {
+                                setTimeout(() => {
+                                    const mainErrorMessage = document.querySelector(".hs_error_rollup .hs-main-font-element");
+                                    const actionsWrapper = document.querySelector(".hs-submit .actions");
+
+                                    if (mainErrorMessage && actionsWrapper) {
+                                        actionsWrapper.classList.add('messageRemove');
+                                    }
+                                    }, 300);
+
+                                window.dataLayer = window.dataLayer || [];
+                                window.dataLayer.push({
+                                 'event':'clique',
+                                    'custom_section': 'lp-komea:modal-formulario-lista-de-espera',
+                                    'custom_type': 'botao',
+                                    'custom_title':'entrar-na-lista-de-espera'
+                                });
+                            });
+                        }
+
                     const allTextFields = document.querySelectorAll('.hs-fieldtype-text input'); 
                     
                     if (allTextFields.length > 0) {
@@ -160,9 +190,25 @@ function CTAForm() {
                     if (hasStoreYes) {
                         selectedStoreOption = 'yes';
                         inputWebsite.classList.remove('hidden');
+
+                        window.dataLayer = window.dataLayer || [];
+                        window.dataLayer.push({
+                            'event':'interacao',
+                            'custom_section': 'lp-komea:modal-formulario-lista-de-espera',
+                            'custom_type': 'checkbox',
+                            'custom_title':'sim'  
+                        });
                     } else if (hasStoreNo) {
                         selectedStoreOption = 'no';
                         inputWebsite.classList.add('hidden');
+
+                        window.dataLayer = window.dataLayer || [];
+                        window.dataLayer.push({
+                            'event':'interacao',
+                            'custom_section': 'lp-komea:modal-formulario-lista-de-espera',
+                            'custom_type': 'checkbox',
+                            'custom_title':'ainda-nao'  
+                        });
                     }
                 };
                 
@@ -170,7 +216,33 @@ function CTAForm() {
                 radioButtons.forEach(radio => {
                     radio.addEventListener('change', captureRadioValues);
                 });
-                
+
+                    const trackFieldInteraction = (fieldClass, fieldName) => {
+                        const field = document.querySelector(fieldClass + ' input');
+                        if (field) {
+                            field.addEventListener('focus', () => {
+                                window.dataLayer = window.dataLayer || [];
+                                window.dataLayer.push({
+                                    'event': 'interacao',
+                                    'custom_section': 'lp-komea:modal-formulario-lista-de-espera',
+                                    'custom_type': 'campo-texto',
+                                    'custom_title': fieldName
+                                });
+                            });
+                        }
+                    };
+
+                    const fieldsToTrack = [
+                        { selector: '.hs-firstname.hs-fieldtype-text', name: 'nome' },
+                        { selector: '.hs-email.hs-fieldtype-text', name: 'email' },
+                        { selector: '.hs-company.hs-fieldtype-text', name: 'empresa' },
+                        { selector: '.hs-website.hs-fieldtype-text', name: 'website' }
+                    ];
+
+                    fieldsToTrack.forEach(({ selector, name }) => {
+                        trackFieldInteraction(selector, name);
+                    });
+                        
                 const observer = new MutationObserver((mutationsList) => {
                     for (const mutation of mutationsList) {
                         if (
@@ -186,9 +258,25 @@ function CTAForm() {
                             if (selectedStoreOption === 'yes') {
                                 const modal = document.getElementById('modal-guaranteed');
                                 if (modal) modal.classList.remove('hidden');
+
+                                  window.dataLayer = window.dataLayer || [];
+                                    window.dataLayer.push({
+                                        event: 'callback',
+                                        custom_section: 'lp-komea:modal-formulario-lista-de-espera',
+                                        custom_type: 'entrar-na-lista-de-espera',
+                                        custom_title: 'sucesso'
+                                    });
                             } else if (selectedStoreOption === 'no') {
                                 const modal2 = document.getElementById('modal-register');
                                 if (modal2) modal2.classList.remove('hidden');
+
+                                  window.dataLayer = window.dataLayer || [];
+                                    window.dataLayer.push({
+                                        event: 'callback',
+                                        custom_section: 'lp-komea:modal-formulario-lista-de-espera',
+                                        custom_type: 'cadastro-confirmado',
+                                        custom_title: 'sucesso'
+                                    });
                             }
                         }
                     }

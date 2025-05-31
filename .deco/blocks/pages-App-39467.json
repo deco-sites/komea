@@ -169,7 +169,8 @@
             "container": {
               "marginTop": "20px",
               "paddingBottom": "0",
-              "marginBottom": "40px"
+              "marginBottom": "40px",
+              "paddingTop": "60px"
             }
           },
           "rule": {
@@ -198,13 +199,13 @@
               "inputLabelBackgroundColor": "#44656A"
             },
             "title": {
-              "text": "<p>Agentes de IA operando</p><p>lado a lado com você</p>",
+              "text": "<p style=\"text-align: center\">Agentes de IA operando lado a lado com você</p>",
               "color": "#00363A",
               "font": "Lektorat Display",
               "fontWeight": "750",
               "lineHeight": "110%",
               "letterSpacing": "-1px",
-              "fontSize": "62px"
+              "fontSize": "60px"
             },
             "media": {
               "image": {
@@ -213,10 +214,10 @@
                 "height": 500
               },
               "use": "image",
-              "cornerImage": true,
-              "placement": "right"
+              "placement": "right",
+              "cornerImage": true
             },
-            "text": "<p><span>A Komea é a primeira </span><strong><span>rede de agentes de IA do e-commerce.</span></strong></p><p><span>Criado pela Loja Integrada, ele automatiza tarefas, sugere </span></p><p><span>melhorias e faz seu negócio crescer todos os dias.</span></p>",
+            "text": "<p style=\"text-align: center\">A Komea é a primeira <strong>rede de agentes de IA do e-commerce.</strong></p><p style=\"text-align: center\">Criado pela Loja Integrada, ele automatiza tarefas, sugere</p><p style=\"text-align: center\">melhorias e faz seu negócio crescer todos os dias.</p>",
             "sectionBackground": {
               "backgroundColor": "#D1CABD",
               "image": {
@@ -250,7 +251,11 @@
                   "fontSize": "14px"
                 }
               }
-            ]
+            ],
+            "container": {
+              "paddingTop": "80px"
+            },
+            "ctaPlacement": "center"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -504,8 +509,8 @@
               "color": "#EEFC58",
               "font": "Lektorat Display",
               "fontWeight": "750",
-              "letterSpacing": "-0.3px",
-              "lineHeight": "100%",
+              "letterSpacing": "-1px",
+              "lineHeight": "110%",
               "fontSize": "62px"
             },
             "sectionBackground": {
@@ -564,7 +569,7 @@
               {
                 "textPosition": "Right",
                 "icon": {
-                  "src": "https://assets.decocache.com/komea/f9ec2bef-6a39-4942-bc39-b1a7d23740d9/statistics-icon.png",
+                  "src": "https://assets.decocache.com/komea/25d4fd0d-aa83-4074-b4e8-7036eccfd197/icon-criar-produto.svg",
                   "width": 40,
                   "height": 40
                 },
@@ -655,7 +660,7 @@
               {
                 "textPosition": "Left",
                 "icon": {
-                  "src": "https://assets.decocache.com/komea/f9ec2bef-6a39-4942-bc39-b1a7d23740d9/statistics-icon.png"
+                  "src": "https://assets.decocache.com/komea/25d4fd0d-aa83-4074-b4e8-7036eccfd197/icon-criar-produto.svg"
                 },
                 "title": "<p><span style=\"color: #ffffff\">Crie produtos</span></p><p><span>conversando</span></p>",
                 "titleTextProps": {
@@ -746,7 +751,7 @@
                 "cta": [],
                 "backgroundColor": "#1b4549",
                 "image": {
-                  "src": "https://assets.decocache.com/komea/6f22e27a-640e-4002-b458-783e8909189f/komea-carousel-image-1.svg"
+                  "src": "https://assets.decocache.com/komea/3a5ee429-2f78-4f7c-a231-ecb7c3c4681a/pergunte-sobre-dados.svg"
                 },
                 "title": {
                   "text": "<p><span style=\"color: #f2f2f2\">Pergunte sobre os </span><span>dados das suas vendas</span></p>",
@@ -757,6 +762,35 @@
                   "lineHeight": "110%"
                 },
                 "caption": "<p><span>Consulte sobre produtos mais vendidos, clientes que mais compram, saiba o meio de pagamento mais utilizado pelos seus clientes, conversando com o analista de performance de vendas.</span></p>",
+                "captionTextProps": {
+                  "color": "#FFFFFFCC",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "20px"
+                }
+              },
+              {
+                "icon": {
+                  "placement": "Top right",
+                  "src": "https://assets.decocache.com/komea/f6a28c58-156e-4d29-8d45-7aeab2a04e33/icon-automatize-reegajamento.svg",
+                  "width": 44,
+                  "height": 44
+                },
+                "use": "image",
+                "cta": [],
+                "backgroundColor": "#1b4549",
+                "image": {
+                  "src": "https://assets.decocache.com/komea/add8a0bd-2d4f-4c53-bc9e-e8fb45d3f018/automatize-reengajamento.svg"
+                },
+                "title": {
+                  "text": "<p><span style=\"color: rgb(242, 242, 242)\"> </span>Automatize <span style=\"color: rgb(242, 242, 242)\">o reengajamento</span></p>",
+                  "font": "Lektorat Display",
+                  "color": "#EEFC58",
+                  "fontWeight": "700",
+                  "fontSize": "24px",
+                  "lineHeight": "110%"
+                },
+                "caption": "<p>Carrinho abandonado? Pedido sem pagamento? Visita sem compra? A Komea envia mensagens automáticas por e-mail e Whatsapp.</p>",
                 "captionTextProps": {
                   "color": "#FFFFFFCC",
                   "fontSize": "14px",
@@ -775,7 +809,7 @@
                 "cta": [],
                 "backgroundColor": "#1b4549",
                 "image": {
-                  "src": "https://assets.decocache.com/komea/8eb8be48-6972-4833-9b67-983de80b3d04/komea-carousel-image-2.svg",
+                  "src": "https://assets.decocache.com/komea/bfb3b269-ead3-4d12-9dd5-f98625271577/crie-promocao-sem-planilha.svg",
                   "height": 280,
                   "width": 362
                 },
@@ -788,35 +822,6 @@
                   "lineHeight": "110%"
                 },
                 "caption": "<p><span>Diga “quero 15% de desconto até domingo” e o agente executa a ação com lógica e data.</span></p>",
-                "captionTextProps": {
-                  "color": "#FFFFFFCC",
-                  "fontSize": "14px",
-                  "fontWeight": "500",
-                  "lineHeight": "20px"
-                }
-              },
-              {
-                "icon": {
-                  "placement": "Top right",
-                  "src": "https://assets.decocache.com/komea/77a45ee0-dc76-42ce-9f12-0bdcbd923814/orange-price-tag-icon.svg",
-                  "width": 44,
-                  "height": 44
-                },
-                "use": "image",
-                "cta": [],
-                "backgroundColor": "#1b4549",
-                "image": {
-                  "src": "https://assets.decocache.com/komea/6f22e27a-640e-4002-b458-783e8909189f/komea-carousel-image-1.svg"
-                },
-                "title": {
-                  "text": "<p><span style=\"color: #f2f2f2\">Pergunte sobre os </span><span>dados das suas vendas</span></p>",
-                  "font": "Lektorat Display",
-                  "color": "#EEFC58",
-                  "fontWeight": "700",
-                  "fontSize": "24px",
-                  "lineHeight": "110%"
-                },
-                "caption": "<p><span>Consulte sobre produtos mais vendidos, clientes que mais compram, saiba o meio de pagamento mais utilizado pelos seus clientes, conversando com o analista de performance de vendas.</span></p>",
                 "captionTextProps": {
                   "color": "#FFFFFFCC",
                   "fontSize": "14px",
@@ -856,10 +861,10 @@
                 "cta": [],
                 "backgroundColor": "#1b4549",
                 "image": {
-                  "src": "https://assets.decocache.com/komea/6f22e27a-640e-4002-b458-783e8909189f/komea-carousel-image-1.svg"
+                  "src": "https://assets.decocache.com/komea/3a5ee429-2f78-4f7c-a231-ecb7c3c4681a/pergunte-sobre-dados.svg"
                 },
                 "title": {
-                  "text": "<p><span style=\"color: #f2f2f2\">Pergunte sobre os </span><span>dados das suas vendas</span></p>",
+                  "text": "<p><span style=\"color: rgb(242, 242, 242)\">Pergunte sobre os </span>dados<br>das suas vendas</p>",
                   "font": "Lektorat Display",
                   "color": "#EEFC58",
                   "fontWeight": "700",
@@ -867,6 +872,35 @@
                   "lineHeight": "110%"
                 },
                 "caption": "<p><span>Consulte sobre produtos mais vendidos, clientes que mais compram, saiba o meio de pagamento mais utilizado pelos seus clientes, conversando com o analista de performance de vendas.</span></p>",
+                "captionTextProps": {
+                  "color": "#FFFFFFCC",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "lineHeight": "20px"
+                }
+              },
+              {
+                "icon": {
+                  "placement": "Top right",
+                  "src": "https://assets.decocache.com/komea/f6a28c58-156e-4d29-8d45-7aeab2a04e33/icon-automatize-reegajamento.svg",
+                  "width": 44,
+                  "height": 44
+                },
+                "use": "image",
+                "cta": [],
+                "backgroundColor": "#1b4549",
+                "image": {
+                  "src": "https://assets.decocache.com/komea/add8a0bd-2d4f-4c53-bc9e-e8fb45d3f018/automatize-reengajamento.svg"
+                },
+                "title": {
+                  "text": "<p>Automatize <span style=\"color: rgb(242, 242, 242)\">o</span><br><span style=\"color: rgb(242, 242, 242)\"> reengajamento</span></p>",
+                  "font": "Lektorat Display",
+                  "color": "#EEFC58",
+                  "fontWeight": "700",
+                  "fontSize": "24px",
+                  "lineHeight": "110%"
+                },
+                "caption": "<p>Carrinho abandonado? Pedido sem pagamento? Visita sem compra? A Komea envia mensagens automáticas por e-mail e Whatsapp.</p>",
                 "captionTextProps": {
                   "color": "#FFFFFFCC",
                   "fontSize": "14px",
@@ -885,7 +919,7 @@
                 "cta": [],
                 "backgroundColor": "#1b4549",
                 "image": {
-                  "src": "https://assets.decocache.com/komea/8eb8be48-6972-4833-9b67-983de80b3d04/komea-carousel-image-2.svg",
+                  "src": "https://assets.decocache.com/komea/bfb3b269-ead3-4d12-9dd5-f98625271577/crie-promocao-sem-planilha.svg",
                   "height": 280,
                   "width": 362
                 },
@@ -898,35 +932,6 @@
                   "lineHeight": "110%"
                 },
                 "caption": "<p><span>Diga “quero 15% de desconto até domingo” e o agente executa a ação com lógica e data.</span></p>",
-                "captionTextProps": {
-                  "color": "#FFFFFFCC",
-                  "fontSize": "14px",
-                  "fontWeight": "500",
-                  "lineHeight": "20px"
-                }
-              },
-              {
-                "icon": {
-                  "placement": "Top right",
-                  "src": "https://assets.decocache.com/komea/77a45ee0-dc76-42ce-9f12-0bdcbd923814/orange-price-tag-icon.svg",
-                  "width": 44,
-                  "height": 44
-                },
-                "use": "image",
-                "cta": [],
-                "backgroundColor": "#1b4549",
-                "image": {
-                  "src": "https://assets.decocache.com/komea/6f22e27a-640e-4002-b458-783e8909189f/komea-carousel-image-1.svg"
-                },
-                "title": {
-                  "text": "<p><span style=\"color: #f2f2f2\">Pergunte sobre os </span><span>dados das suas vendas</span></p>",
-                  "font": "Lektorat Display",
-                  "color": "#EEFC58",
-                  "fontWeight": "700",
-                  "fontSize": "24px",
-                  "lineHeight": "110%"
-                },
-                "caption": "<p><span>Consulte sobre produtos mais vendidos, clientes que mais compram, saiba o meio de pagamento mais utilizado pelos seus clientes, conversando com o analista de performance de vendas.</span></p>",
                 "captionTextProps": {
                   "color": "#FFFFFFCC",
                   "fontSize": "14px",

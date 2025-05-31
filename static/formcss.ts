@@ -151,6 +151,12 @@ ul.inputs-list.multi-container {
     color: #00363A;
 }
 
+.hs-submit .actions.messageRemove::before {
+    content: '';
+    font-size: 0;
+    color: #00363A;
+}
+
 .hs-submit .actions input{
     font-size: 14px;
     padding: 14px 22px;
@@ -165,5 +171,23 @@ ul.inputs-list.multi-container {
 .hs-error-msg.hs-main-font-element {
     display: none;
 }
+
+.hs_error_rollup {
+    text-align: center;
+}
+
+.hs-main-font-element {
+    font-size: 12px;
+    color: #F57E77;
+    font-weight: 400;
+}
+
+.hs-main-font-element::before {
+    content: '*';
+     font-size: 12px;
+    color: #F57E77;
+    font-weight: 400;
+}
+
 }
 `;

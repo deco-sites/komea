@@ -132,22 +132,31 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight }
         <div class="relative h-full flex items-center justify-center" style={{ width: folds[0].image?.width || 336 }}>
           {folds.map((fold, index) => {
             return <>
-              {(fold.use != 'video' || fold.video?.mockup) && fold.image?.src &&
+              {fold.use != 'video' && fold.image?.src &&
                 <Image
                   src={fold.image.src}
                   alt={fold.image.alt || "Sticky image"}
                   width={fold.image.width || 336}
                   height={fold.image.height || 690}
-                  class={`absolute z-10 transition-opacity duration-500 ${!fold.video?.mockup && 'stickyMedia'}`}
+                  class={`absolute z-10 transition-opacity duration-500 stickyMedia`}
                   style={{ opacity: index == 0 ? 1 : 0 }}
                 />
               }
-              {fold.use == 'video' && fold.video?.src &&
+              {fold.use == 'video' && fold.video?.src && <div class="relative h-full w-full flex items-center justify-center stickyMedia">
+                {fold.video.mockup && fold.image?.src && <div class="absolute z-10 flex items-center w-full h-full" style={{ transform: `scale(${fold.video.mockupScale})` }}>
+                  <Image
+                    src={fold.image.src}
+                    alt={fold.image.alt || "Sticky image"}
+                    width={fold.image.width || 336}
+                    height={fold.image.height || 690}
+                    class={`absolute z-10 transition-opacity duration-500`} />
+                </div>}
                 <video width={fold.video.width || 336} height={fold.video.height || 336} autoPlay playsInline muted loading="lazy" loop
-                  class='absolute h-full transition-opacity duration-500 stickyMedia'
+                  class='absolute h-full w-full transition-opacity duration-500'
                   style={{ width: fold.video.width + "px" || "336px", height: fold.video.height + "px" || "690px", opacity: index == 0 ? 1 : 0, borderRadius: fold.video.borderRadius }}>
                   <source src={fold.video.src} type="video/mp4" />
                 </video>
+              </div>
               }
             </>
           })}

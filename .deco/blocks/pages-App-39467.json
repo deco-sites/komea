@@ -208,11 +208,13 @@
             },
             "media": {
               "image": {
-                "src": "https://assets.decocache.com/komea/ef0afe9d-7741-426d-bf9d-fcd24c625224/komea-mobile-image.svg",
-                "width": 386,
-                "height": 545
+                "src": "https://assets.decocache.com/komea/a92bc555-5b7b-44c5-bb17-b6e3ae501afa/komea-app.png",
+                "width": 565,
+                "height": 500
               },
-              "use": "image"
+              "use": "image",
+              "cornerImage": true,
+              "placement": "right"
             },
             "text": "<p><span>A Komea é a primeira </span><strong><span>rede de agentes de IA do e-commerce.</span></strong></p><p><span>Criado pela Loja Integrada, ele automatiza tarefas, sugere </span></p><p><span>melhorias e faz seu negócio crescer todos os dias.</span></p>",
             "sectionBackground": {
@@ -1092,7 +1094,10 @@
             "container": {
               "backgroundColor": "linear-gradient(217.97deg, #D1CABD 21.92%, #D8C186 76.48%);",
               "backgroundMedia": {
-                "image": {}
+                "image": {
+                  "src": "https://assets.decocache.com/komea/6a21e766-08f8-413c-b244-bf5246896014/bullet-points-hero-background.svg"
+                },
+                "use": "image"
               }
             },
             "sectionBackground": {

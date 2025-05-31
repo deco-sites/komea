@@ -1,7 +1,13 @@
 import type { ImageWidget, VideoWidget, RichText } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import CTA, { Props as CTAProps } from "site/components/ui/CTA.tsx";
-import { Media, HeroMedia } from "../sections/HeroV3.tsx";
+import { HeroMedia } from "../sections/HeroV3.tsx";
+
+export interface Media {
+  image?: IImage;
+  video?: IVideo;
+  use?: "image" | "video" | "embed";
+}
 
 export interface TextProps {
   /** @format color-input */

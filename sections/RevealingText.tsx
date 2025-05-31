@@ -73,13 +73,15 @@ export default function RevealingText({ lines = [], backgroundMedia, scrollAmoun
       type="module"
       dangerouslySetInnerHTML={{ __html: useScript(onLoad, rootId, lines) }}
     />
-    <div class="h-[100vh] sticky top-0 flex flex-col items-center justify-center" style={{ background: backgroundMedia?.backgroundColor }}>
-      {lines.map(line => (
-        <div
-          dangerouslySetInnerHTML={{ __html: line.text || "" }}
-          class="!text-transparent !bg-clip-text line leading-none transition-opacity duration-300"
-          style={{ ...line.textProps, background: `linear-gradient(to right, ${line.color} 100%, transparent 110%)`, opacity: line.justReveal ? 0 : "" }} />
-      ))}
+    <div class="absolute top-0 w-full" style={{ height: `${(lines.length * (scrollAmount || 120)) + 100}vh`, zIndex: -60 }}>
+      <div class="h-[100vh] sticky top-0 flex flex-col items-center justify-center" style={{ background: backgroundMedia?.backgroundColor }}>
+        {lines.map(line => (
+          <div
+            dangerouslySetInnerHTML={{ __html: line.text || "" }}
+            class="!text-transparent !bg-clip-text line leading-none transition-opacity duration-300"
+            style={{ ...line.textProps, background: `linear-gradient(to right, ${line.color} 100%, transparent 110%)`, opacity: line.justReveal ? 0 : "" }} />
+        ))}
+      </div>
     </div>
   </div>
 }

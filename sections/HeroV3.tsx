@@ -79,6 +79,7 @@ export interface BulletPoints {
 
 export interface Media {
   image?: IImage;
+  cornerImage?: boolean;
   video?: IVideo;
   use?: "image" | "video" | "embed";
 }
@@ -175,7 +176,7 @@ export default function HeroV3({ hideSection, title, text, textProps, bulletPoin
     "bottom": "object-bottom"
   }
 
-  return <div class=" relative py-12" style={{ paddingTop: container?.marginTop, paddingBottom: container?.marginBottom }}>
+  return <div class=" relative py-12" style={{ paddingTop: container?.marginTop, paddingBottom: container?.marginBottom, marginBottom: "-1px" }}>
     <div
       class={`max-w-[1120px] relative z-10 mx-auto rounded-[20px] px-3.5 lg:px-0 flex gap-5 gap-y-10 lg:gap-y-20 lg:flex-nowrap items-center justify-center ${mediaPlacement[media?.placement || "right"]}`}
       style={{ background: container?.backgroundColor, paddingTop: container?.paddingTop, paddingLeft: container?.paddingLeft, paddingBottom: container?.paddingBottom, paddingRight: container?.paddingRight, minHeight: container?.minHeight }}>
@@ -225,7 +226,7 @@ export default function HeroV3({ hideSection, title, text, textProps, bulletPoin
         delay={200}
         style={{ animationDuration: "1s" }}
         animation={"animate-fade-up50"}>
-        <HeroMedia media={media} />
+        <div class={`${media.cornerImage && 'opacity-0'}`}><HeroMedia media={media} /></div>
       </AnimateOnShow>}
 
 
@@ -256,5 +257,16 @@ export default function HeroV3({ hideSection, title, text, textProps, bulletPoin
       style={{ height: sectionBackground.customHeight }}>
       <source src={sectionBackground.video} type="video/mp4" />
     </video>}
+
+    {media?.cornerImage && media.use == "image" && <div class={`absolute h-full ${media.placement == "left" ? "left-0" : "right-0"} top-0 flex items-center`}>
+      {media?.use == "image" && media.image?.src && <Image
+        src={media.image.src}
+        alt={media.image.alt || "image"}
+        class="object-contain"
+        width={media.image.width || 534}
+        height={media.image.height || 534}
+        style={{ width: media.image.width + 'px' }}
+      />}
+    </div>}
   </div>
 }

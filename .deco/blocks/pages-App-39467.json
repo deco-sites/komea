@@ -380,11 +380,12 @@
                   "marginTop": "22px",
                   "letterSpacing": "-0.3px"
                 },
-                "color": "#ffffff"
+                "color": "#ffffff",
+                "justReveal": true
               }
             ],
             "speed": 0.6,
-            "scrollAmount": 25
+            "scrollAmount": 50
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -425,9 +426,11 @@
                   "marginTop": "22px",
                   "letterSpacing": "-0.3px"
                 },
-                "color": "#ffffff"
+                "color": "#ffffff",
+                "justReveal": true
               }
-            ]
+            ],
+            "scrollAmount": 120
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

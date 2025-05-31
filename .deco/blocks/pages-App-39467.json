@@ -213,8 +213,8 @@
                 "height": 500
               },
               "use": "image",
-              "cornerImage": true,
-              "placement": "right"
+              "placement": "right",
+              "cornerImage": true
             },
             "text": "<p><span>A Komea é a primeira </span><strong><span>rede de agentes de IA do e-commerce.</span></strong></p><p><span>Criado pela Loja Integrada, ele automatiza tarefas, sugere </span></p><p><span>melhorias e faz seu negócio crescer todos os dias.</span></p>",
             "sectionBackground": {

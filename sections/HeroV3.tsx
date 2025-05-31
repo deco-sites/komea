@@ -126,6 +126,7 @@ export interface Props {
   media?: MediaWithPlacement;
   hubspotForm?: HubspotFormProps;
   container?: Container;
+  sectionMarginTop?: string;
   sectionBackground?: sectionBackgroundMedia;
   floatingImage?: FloatingImage;
   lcp?: boolean;
@@ -157,7 +158,7 @@ export function HeroMedia({ media }: { media?: Media }) {
   </>
 }
 
-export default function HeroV3({ hideSection, title, text, textProps, bulletPoints, cta = [], media, hubspotForm, distanceBetweenTitleAndText, container, ctaPlacement, sectionBackground, lcp, floatingImage }: Props) {
+export default function HeroV3({ hideSection, title, text, textProps, bulletPoints, cta = [], media, hubspotForm, distanceBetweenTitleAndText, container, ctaPlacement, sectionBackground, sectionMarginTop, lcp, floatingImage }: Props) {
   if (hideSection) return <></>;
   const placement = {
     "left": "justify-start",
@@ -176,7 +177,7 @@ export default function HeroV3({ hideSection, title, text, textProps, bulletPoin
     "bottom": "object-bottom"
   }
 
-  return <div class=" relative py-12" style={{ paddingTop: container?.marginTop, paddingBottom: container?.marginBottom, marginBottom: "-1px" }}>
+  return <div class=" relative py-12" style={{ paddingTop: container?.marginTop, paddingBottom: container?.marginBottom, marginTop: sectionMarginTop }}>
     <div
       class={`max-w-[1120px] relative z-10 mx-auto rounded-[20px] px-3.5 lg:px-0 flex gap-5 gap-y-10 lg:gap-y-20 lg:flex-nowrap items-center justify-center ${mediaPlacement[media?.placement || "right"]}`}
       style={{ background: container?.backgroundColor, paddingTop: container?.paddingTop, paddingLeft: container?.paddingLeft, paddingBottom: container?.paddingBottom, paddingRight: container?.paddingRight, minHeight: container?.minHeight }}>

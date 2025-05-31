@@ -437,7 +437,7 @@
                 "justReveal": true
               }
             ],
-            "scrollAmount": 120
+            "scrollAmount": 100
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -491,9 +491,7 @@
               }
             ],
             "ctaPlacement": "center",
-            "container": {
-              "paddingTop": "60px"
-            }
+            "sectionMarginTop": "-18vh"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -545,9 +543,9 @@
             "ctaPlacement": "center",
             "container": {
               "paddingTop": "124px",
-              "marginTop": "0px",
-              "paddingBottom": "64px"
-            }
+              "marginTop": "0px"
+            },
+            "sectionMarginTop": "-18vh"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

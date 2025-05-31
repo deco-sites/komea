@@ -198,13 +198,13 @@
               "inputLabelBackgroundColor": "#44656A"
             },
             "title": {
-              "text": "<p>Agentes de IA operando</p><p>lado a lado com você</p>",
+              "text": "<p style=\"text-align: center\">Agentes de IA operando lado a lado com você</p>",
               "color": "#00363A",
               "font": "Lektorat Display",
               "fontWeight": "750",
               "lineHeight": "110%",
               "letterSpacing": "-1px",
-              "fontSize": "62px"
+              "fontSize": "60px"
             },
             "media": {
               "image": {
@@ -216,7 +216,7 @@
               "placement": "right",
               "cornerImage": true
             },
-            "text": "<p><span>A Komea é a primeira </span><strong><span>rede de agentes de IA do e-commerce.</span></strong></p><p><span>Criado pela Loja Integrada, ele automatiza tarefas, sugere </span></p><p><span>melhorias e faz seu negócio crescer todos os dias.</span></p>",
+            "text": "<p style=\"text-align: center\">A Komea é a primeira <strong>rede de agentes de IA do e-commerce.</strong></p><p style=\"text-align: center\">Criado pela Loja Integrada, ele automatiza tarefas, sugere</p><p style=\"text-align: center\">melhorias e faz seu negócio crescer todos os dias.</p>",
             "sectionBackground": {
               "backgroundColor": "#D1CABD",
               "image": {
@@ -250,7 +250,11 @@
                   "fontSize": "14px"
                 }
               }
-            ]
+            ],
+            "container": {
+              "paddingTop": "80px"
+            },
+            "ctaPlacement": "center"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -503,8 +507,8 @@
               "color": "#EEFC58",
               "font": "Lektorat Display",
               "fontWeight": "750",
-              "letterSpacing": "-0.3px",
-              "lineHeight": "100%",
+              "letterSpacing": "-1px",
+              "lineHeight": "110%",
               "fontSize": "62px"
             },
             "sectionBackground": {

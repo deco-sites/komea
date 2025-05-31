@@ -44,6 +44,8 @@ export interface IVideo {
   src?: VideoWidget;
   width?: string;
   height?: string;
+  borderRadius?: string;
+  mockup?: boolean;
 }
 
 export interface TextProps {
@@ -116,25 +118,27 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight }
 
     <div class="hidden lg:block">
       <div class="sticky h-screen top-0 flex items-center" style={{ height: foldsHeight }}>
-        <div class="relative h-full" style={{ width: folds[0].image?.width || 336 }}>
+        <div class="relative h-full flex items-center justify-center" style={{ width: folds[0].image?.width || 336 }}>
           {folds.map((fold, index) => {
-            if (fold.use != 'video' && fold.image?.src) {
-              return <Image
-                src={fold.image.src}
-                alt={fold.image.alt || "Sticky image"}
-                width={fold.image.width || 336}
-                height={fold.image.height || 690}
-                class='absolute h-full transition-opacity duration-500 stickyMedia'
-                style={{ opacity: index == 0 ? 1 : 0 }}
-              />
-            }
-            if (fold.use == 'video' && fold.video?.src) {
-              return <video width={fold.video.width || 336} height={fold.video.height || 336} autoPlay playsInline muted loading="lazy" loop
-                class='absolute h-full transition-opacity duration-500 stickyMedia'
-                style={{ width: fold.video.width + "px" || "336px", height: fold.video.height + "px" || "690px", opacity: index == 0 ? 1 : 0 }}>
-                <source src={fold.video.src} type="video/mp4" />
-              </video>
-            }
+            return <>
+              {(fold.use != 'video' || fold.video?.mockup) && fold.image?.src &&
+                <Image
+                  src={fold.image.src}
+                  alt={fold.image.alt || "Sticky image"}
+                  width={fold.image.width || 336}
+                  height={fold.image.height || 690}
+                  class={`absolute z-10 transition-opacity duration-500 ${!fold.video?.mockup && 'stickyMedia'}`}
+                  style={{ opacity: index == 0 ? 1 : 0 }}
+                />
+              }
+              {fold.use == 'video' && fold.video?.src &&
+                <video width={fold.video.width || 336} height={fold.video.height || 336} autoPlay playsInline muted loading="lazy" loop
+                  class='absolute h-full transition-opacity duration-500 stickyMedia'
+                  style={{ width: fold.video.width + "px" || "336px", height: fold.video.height + "px" || "690px", opacity: index == 0 ? 1 : 0, borderRadius: fold.video.borderRadius }}>
+                  <source src={fold.video.src} type="video/mp4" />
+                </video>
+              }
+            </>
           })}
         </div>
       </div>

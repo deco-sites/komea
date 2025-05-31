@@ -653,7 +653,16 @@
                   "lineHeight": "125%"
                 },
                 "image": {
-                  "src": "https://assets.decocache.com/komea/019bd2bb-adae-443d-b14e-f8748ecfdf69/mobile-sticky-image.svg"
+                  "src": "https://assets.decocache.com/komea/498fa169-f084-475d-a029-ca132be68953/Template-iPhone-13.png",
+                  "width": 336,
+                  "height": 689
+                },
+                "use": "video",
+                "video": {
+                  "mockup": true,
+                  "src": "https://assets.decocache.com/komea/1dc28cce-e99f-4a13-b4a4-075c5ccf659d/Mockup_iPhone_15_01.mp4",
+                  "height": "656",
+                  "width": "302"
                 }
               },
               {

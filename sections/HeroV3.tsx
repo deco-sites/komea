@@ -216,7 +216,7 @@ export default function HeroV3({ hideSection, title, text, textProps, bulletPoin
 
         {cta.length > 0 && <div class={`flex flex-wrap gap-4 mt-auto pt-2 ${placement[ctaPlacement || "left"]}`}>
           {cta.map(cta => (
-            <CTA {...cta} />
+            <CTA customSection={"lp-komea"} customTitle={"waitlist-button"} customType={"hero-v3"} {...cta} />
           ))}
         </div>}
       </AnimateOnShow>

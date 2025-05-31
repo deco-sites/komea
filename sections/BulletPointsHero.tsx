@@ -116,7 +116,7 @@ export default function BulletPointsHero({ texts, bulletPoints, cta = [], contai
 
       <div class="flex flex-wrap justify-center items-end gap-4">
         {cta.map(cta => (
-          <CTA {...cta} />
+          <CTA customSection={"lp-komea"} customTitle={"waitlist-button"} customType={"team-agents"} {...cta} />
         ))}
       </div>
 

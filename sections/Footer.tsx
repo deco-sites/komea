@@ -96,7 +96,7 @@ export default function Footer({ title, text, textProps, cta = [], ctaPlacement,
         {cta.length > 0 && <div class={`flex flex-wrap mt-10 ${placement[ctaPlacement || "left"]}`}>
           <div class="flex gap-4 relative">
             {cta.map(cta => (
-              <CTA {...cta} />
+              <CTA customSection={"lp-komea"} customTitle={"waitlist-button"} customType={"footer"} {...cta} />
             ))}
             {ctaFloatingImage?.src && <Image
               src={ctaFloatingImage.src}
@@ -110,8 +110,8 @@ export default function Footer({ title, text, textProps, cta = [], ctaPlacement,
         </div>}
 
         {socialMedias.length > 0 && <div class="flex gap-4 justify-center items-center mt-[60px] lg:mt-[40px]">
-          {socialMedias.map(social => (
-            <a target={social.href?.includes("http") ? "_blank" : "_self"} href={social.href}>
+          {socialMedias.map((social, index) => (
+            <a hx-on:click={`window.dataLayer = window.dataLayer || []; window.dataLayer.push({event: 'clique', custom_section: 'lp-komea', custom_type: 'footer', custom_title: '${social.logo?.alt || `Social ${index + 1}`}'});`} target={social.href?.includes("http") ? "_blank" : "_self"} href={social.href}>
               <Image src={social.logo?.src || ""} width={social.logo?.width || 26} height={social.logo?.height || 26} alt={social.logo?.alt || "social media logo"} />
             </a>
           ))}

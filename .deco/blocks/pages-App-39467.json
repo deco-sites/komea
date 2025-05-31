@@ -432,7 +432,7 @@
                 "justReveal": true
               }
             ],
-            "scrollAmount": 120
+            "scrollAmount": 100
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -485,7 +485,8 @@
                 "openModal": "Komea wait list"
               }
             ],
-            "ctaPlacement": "center"
+            "ctaPlacement": "center",
+            "sectionMarginTop": "-18vh"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -538,7 +539,8 @@
             "container": {
               "paddingTop": "124px",
               "marginTop": "0px"
-            }
+            },
+            "sectionMarginTop": "-18vh"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

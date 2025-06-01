@@ -66,6 +66,23 @@ export default {
           "50%": { opacity: 1 },
           "100%": { opacity: 0 },
         },
+        "float": {
+          "0%": {
+            transform: "translateY(0) translateX(0)",
+          },
+          "25%": {
+            transform: "translateY(-6%) translateX(3%)",
+          },
+          "50%": {
+            transform: "translateY(-12%) translateX(-3%)",
+          },
+          "75%": {
+            transform: "translateY(-6%) translateX(3%)",
+          },
+          "100%": {
+            transform: "translateY(0) translateX(0)",
+          },
+        },
       },
       boxShadow: {
         "tinyspread": "0px 0px 10px rgba(204, 204, 204, 0.4)",
@@ -90,6 +107,7 @@ export default {
         "fade-down10": "fade-down10 0.3s ease-in-out",
         "progress": "progress 3s linear",
         "blink": " blink 0.5s linear infinite",
+        "float": "float 12s infinite cubic-bezier(0.11, 0.02, 0.9, 1.02)",
       },
       fontFamily: {
         instrument: ["Instrument Serif", "sans-serif"],

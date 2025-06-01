@@ -225,10 +225,10 @@
                 "width": 1201,
                 "height": 773
               },
-              "use": "image",
               "bleeding": 15,
               "customHeight": "105%",
-              "postition": "bottom"
+              "postition": "bottom",
+              "use": "image"
             },
             "textProps": {
               "fontWeight": "500",
@@ -269,6 +269,16 @@
         {
           "value": {
             "__resolveType": "site/sections/VideoSection.tsx",
+            "backgroundMedia": {
+              "color": "#D1CABD",
+              "image": {
+                "src": "https://assets.decocache.com/komea/e7b3a078-d7f7-4145-9aa1-ea26bacf8ff8/yellow-circles-mobile-2.svg",
+                "width": 1261,
+                "height": 777
+              },
+              "use": "image",
+              "postition": "top"
+            },
             "video": {
               "src": "https://www.youtube.com/embed/h8t1cSSudVQ?si=rFb31GzR0tNFQRtZ",
               "use": "embed",
@@ -287,16 +297,6 @@
               "paddingTop": "60px",
               "paddingBottom": "124px",
               "marginTop": "-1px"
-            },
-            "backgroundMedia": {
-              "color": "#D1CABD",
-              "image": {
-                "src": "https://assets.decocache.com/komea/e7b3a078-d7f7-4145-9aa1-ea26bacf8ff8/yellow-circles-mobile-2.svg",
-                "width": 1261,
-                "height": 777
-              },
-              "use": "image",
-              "postition": "top"
             }
           },
           "rule": {
@@ -307,8 +307,18 @@
         {
           "value": {
             "__resolveType": "site/sections/VideoSection.tsx",
+            "backgroundMedia": {
+              "color": "#D1CABD",
+              "image": {
+                "src": "https://assets.decocache.com/komea/66b297b8-28ba-4309-b97a-1af27f99ffa6/yellow-circles-2.svg",
+                "width": 1261,
+                "height": 777
+              },
+              "use": "image",
+              "postition": "top"
+            },
             "video": {
-              "src": "https://www.youtube.com/embed/h8t1cSSudVQ?si=rFb31GzR0tNFQRtZ",
+              "src": "https://www.youtube.com/embed/h8t1cSSudVQ?si=VZfDmW42Z1DjiQBc",
               "use": "embed",
               "width": "990px",
               "height": "558px",
@@ -322,16 +332,6 @@
             "sectionProps": {
               "paddingTop": "80px",
               "paddingBottom": "124px"
-            },
-            "backgroundMedia": {
-              "color": "#D1CABD",
-              "image": {
-                "src": "https://assets.decocache.com/komea/66b297b8-28ba-4309-b97a-1af27f99ffa6/yellow-circles-2.svg",
-                "width": 1261,
-                "height": 777
-              },
-              "use": "image",
-              "postition": "top"
             }
           },
           "rule": {
@@ -686,9 +686,9 @@
                 "use": "video",
                 "video": {
                   "mockup": true,
-                  "src": "https://assets.decocache.com/komea/1dc28cce-e99f-4a13-b4a4-075c5ccf659d/Mockup_iPhone_15_01.mp4",
                   "height": "656",
-                  "width": "302"
+                  "width": "302",
+                  "src": "https://assets.decocache.com/komea/21203775-63d2-4103-8142-7d43c2fd8b65/Receba-insight-.mp4"
                 }
               },
               {
@@ -713,14 +713,16 @@
                   "lineHeight": "125%"
                 },
                 "image": {
-                  "src": "https://assets.decocache.com/komea/861453f4-672d-4b54-92a6-b646aec44654/tela-teste.svg"
+                  "src": "https://assets.decocache.com/komea/e12ea5fe-437c-497e-a6fd-8baefe0dee98/iPhone-14-Pro.png"
                 },
                 "video": {
-                  "src": "https://assets.decocache.com/komea/1dc28cce-e99f-4a13-b4a4-075c5ccf659d/Mockup_iPhone_15_01.mp4",
+                  "src": "https://assets.decocache.com/komea/6413d58e-cc58-466a-896d-5323f0ae8647/Chat--Criar-Produto-.mp4",
                   "height": "656",
-                  "width": "302"
+                  "width": "302",
+                  "mockup": true,
+                  "mockupScale": "1"
                 },
-                "use": "image"
+                "use": "video"
               }
             ]
           },
@@ -960,6 +962,21 @@
         {
           "value": {
             "__resolveType": "site/sections/BulletPointsHero.tsx",
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Small",
+                "openModal": "Komea wait list",
+                "text": "<p><span>Seja um dos primeiros a testar</span></p>",
+                "textColor": "#00363A",
+                "backgroundColor": "#EEFC58",
+                "borderColor": "#EEFC58",
+                "customProps": {
+                  "height": "48px",
+                  "borderRadius": "100px"
+                }
+              }
+            ],
             "texts": [
               {
                 "text": "<p><span>Um time de agentes</span></p>",
@@ -1014,21 +1031,6 @@
                 "src": "https://assets.decocache.com/komea/615b1b6b-1f76-4b73-bda0-43ee870521e7/yellow-power-icon.svg"
               }
             },
-            "cta": [
-              {
-                "type": "Button",
-                "size": "Small",
-                "openModal": "Komea wait list",
-                "text": "<p><span>Seja um dos primeiros a testar</span></p>",
-                "textColor": "#00363A",
-                "backgroundColor": "#EEFC58",
-                "borderColor": "#EEFC58",
-                "customProps": {
-                  "height": "48px",
-                  "borderRadius": "100px"
-                }
-              }
-            ],
             "container": {
               "backgroundColor": "linear-gradient(217.97deg, #D1CABD 21.92%, #D8C186 76.48%);",
               "backgroundMedia": {
@@ -1048,6 +1050,21 @@
         {
           "value": {
             "__resolveType": "site/sections/BulletPointsHero.tsx",
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Small",
+                "openModal": "Komea wait list",
+                "text": "<p><span>Seja um dos primeiros a testar</span></p>",
+                "textColor": "#00363A",
+                "backgroundColor": "#EEFC58",
+                "borderColor": "#EEFC58",
+                "customProps": {
+                  "height": "48px",
+                  "borderRadius": "100px"
+                }
+              }
+            ],
             "texts": [
               {
                 "text": "<p><span>Um time de agentes</span></p>",
@@ -1101,21 +1118,6 @@
                 "src": "https://assets.decocache.com/komea/615b1b6b-1f76-4b73-bda0-43ee870521e7/yellow-power-icon.svg"
               }
             },
-            "cta": [
-              {
-                "type": "Button",
-                "size": "Small",
-                "openModal": "Komea wait list",
-                "text": "<p><span>Seja um dos primeiros a testar</span></p>",
-                "textColor": "#00363A",
-                "backgroundColor": "#EEFC58",
-                "borderColor": "#EEFC58",
-                "customProps": {
-                  "height": "48px",
-                  "borderRadius": "100px"
-                }
-              }
-            ],
             "container": {
               "backgroundColor": "linear-gradient(217.97deg, #D1CABD 21.92%, #D8C186 76.48%);",
               "backgroundMedia": {
@@ -1142,6 +1144,21 @@
         {
           "value": {
             "__resolveType": "site/sections/Footer.tsx",
+            "cta": [
+              {
+                "type": "Button",
+                "size": "Small",
+                "openModal": "Komea wait list",
+                "text": "<p><span>Entre na lista de espera</span></p>",
+                "textColor": "#00363A",
+                "backgroundColor": "#EEFC58",
+                "borderColor": "#EEFC58",
+                "customProps": {
+                  "height": "48px",
+                  "borderRadius": "100px"
+                }
+              }
+            ],
             "subscribe": {},
             "title": {
               "text": "<p style=\"text-align: center\"><span>Use todo potencial da Loja</span></p><p style=\"text-align: center\"><span>Integrada com Komea</span></p>",
@@ -1158,21 +1175,6 @@
               "fontWeight": "500",
               "fontSize": "3.02vw"
             },
-            "cta": [
-              {
-                "type": "Button",
-                "size": "Small",
-                "openModal": "Komea wait list",
-                "text": "<p><span>Entre na lista de espera</span></p>",
-                "textColor": "#00363A",
-                "backgroundColor": "#EEFC58",
-                "borderColor": "#EEFC58",
-                "customProps": {
-                  "height": "48px",
-                  "borderRadius": "100px"
-                }
-              }
-            ],
             "ctaPlacement": "center",
             "media": {
               "image": {
@@ -1223,20 +1225,6 @@
         {
           "value": {
             "__resolveType": "site/sections/Footer.tsx",
-            "subscribe": {},
-            "title": {
-              "text": "<p style=\"text-align: center\"><span>Use todo potencial da Loja</span></p><p style=\"text-align: center\"><span>Integrada com Komea</span></p>",
-              "color": "#00363A",
-              "fontWeight": "750",
-              "font": "Lektorat Display",
-              "letterSpacing": "-0.3px",
-              "lineHeight": "100%"
-            },
-            "text": "<p style=\"text-align: center\"><span>A Komea é um </span><strong><span>lançamento exclusivo para clientes da Loja Integrada.</span></strong><span></span></p><p style=\"text-align: center\"><span>Se você já tem sua loja, entre na lista de espera</span></p><p style=\"text-align: center\"><span>e ative seus agentes de IA.</span></p>",
-            "textProps": {
-              "color": "#00363A",
-              "fontWeight": "500"
-            },
             "cta": [
               {
                 "type": "Button",
@@ -1252,6 +1240,20 @@
                 }
               }
             ],
+            "subscribe": {},
+            "title": {
+              "text": "<p style=\"text-align: center\"><span>Use todo potencial da Loja</span></p><p style=\"text-align: center\"><span>Integrada com Komea</span></p>",
+              "color": "#00363A",
+              "fontWeight": "750",
+              "font": "Lektorat Display",
+              "letterSpacing": "-0.3px",
+              "lineHeight": "100%"
+            },
+            "text": "<p style=\"text-align: center\"><span>A Komea é um </span><strong><span>lançamento exclusivo para clientes da Loja Integrada.</span></strong><span></span></p><p style=\"text-align: center\"><span>Se você já tem sua loja, entre na lista de espera</span></p><p style=\"text-align: center\"><span>e ative seus agentes de IA.</span></p>",
+            "textProps": {
+              "color": "#00363A",
+              "fontWeight": "500"
+            },
             "ctaPlacement": "center",
             "media": {
               "image": {

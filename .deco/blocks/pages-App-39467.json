@@ -58,7 +58,7 @@
               "src": "https://assets.decocache.com/komea/b352a0c5-16b9-4f6a-a952-bcae78f4cfd7/logo-komea.svg",
               "width": 180,
               "height": 60,
-              "href": "komea logo "
+              "href": "komea logo"
             },
             "hideAsideMenu": true,
             "navigation": {
@@ -222,7 +222,7 @@
             "sectionBackground": {
               "backgroundColor": "#D1CABD",
               "image": {
-                "src": "https://assets.decocache.com/komea/3c8f8be3-85da-4991-a733-c377f03d079c/yellow-circles.svg",
+                "src": "https://assets.decocache.com/komea/b2b6a516-84bd-430e-a262-c21bbbbff9be/bg-komea.svg",
                 "width": 1201,
                 "height": 773
               },
@@ -328,7 +328,7 @@
             "backgroundMedia": {
               "color": "#D1CABD",
               "image": {
-                "src": "https://assets.decocache.com/komea/66b297b8-28ba-4309-b97a-1af27f99ffa6/yellow-circles-2.svg",
+                "src": "https://assets.decocache.com/komea/8e0f9620-01b1-4c5d-a459-13bea541ff21/bg-komea2.svg",
                 "width": 1261,
                 "height": 777
               },

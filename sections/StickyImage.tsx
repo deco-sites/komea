@@ -142,8 +142,9 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight }
                   style={{ opacity: index == 0 ? 1 : 0 }}
                 />
               }
-              {fold.use == 'video' && fold.video?.src && <div class="relative h-full w-full flex items-center justify-center transition-opacity duration-500 stickyMedia">
-                {fold.video.mockup && fold.image?.src && <div class="absolute z-10 flex items-center w-full h-full" style={{ opacity: index == 0 ? 1 : 0, transform: `scale(${fold.video.mockupScale})` }}>
+              {fold.use == 'video' && fold.video?.src && <div class="absolute h-full w-full flex items-center justify-center transition-opacity duration-500 stickyMedia" style={{ opacity: index == 0 ? 1 : 0 }}>
+
+                {fold.video.mockup && fold.image?.src && <div class="absolute z-10 flex items-center w-full h-full" style={{ transform: `scale(${fold.video.mockupScale})` }}>
                   <Image
                     src={fold.image.src}
                     alt={fold.image.alt || "Sticky image"}

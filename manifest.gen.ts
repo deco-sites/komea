@@ -6,50 +6,52 @@ import * as $$$$$$$$$$$0 from "./apps/deco/blog.ts";
 import * as $$$$$$$$$$$1 from "./apps/deco/htmx.ts";
 import * as $$$$$$$$$$$2 from "./apps/site.ts";
 import * as $$$$$$0 from "./sections/BlogPosts.tsx";
-import * as $$$$$$1 from "./sections/BulletPointsHero.tsx";
-import * as $$$$$$2 from "./sections/CampaignTimerHero.tsx";
-import * as $$$$$$3 from "./sections/CarouselV2.tsx";
-import * as $$$$$$4 from "./sections/CustomGTM.tsx";
-import * as $$$$$$5 from "./sections/Faq.tsx";
-import * as $$$$$$6 from "./sections/Footer.tsx";
-import * as $$$$$$7 from "./sections/Header.tsx";
-import * as $$$$$$18 from "./sections/hero-1.tsx";
-import * as $$$$$$19 from "./sections/hero-2.tsx";
-import * as $$$$$$8 from "./sections/Hero.tsx";
-import * as $$$$$$20 from "./sections/hero2.tsx";
-import * as $$$$$$9 from "./sections/HeroV3.tsx";
-import * as $$$$$$10 from "./sections/ImageWithParagraph.tsx";
-import * as $$$$$$11 from "./sections/Logos.tsx";
-import * as $$$$$$12 from "./sections/MainHero.tsx";
-import * as $$$$$$13 from "./sections/RevealingText.tsx";
-import * as $$$$$$14 from "./sections/StickyImage.tsx";
-import * as $$$$$$15 from "./sections/Testimonials.tsx";
-import * as $$$$$$16 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$17 from "./sections/VideoSection.tsx";
+import * as $$$$$$1 from "./sections/Bubbles.tsx";
+import * as $$$$$$2 from "./sections/BulletPointsHero.tsx";
+import * as $$$$$$3 from "./sections/CampaignTimerHero.tsx";
+import * as $$$$$$4 from "./sections/CarouselV2.tsx";
+import * as $$$$$$5 from "./sections/CustomGTM.tsx";
+import * as $$$$$$6 from "./sections/Faq.tsx";
+import * as $$$$$$7 from "./sections/Footer.tsx";
+import * as $$$$$$8 from "./sections/Header.tsx";
+import * as $$$$$$19 from "./sections/hero-1.tsx";
+import * as $$$$$$20 from "./sections/hero-2.tsx";
+import * as $$$$$$9 from "./sections/Hero.tsx";
+import * as $$$$$$21 from "./sections/hero2.tsx";
+import * as $$$$$$10 from "./sections/HeroV3.tsx";
+import * as $$$$$$11 from "./sections/ImageWithParagraph.tsx";
+import * as $$$$$$12 from "./sections/Logos.tsx";
+import * as $$$$$$13 from "./sections/MainHero.tsx";
+import * as $$$$$$14 from "./sections/RevealingText.tsx";
+import * as $$$$$$15 from "./sections/StickyImage.tsx";
+import * as $$$$$$16 from "./sections/Testimonials.tsx";
+import * as $$$$$$17 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$18 from "./sections/VideoSection.tsx";
 
 const manifest = {
   "sections": {
     "site/sections/BlogPosts.tsx": $$$$$$0,
-    "site/sections/BulletPointsHero.tsx": $$$$$$1,
-    "site/sections/CampaignTimerHero.tsx": $$$$$$2,
-    "site/sections/CarouselV2.tsx": $$$$$$3,
-    "site/sections/CustomGTM.tsx": $$$$$$4,
-    "site/sections/Faq.tsx": $$$$$$5,
-    "site/sections/Footer.tsx": $$$$$$6,
-    "site/sections/Header.tsx": $$$$$$7,
-    "site/sections/hero-1.tsx": $$$$$$18,
-    "site/sections/hero-2.tsx": $$$$$$19,
-    "site/sections/Hero.tsx": $$$$$$8,
-    "site/sections/hero2.tsx": $$$$$$20,
-    "site/sections/HeroV3.tsx": $$$$$$9,
-    "site/sections/ImageWithParagraph.tsx": $$$$$$10,
-    "site/sections/Logos.tsx": $$$$$$11,
-    "site/sections/MainHero.tsx": $$$$$$12,
-    "site/sections/RevealingText.tsx": $$$$$$13,
-    "site/sections/StickyImage.tsx": $$$$$$14,
-    "site/sections/Testimonials.tsx": $$$$$$15,
-    "site/sections/Theme/Theme.tsx": $$$$$$16,
-    "site/sections/VideoSection.tsx": $$$$$$17,
+    "site/sections/Bubbles.tsx": $$$$$$1,
+    "site/sections/BulletPointsHero.tsx": $$$$$$2,
+    "site/sections/CampaignTimerHero.tsx": $$$$$$3,
+    "site/sections/CarouselV2.tsx": $$$$$$4,
+    "site/sections/CustomGTM.tsx": $$$$$$5,
+    "site/sections/Faq.tsx": $$$$$$6,
+    "site/sections/Footer.tsx": $$$$$$7,
+    "site/sections/Header.tsx": $$$$$$8,
+    "site/sections/hero-1.tsx": $$$$$$19,
+    "site/sections/hero-2.tsx": $$$$$$20,
+    "site/sections/Hero.tsx": $$$$$$9,
+    "site/sections/hero2.tsx": $$$$$$21,
+    "site/sections/HeroV3.tsx": $$$$$$10,
+    "site/sections/ImageWithParagraph.tsx": $$$$$$11,
+    "site/sections/Logos.tsx": $$$$$$12,
+    "site/sections/MainHero.tsx": $$$$$$13,
+    "site/sections/RevealingText.tsx": $$$$$$14,
+    "site/sections/StickyImage.tsx": $$$$$$15,
+    "site/sections/Testimonials.tsx": $$$$$$16,
+    "site/sections/Theme/Theme.tsx": $$$$$$17,
+    "site/sections/VideoSection.tsx": $$$$$$18,
   },
   "apps": {
     "site/apps/deco/blog.ts": $$$$$$$$$$$0,

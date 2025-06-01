@@ -573,7 +573,7 @@
               {
                 "textPosition": "Right",
                 "icon": {
-                  "src": "https://assets.decocache.com/komea/25d4fd0d-aa83-4074-b4e8-7036eccfd197/icon-criar-produto.svg",
+                  "src": "https://assets.decocache.com/komea/d7146eb7-3c79-498e-b7d0-011bcb0e1535/icon-crie-produto.png",
                   "width": 40,
                   "height": 40
                 },
@@ -595,10 +595,10 @@
                   "fontSize": "14px"
                 },
                 "image": {
-                  "src": "https://assets.decocache.com/komea/498fa169-f084-475d-a029-ca132be68953/Template-iPhone-13.png"
+                  "src": "https://assets.decocache.com/komea/e12ea5fe-437c-497e-a6fd-8baefe0dee98/iPhone-14-Pro.png"
                 },
                 "video": {
-                  "src": "https://assets.decocache.com/komea/1dc28cce-e99f-4a13-b4a4-075c5ccf659d/Mockup_iPhone_15_01.mp4",
+                  "src": "https://assets.decocache.com/komea/6413d58e-cc58-466a-896d-5323f0ae8647/Chat--Criar-Produto-.mp4",
                   "mockup": true,
                   "width": "140",
                   "height": "349",
@@ -631,10 +631,10 @@
                   "fontSize": "14px"
                 },
                 "image": {
-                  "src": "https://assets.decocache.com/komea/498fa169-f084-475d-a029-ca132be68953/Template-iPhone-13.png"
+                  "src": "https://assets.decocache.com/komea/e12ea5fe-437c-497e-a6fd-8baefe0dee98/iPhone-14-Pro.png"
                 },
                 "video": {
-                  "src": "https://assets.decocache.com/komea/1dc28cce-e99f-4a13-b4a4-075c5ccf659d/Mockup_iPhone_15_01.mp4",
+                  "src": "https://assets.decocache.com/komea/21203775-63d2-4103-8142-7d43c2fd8b65/Receba-insight-.mp4",
                   "width": "140",
                   "height": "349",
                   "mockup": true,
@@ -690,7 +690,7 @@
                 "use": "video",
                 "video": {
                   "mockup": true,
-                  "src": "https://assets.decocache.com/komea/9411ff48-0264-4c02-92a3-4790e54525aa/Chat--Criar-Produto-.mp4",
+                  "src": "https://assets.decocache.com/komea/6413d58e-cc58-466a-896d-5323f0ae8647/Chat--Criar-Produto-.mp4",
                   "height": "658",
                   "width": "302"
                 }

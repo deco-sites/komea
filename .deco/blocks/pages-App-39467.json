@@ -171,7 +171,8 @@
               "paddingBottom": "0",
               "marginBottom": "40px",
               "paddingTop": "60px"
-            }
+            },
+            "customTitle": "hero:agentes-de-ia"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -255,7 +256,8 @@
             "container": {
               "paddingTop": "80px"
             },
-            "ctaPlacement": "center"
+            "ctaPlacement": "center",
+            "customTitle": "hero:agentes-de-ia"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -491,7 +493,8 @@
               }
             ],
             "ctaPlacement": "center",
-            "sectionMarginTop": "-18vh"
+            "sectionMarginTop": "-18vh",
+            "customTitle": "hero:multiplos-especialistas"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -545,7 +548,8 @@
               "paddingTop": "124px",
               "marginTop": "0px"
             },
-            "sectionMarginTop": "-18vh"
+            "sectionMarginTop": "-18vh",
+            "customTitle": "hero:multiplos-especialistas"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

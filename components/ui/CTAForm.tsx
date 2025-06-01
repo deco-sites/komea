@@ -188,18 +188,6 @@ function CTAForm() {
                     const hasStoreNo = document.querySelector('input[type="radio"][value="Ainda não"]:checked');
                     const inputWebsite = document.querySelector('.hs_website');
 
-                    const acceptInfo = document.querySelector('.hs-form-booleancheckbox input');
-
-                    if(acceptInfo.checked) {
-                        window.dataLayer = window.dataLayer || [];
-                        window.dataLayer.push({
-                            'event':'interacao',
-                            'custom_section': 'lp-komea:modal-formulario-lista-de-espera',
-                            'custom_type': 'checkbox',
-                            'custom_title':'aceito-recebimento'
-                        });
-                    }
-
                     if (hasStoreYes) {
                         selectedStoreOption = 'yes';
                         inputWebsite.classList.remove('hidden');
@@ -229,6 +217,23 @@ function CTAForm() {
                 radioButtons.forEach(radio => {
                     radio.addEventListener('change', captureRadioValues);
                 });
+
+                const lastCheckboxModal = () => {
+                    const acceptInfo = document.querySelector('.hs-form-booleancheckbox input');
+
+                    if(acceptInfo.checked) {
+                        window.dataLayer = window.dataLayer || [];
+                        window.dataLayer.push({
+                            'event':'interacao',
+                            'custom_section': 'lp-komea:modal-formulario-lista-de-espera',
+                            'custom_type': 'checkbox',
+                            'custom_title':'aceito-recebimento'
+                        });
+                    }
+                }
+
+               const getLastCheckbox = formWrapper.querySelector(".hs-form-booleancheckbox input");
+                    getLastCheckbox.addEventListener('change', lastCheckboxModal);
 
                     const trackFieldInteraction = (fieldClass, fieldName) => {
                         const field = document.querySelector(fieldClass + ' input');

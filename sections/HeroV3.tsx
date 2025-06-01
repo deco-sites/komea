@@ -130,6 +130,8 @@ export interface Props {
   sectionBackground?: sectionBackgroundMedia;
   floatingImage?: FloatingImage;
   lcp?: boolean;
+  /** @description customTitle for GA4 event. Do not change this if you doesn't know what you're doing */
+  customTitle?: string;
 }
 
 export function HeroMedia({ media }: { media?: Media }) {
@@ -158,7 +160,7 @@ export function HeroMedia({ media }: { media?: Media }) {
   </>
 }
 
-export default function HeroV3({ hideSection, title, text, textProps, bulletPoints, cta = [], media, hubspotForm, distanceBetweenTitleAndText, container, ctaPlacement, sectionBackground, sectionMarginTop, lcp, floatingImage }: Props) {
+export default function HeroV3({ hideSection, title, text, textProps, bulletPoints, cta = [], media, hubspotForm, distanceBetweenTitleAndText, container, ctaPlacement, sectionBackground, sectionMarginTop, lcp, floatingImage, customTitle }: Props) {
   if (hideSection) return <></>;
   const placement = {
     "left": "justify-start",
@@ -217,7 +219,7 @@ export default function HeroV3({ hideSection, title, text, textProps, bulletPoin
 
         {cta.length > 0 && <div class={`flex flex-wrap gap-4 mt-auto pt-2 ${placement[ctaPlacement || "left"]}`}>
           {cta.map(cta => (
-            <CTA customSection={"lp-komea"} customTitle={"waitlist-button"} customType={"hero-v3"} {...cta} />
+            <CTA customSection={"lp-komea"} customTitle={customTitle} customType={"botao"} {...cta} />
           ))}
         </div>}
       </AnimateOnShow>

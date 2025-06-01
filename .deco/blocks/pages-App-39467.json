@@ -58,7 +58,7 @@
               "src": "https://assets.decocache.com/komea/b352a0c5-16b9-4f6a-a952-bcae78f4cfd7/logo-komea.svg",
               "width": 180,
               "height": 60,
-              "href": "komea logo "
+              "href": "komea logo"
             },
             "hideAsideMenu": true,
             "navigation": {
@@ -171,7 +171,8 @@
               "paddingBottom": "0",
               "marginBottom": "40px",
               "paddingTop": "60px"
-            }
+            },
+            "customTitle": "hero:agentes-de-ia"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -209,7 +210,7 @@
             },
             "media": {
               "image": {
-                "src": "https://assets.decocache.com/komea/a92bc555-5b7b-44c5-bb17-b6e3ae501afa/komea-app.png",
+                "src": "https://assets.decocache.com/komea/539b78ab-1f32-4b3e-80b9-576e55df18cd/img-hero.png",
                 "width": 565,
                 "height": 500
               },
@@ -221,7 +222,7 @@
             "sectionBackground": {
               "backgroundColor": "#D1CABD",
               "image": {
-                "src": "https://assets.decocache.com/komea/3c8f8be3-85da-4991-a733-c377f03d079c/yellow-circles.svg",
+                "src": "https://assets.decocache.com/komea/b2b6a516-84bd-430e-a262-c21bbbbff9be/bg-komea.svg",
                 "width": 1201,
                 "height": 773
               },
@@ -255,7 +256,8 @@
             "container": {
               "paddingTop": "80px"
             },
-            "ctaPlacement": "center"
+            "ctaPlacement": "center",
+            "customTitle": "hero:agentes-de-ia"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -280,7 +282,7 @@
               "postition": "top"
             },
             "video": {
-              "src": "https://www.youtube.com/embed/h8t1cSSudVQ?si=rFb31GzR0tNFQRtZ",
+              "src": "https://www.youtube.com/embed/JVHpddoqZS0?si=281GoUPM8qQVGXim",
               "use": "embed",
               "width": "100%",
               "height": "227px",
@@ -318,7 +320,7 @@
               "postition": "top"
             },
             "video": {
-              "src": "https://www.youtube.com/embed/h8t1cSSudVQ?si=VZfDmW42Z1DjiQBc",
+              "src": "https://www.youtube.com/embed/JVHpddoqZS0?si=281GoUPM8qQVGXim",
               "use": "embed",
               "width": "990px",
               "height": "558px",
@@ -332,6 +334,16 @@
             "sectionProps": {
               "paddingTop": "80px",
               "paddingBottom": "124px"
+            },
+            "backgroundMedia": {
+              "color": "#D1CABD",
+              "image": {
+                "src": "https://assets.decocache.com/komea/8e0f9620-01b1-4c5d-a459-13bea541ff21/bg-komea2.svg",
+                "width": 1261,
+                "height": 777
+              },
+              "use": "image",
+              "postition": "top"
             }
           },
           "rule": {
@@ -491,7 +503,8 @@
               }
             ],
             "ctaPlacement": "center",
-            "sectionMarginTop": "-18vh"
+            "sectionMarginTop": "-18vh",
+            "customTitle": "hero:multiplos-especialistas"
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -545,7 +558,8 @@
               "paddingTop": "124px",
               "marginTop": "0px"
             },
-            "sectionMarginTop": "-18vh"
+            "sectionMarginTop": "-18vh",
+            "customTitle": "hero:multiplos-especialistas"
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
@@ -660,7 +674,7 @@
               {
                 "textPosition": "Left",
                 "icon": {
-                  "src": "https://assets.decocache.com/komea/25d4fd0d-aa83-4074-b4e8-7036eccfd197/icon-criar-produto.svg"
+                  "src": "https://assets.decocache.com/komea/d7146eb7-3c79-498e-b7d0-011bcb0e1535/icon-crie-produto.png"
                 },
                 "title": "<p><span style=\"color: #ffffff\">Crie produtos</span></p><p><span>conversando</span></p>",
                 "titleTextProps": {
@@ -679,22 +693,22 @@
                   "lineHeight": "125%"
                 },
                 "image": {
-                  "src": "https://assets.decocache.com/komea/498fa169-f084-475d-a029-ca132be68953/Template-iPhone-13.png",
-                  "width": 336,
-                  "height": 689
+                  "src": "https://assets.decocache.com/komea/e12ea5fe-437c-497e-a6fd-8baefe0dee98/iPhone-14-Pro.png",
+                  "width": 334,
+                  "height": 682
                 },
                 "use": "video",
                 "video": {
                   "mockup": true,
-                  "height": "656",
-                  "width": "302",
-                  "src": "https://assets.decocache.com/komea/21203775-63d2-4103-8142-7d43c2fd8b65/Receba-insight-.mp4"
+                  "src": "https://assets.decocache.com/komea/9411ff48-0264-4c02-92a3-4790e54525aa/Chat--Criar-Produto-.mp4",
+                  "height": "658",
+                  "width": "302"
                 }
               },
               {
                 "textPosition": "Right",
                 "icon": {
-                  "src": "https://assets.decocache.com/komea/f9ec2bef-6a39-4942-bc39-b1a7d23740d9/statistics-icon.png"
+                  "src": "https://assets.decocache.com/komea/bc148d10-2a21-4895-a100-c98619ef4f03/receba-insight.png"
                 },
                 "title": "<p><span>Receba insight </span></p><p><span style=\"color: #ffffff\">direto no app</span></p>",
                 "titleTextProps": {
@@ -713,14 +727,15 @@
                   "lineHeight": "125%"
                 },
                 "image": {
-                  "src": "https://assets.decocache.com/komea/e12ea5fe-437c-497e-a6fd-8baefe0dee98/iPhone-14-Pro.png"
+                  "src": "https://assets.decocache.com/komea/e12ea5fe-437c-497e-a6fd-8baefe0dee98/iPhone-14-Pro.png",
+                  "width": 334,
+                  "height": 682
                 },
                 "video": {
-                  "src": "https://assets.decocache.com/komea/6413d58e-cc58-466a-896d-5323f0ae8647/Chat--Criar-Produto-.mp4",
-                  "height": "656",
+                  "src": "https://assets.decocache.com/komea/21203775-63d2-4103-8142-7d43c2fd8b65/Receba-insight-.mp4",
+                  "height": "658",
                   "width": "302",
-                  "mockup": true,
-                  "mockupScale": "1"
+                  "mockup": false
                 },
                 "use": "video"
               }

@@ -9,7 +9,6 @@
           "value": {
             "__resolveType": "site/sections/CampaignTimerHero.tsx",
             "campaignTimer": {
-              "expiresAt": "2025-06-02T02:59:00.000Z",
               "expiredText": "<p style=\"text-align: justify\">Expired!</p>",
               "expiredTextProps": {},
               "labels": {
@@ -19,7 +18,8 @@
                 "seconds": "Segundos"
               },
               "labelsColor": "#ffffff",
-              "numbersColor": "#ffffff"
+              "numbersColor": "#ffffff",
+              "expiresAt": "2025-06-02T09:00:00.000Z"
             },
             "title": "<p style=\"text-align: center\"><span>O FIM ESTÁ </span></p><p style=\"text-align: center\"><span>PRÓXIMO</span></p>",
             "titleTextProps": {
@@ -66,7 +66,7 @@
               },
               "labelsColor": "#ffffff",
               "numbersColor": "#ffffff",
-              "expiresAt": "2025-06-02T02:59:00.000Z"
+              "expiresAt": "2025-06-02T09:00:00.000Z"
             },
             "title": "<p style=\"text-align: center\"><span>O FIM ESTÁ </span></p><p style=\"text-align: center\"><span>PRÓXIMO</span></p>",
             "titleTextProps": {

@@ -210,7 +210,7 @@ export default function Header({ logo = {
 
             <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, backgroundColor, noScrollBackgroundColor) }} />
 
-            <a href={logo.href || "/"} class="flex items-center">
+            <a hx-on:click={`window.dataLayer = window.dataLayer || []; window.dataLayer.push({event: 'clique', custom_section: 'lp-komea', custom_type: 'header', custom_title: 'logotipo'});`} href={logo.href || "/"} class="flex items-center">
               <Image src={logo.src || ""} width={logo.width || 257} height={logo.height || 40} alt={logo.alt || "header logo"} />
             </a>
 
@@ -255,7 +255,7 @@ export default function Header({ logo = {
             <div class="items-center justify-between">
               <ul class="flex justify-end gap-7 flex-wrap">
                 {navigation?.buttons?.map(cta => (
-                  <div class="flex items-center"><CTA {...cta} /></div>
+                  <div class="flex items-center"><CTA customSection={"lp-komea"} customTitle={"waitlist-button"} customType={"header"} {...cta} /></div>
                 ))}
                 {!hideAsideMenu && <label htmlFor="mobile-drawer-nav" class={`flex btn btn-ghost drawer-button px-0 order-last ${asideMenuOnlyMobile && 'lg:hidden'}`}>
                   {/* <Icon id="Bars3" size={46} strokeWidth={0.1} class="text-primary fill-current" style={{ color: barsColor }} /> */}
@@ -281,7 +281,7 @@ export default function Header({ logo = {
                   </svg>
                 </label>
                 {navigation?.asideMenuButtons?.map(cta => (
-                  <div class="flex items-center"><CTA {...cta} /></div>
+                  <div class="flex items-center"><CTA customSection={"lp-komea"} customTitle={"waitlist-button"} customType={"header"} {...cta} /></div>
                 ))}
               </ul>
 

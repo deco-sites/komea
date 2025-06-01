@@ -186,7 +186,20 @@ function CTAForm() {
                 const captureRadioValues = () => {
                     const hasStoreYes = document.querySelector('input[type="radio"][value="Sim"]:checked');
                     const hasStoreNo = document.querySelector('input[type="radio"][value="Ainda não"]:checked');
-                     const inputWebsite = document.querySelector('.hs_website');
+                    const inputWebsite = document.querySelector('.hs_website');
+
+                    const acceptInfo = document.querySelector('.hs-form-booleancheckbox input');
+
+                    if(acceptInfo.checked) {
+                        window.dataLayer = window.dataLayer || [];
+                        window.dataLayer.push({
+                            'event':'interacao',
+                            'custom_section': 'lp-komea:modal-formulario-lista-de-espera',
+                            'custom_type': 'checkbox',
+                            'custom_title':'aceito-recebimento'
+                        });
+                    }
+
                     if (hasStoreYes) {
                         selectedStoreOption = 'yes';
                         inputWebsite.classList.remove('hidden');
@@ -225,7 +238,7 @@ function CTAForm() {
                                 window.dataLayer.push({
                                     'event': 'interacao',
                                     'custom_section': 'lp-komea:modal-formulario-lista-de-espera',
-                                    'custom_type': 'campo-texto',
+                                    'custom_type': 'campo',
                                     'custom_title': fieldName
                                 });
                             });

@@ -312,7 +312,7 @@
             "backgroundMedia": {
               "color": "#D1CABD",
               "image": {
-                "src": "https://assets.decocache.com/komea/66b297b8-28ba-4309-b97a-1af27f99ffa6/yellow-circles-2.svg",
+                "src": "https://assets.decocache.com/komea/8e0f9620-01b1-4c5d-a459-13bea541ff21/bg-komea2.svg",
                 "width": 1261,
                 "height": 777
               },
@@ -334,16 +334,6 @@
             "sectionProps": {
               "paddingTop": "80px",
               "paddingBottom": "124px"
-            },
-            "backgroundMedia": {
-              "color": "#D1CABD",
-              "image": {
-                "src": "https://assets.decocache.com/komea/8e0f9620-01b1-4c5d-a459-13bea541ff21/bg-komea2.svg",
-                "width": 1261,
-                "height": 777
-              },
-              "use": "image",
-              "postition": "top"
             }
           },
           "rule": {
@@ -735,7 +725,7 @@
                   "src": "https://assets.decocache.com/komea/21203775-63d2-4103-8142-7d43c2fd8b65/Receba-insight-.mp4",
                   "height": "658",
                   "width": "302",
-                  "mockup": false
+                  "mockup": true
                 },
                 "use": "video"
               }

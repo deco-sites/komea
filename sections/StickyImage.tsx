@@ -109,7 +109,7 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight }
               width={fold.image.width || 179}
               height={fold.image.height || 367}
             />}
-            {fold.use == 'video' && fold.video?.src && <div class="relative">
+            {fold.use == 'video' && fold.video?.src && <div class="relative" style={{ width: fold.video.width + "px" || "336px", height: fold.video.height + "px" || "690px" }}>
               {fold.video.mockup && fold.image?.src && <div class="absolute z-10 flex items-center w-full h-full" style={{ transform: `scale(${fold.video.mockupScale})` }}>
                 <Image
                   src={fold.image.src}
@@ -117,7 +117,7 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight }
                   width={fold.image.width || 179}
                   height={fold.image.height || 367} />
               </div>}
-              <video width={fold.video.width || 336} height={fold.video.height || 336} autoPlay playsInline muted loading="lazy" loop
+              <video width={fold.video.width || 336} height={fold.video.height || 336} autoPlay playsInline muted loading="lazy" loop class="absolute"
                 style={{ width: fold.video.width + "px" || "336px", height: fold.video.height + "px" || "690px", borderRadius: fold.video.borderRadius }}>
                 <source src={fold.video.src} type="video/mp4" />
               </video>
@@ -184,7 +184,7 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight }
               width={fold.image.width || 179}
               height={fold.image.height || 367}
             />}
-            {fold.use == 'video' && fold.video?.src && <div class="relative">
+            {fold.use == 'video' && fold.video?.src && <div class="relative" style={{ width: fold.video.width + "px" || "336px", height: fold.video.height + "px" || "690px" }}>
               {fold.video.mockup && fold.image?.src && <div class="absolute z-10 flex items-center w-full h-full" style={{ transform: `scale(${fold.video.mockupScale})` }}>
                 <Image
                   src={fold.image.src}
@@ -192,7 +192,7 @@ export default function StickyImage({ folds = [], backgroundMedia, foldsHeight }
                   width={fold.image.width || 179}
                   height={fold.image.height || 367} />
               </div>}
-              <video width={fold.video.width || 336} height={fold.video.height || 336} autoPlay playsInline muted loading="lazy" loop
+              <video width={fold.video.width || 336} height={fold.video.height || 336} autoPlay playsInline muted loading="lazy" loop class="absolute"
                 style={{ width: fold.video.width + "px" || "336px", height: fold.video.height + "px" || "690px", borderRadius: fold.video.borderRadius }}>
                 <source src={fold.video.src} type="video/mp4" />
               </video>

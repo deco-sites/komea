@@ -59,7 +59,6 @@
               "width": 180,
               "height": 60,
               "href": "komea logo "
-              "href": "komea logo "
             },
             "hideAsideMenu": true,
             "navigation": {
@@ -575,7 +574,6 @@
                 "textPosition": "Right",
                 "icon": {
                   "src": "https://assets.decocache.com/komea/d7146eb7-3c79-498e-b7d0-011bcb0e1535/icon-crie-produto.png",
-                  "src": "https://assets.decocache.com/komea/d7146eb7-3c79-498e-b7d0-011bcb0e1535/icon-crie-produto.png",
                   "width": 40,
                   "height": 40
                 },
@@ -600,18 +598,14 @@
                   "src": "https://assets.decocache.com/komea/e12ea5fe-437c-497e-a6fd-8baefe0dee98/iPhone-14-Pro.png",
                   "width": 181,
                   "height": 370
-                  "src": "https://assets.decocache.com/komea/e12ea5fe-437c-497e-a6fd-8baefe0dee98/iPhone-14-Pro.png",
-                  "width": 181,
-                  "height": 370
                 },
                 "video": {
                   "src": "https://assets.decocache.com/komea/6413d58e-cc58-466a-896d-5323f0ae8647/Chat--Criar-Produto-.mp4",
-                  "src": "https://assets.decocache.com/komea/6413d58e-cc58-466a-896d-5323f0ae8647/Chat--Criar-Produto-.mp4",
                   "mockup": true,
-                  "width": "181",
                   "height": "370",
-                  "mockupScale": "1.04",
-                  "borderRadius": "20px"
+                  "borderRadius": "20px",
+                  "width": "181",
+                  "mockupScale": "1.04"
                 },
                 "use": "video"
               },
@@ -643,14 +637,8 @@
                   "src": "https://assets.decocache.com/komea/e12ea5fe-437c-497e-a6fd-8baefe0dee98/iPhone-14-Pro.png",
                   "width": 181,
                   "height": 370
-                  "src": "https://assets.decocache.com/komea/e12ea5fe-437c-497e-a6fd-8baefe0dee98/iPhone-14-Pro.png",
-                  "width": 181,
-                  "height": 370
                 },
                 "video": {
-                  "src": "https://assets.decocache.com/komea/21203775-63d2-4103-8142-7d43c2fd8b65/Receba-insight-.mp4",
-                  "width": "172",
-                  "height": "352",
                   "src": "https://assets.decocache.com/komea/21203775-63d2-4103-8142-7d43c2fd8b65/Receba-insight-.mp4",
                   "width": "172",
                   "height": "352",
@@ -708,7 +696,6 @@
                 "use": "video",
                 "video": {
                   "mockup": true,
-                  "src": "https://assets.decocache.com/komea/6413d58e-cc58-466a-896d-5323f0ae8647/Chat--Criar-Produto-.mp4",
                   "src": "https://assets.decocache.com/komea/6413d58e-cc58-466a-896d-5323f0ae8647/Chat--Criar-Produto-.mp4",
                   "height": "658",
                   "width": "302"
@@ -770,7 +757,6 @@
                 "icon": {
                   "placement": "Top right",
                   "src": "https://assets.decocache.com/komea/bc148d10-2a21-4895-a100-c98619ef4f03/receba-insight.png",
-                  "src": "https://assets.decocache.com/komea/bc148d10-2a21-4895-a100-c98619ef4f03/receba-insight.png",
                   "width": 44,
                   "height": 44
                 },
@@ -778,7 +764,6 @@
                 "cta": [],
                 "backgroundColor": "#1b4549",
                 "image": {
-                  "src": "https://assets.decocache.com/komea/0272303f-fff4-4222-be66-497c28b941f8/01-sobredadosevendas.png"
                   "src": "https://assets.decocache.com/komea/0272303f-fff4-4222-be66-497c28b941f8/01-sobredadosevendas.png"
                 },
                 "title": {
@@ -801,7 +786,6 @@
                 "icon": {
                   "placement": "Top right",
                   "src": "https://assets.decocache.com/komea/81f55530-465e-4dbf-a8d5-d3c30c9b27d7/icon-automatize-reengajamento.png",
-                  "src": "https://assets.decocache.com/komea/81f55530-465e-4dbf-a8d5-d3c30c9b27d7/icon-automatize-reengajamento.png",
                   "width": 44,
                   "height": 44
                 },
@@ -809,7 +793,6 @@
                 "cta": [],
                 "backgroundColor": "#1b4549",
                 "image": {
-                  "src": "https://assets.decocache.com/komea/1213450c-927a-487a-8a20-da95fad55153/02-Automatize-o-reengajamento.png"
                   "src": "https://assets.decocache.com/komea/1213450c-927a-487a-8a20-da95fad55153/02-Automatize-o-reengajamento.png"
                 },
                 "title": {
@@ -832,7 +815,6 @@
                 "icon": {
                   "placement": "Top right",
                   "src": "https://assets.decocache.com/komea/8ba75879-9868-4ace-9252-d329c42b9baf/icon-crie-planilha.png",
-                  "src": "https://assets.decocache.com/komea/8ba75879-9868-4ace-9252-d329c42b9baf/icon-crie-planilha.png",
                   "width": 44,
                   "height": 44
                 },
@@ -840,7 +822,6 @@
                 "cta": [],
                 "backgroundColor": "#1b4549",
                 "image": {
-                  "src": "https://assets.decocache.com/komea/c4e29ddd-923d-446a-9470-b0dd75247809/03-Crie-promocao-sem-planilha.png",
                   "src": "https://assets.decocache.com/komea/c4e29ddd-923d-446a-9470-b0dd75247809/03-Crie-promocao-sem-planilha.png",
                   "height": 280,
                   "width": 362
@@ -870,8 +851,6 @@
               "arrowsDisableBackgroundColor": "rgba(238, 252, 88, 0.3)"
             },
             "campaignTimer": {}
-            },
-            "campaignTimer": {}
           },
           "rule": {
             "__resolveType": "website/matchers/device.ts",
@@ -889,7 +868,6 @@
                 "icon": {
                   "placement": "Top right",
                   "src": "https://assets.decocache.com/komea/bc148d10-2a21-4895-a100-c98619ef4f03/receba-insight.png",
-                  "src": "https://assets.decocache.com/komea/bc148d10-2a21-4895-a100-c98619ef4f03/receba-insight.png",
                   "width": 44,
                   "height": 44
                 },
@@ -897,7 +875,6 @@
                 "cta": [],
                 "backgroundColor": "#1b4549",
                 "image": {
-                  "src": "https://assets.decocache.com/komea/0272303f-fff4-4222-be66-497c28b941f8/01-sobredadosevendas.png"
                   "src": "https://assets.decocache.com/komea/0272303f-fff4-4222-be66-497c28b941f8/01-sobredadosevendas.png"
                 },
                 "title": {
@@ -920,7 +897,6 @@
                 "icon": {
                   "placement": "Top right",
                   "src": "https://assets.decocache.com/komea/81f55530-465e-4dbf-a8d5-d3c30c9b27d7/icon-automatize-reengajamento.png",
-                  "src": "https://assets.decocache.com/komea/81f55530-465e-4dbf-a8d5-d3c30c9b27d7/icon-automatize-reengajamento.png",
                   "width": 44,
                   "height": 44
                 },
@@ -928,7 +904,6 @@
                 "cta": [],
                 "backgroundColor": "#1b4549",
                 "image": {
-                  "src": "https://assets.decocache.com/komea/1213450c-927a-487a-8a20-da95fad55153/02-Automatize-o-reengajamento.png"
                   "src": "https://assets.decocache.com/komea/1213450c-927a-487a-8a20-da95fad55153/02-Automatize-o-reengajamento.png"
                 },
                 "title": {
@@ -951,7 +926,6 @@
                 "icon": {
                   "placement": "Top right",
                   "src": "https://assets.decocache.com/komea/8ba75879-9868-4ace-9252-d329c42b9baf/icon-crie-planilha.png",
-                  "src": "https://assets.decocache.com/komea/8ba75879-9868-4ace-9252-d329c42b9baf/icon-crie-planilha.png",
                   "width": 44,
                   "height": 44
                 },
@@ -959,7 +933,6 @@
                 "cta": [],
                 "backgroundColor": "#1b4549",
                 "image": {
-                  "src": "https://assets.decocache.com/komea/c4e29ddd-923d-446a-9470-b0dd75247809/03-Crie-promocao-sem-planilha.png",
                   "src": "https://assets.decocache.com/komea/c4e29ddd-923d-446a-9470-b0dd75247809/03-Crie-promocao-sem-planilha.png",
                   "height": 280,
                   "width": 362
@@ -1161,9 +1134,6 @@
               "backgroundColor": "linear-gradient(217.97deg, #D1CABD 21.92%, #D8C186 76.48%);",
               "backgroundMedia": {
                 "image": {
-                  "src": "https://assets.decocache.com/komea/00a0328e-ec60-431b-ae6c-eec57e579fe7/bg-um-time-de-agentes.png",
-                  "width": 1120,
-                  "height": 418
                   "src": "https://assets.decocache.com/komea/00a0328e-ec60-431b-ae6c-eec57e579fe7/bg-um-time-de-agentes.png",
                   "width": 1120,
                   "height": 418

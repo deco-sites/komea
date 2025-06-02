@@ -602,10 +602,10 @@
                 "video": {
                   "src": "https://assets.decocache.com/komea/6413d58e-cc58-466a-896d-5323f0ae8647/Chat--Criar-Produto-.mp4",
                   "mockup": true,
-                  "width": "181",
                   "height": "370",
-                  "mockupScale": "1.04",
-                  "borderRadius": "20px"
+                  "borderRadius": "20px",
+                  "width": "181",
+                  "mockupScale": "1.12"
                 },
                 "use": "video"
               },
@@ -640,10 +640,10 @@
                 },
                 "video": {
                   "src": "https://assets.decocache.com/komea/21203775-63d2-4103-8142-7d43c2fd8b65/Receba-insight-.mp4",
-                  "width": "181",
-                  "height": "370",
+                  "width": "172",
+                  "height": "352",
                   "mockup": true,
-                  "mockupScale": "1.04",
+                  "mockupScale": "1.09",
                   "borderRadius": "20px"
                 },
                 "use": "video"

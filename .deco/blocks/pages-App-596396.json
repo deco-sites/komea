@@ -283,7 +283,7 @@
               "postition": "top"
             },
             "video": {
-              "src": "https://www.youtube.com/embed/JVHpddoqZS0?si=281GoUPM8qQVGXim",
+              "src": "https://www.youtube.com/embed/JVHpddoqZS0?si=LBV1XkYpqAb_Vpbc&amp;controls=0",
               "use": "embed",
               "width": "100%",
               "height": "227px",
@@ -321,7 +321,7 @@
               "postition": "top"
             },
             "video": {
-              "src": "https://www.youtube.com/embed/JVHpddoqZS0?si=281GoUPM8qQVGXim",
+              "src": "https://www.youtube.com/embed/JVHpddoqZS0?si=LBV1XkYpqAb_Vpbc&amp;controls=0",
               "use": "embed",
               "width": "990px",
               "height": "558px",

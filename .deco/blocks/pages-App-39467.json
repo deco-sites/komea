@@ -595,13 +595,16 @@
                   "fontSize": "14px"
                 },
                 "image": {
-                  "src": "https://assets.decocache.com/komea/e12ea5fe-437c-497e-a6fd-8baefe0dee98/iPhone-14-Pro.png"
+                  "src": "https://assets.decocache.com/komea/e12ea5fe-437c-497e-a6fd-8baefe0dee98/iPhone-14-Pro.png",
+                  "width": 181,
+                  "height": 370
                 },
                 "video": {
                   "src": "https://assets.decocache.com/komea/6413d58e-cc58-466a-896d-5323f0ae8647/Chat--Criar-Produto-.mp4",
                   "mockup": true,
-                  "width": "140",
-                  "height": "349",
+                  "height": "370",
+                  "borderRadius": "20px",
+                  "width": "181",
                   "mockupScale": "1.12"
                 },
                 "use": "video"
@@ -631,14 +634,17 @@
                   "fontSize": "14px"
                 },
                 "image": {
-                  "src": "https://assets.decocache.com/komea/e12ea5fe-437c-497e-a6fd-8baefe0dee98/iPhone-14-Pro.png"
+                  "src": "https://assets.decocache.com/komea/e12ea5fe-437c-497e-a6fd-8baefe0dee98/iPhone-14-Pro.png",
+                  "width": 181,
+                  "height": 370
                 },
                 "video": {
                   "src": "https://assets.decocache.com/komea/21203775-63d2-4103-8142-7d43c2fd8b65/Receba-insight-.mp4",
-                  "width": "140",
-                  "height": "349",
+                  "width": "172",
+                  "height": "352",
                   "mockup": true,
-                  "mockupScale": "1.09"
+                  "mockupScale": "1.09",
+                  "borderRadius": "20px"
                 },
                 "use": "video"
               }

@@ -102,12 +102,12 @@ export function HeroMedia({ media }: { media?: Media }) {
   </>
 }
 
-export default function HubspotForm(hubspotForm : Props) {
+export default function HubspotForm(hubspotForm: Props) {
   const id = useId();
   const modalId = id + "modal";
   const hubspostFormId = id + "hubspotForm";
 
-  return <div class="max-w-[792px] w-full mx-auto">
+  return <div id="hubsportForm" class="max-w-[792px] w-full mx-auto">
     <label >
       {hubspotForm?.inputLabel && <p
         class={`bg-info-content rounded-tl-xl rounded-tr-xl py-1.5 pl-2.5 lg:pl-4 text-sm lg:text-base text-primary inline-block ${hubspotForm?.inputLabelWidth == 'full' ? "w-full text-center px-1" : "pr-12"}`}
@@ -131,28 +131,92 @@ export default function HubspotForm(hubspotForm : Props) {
                                 </script>`
       }} />
     </label>
-            <div id={modalId} class="fixed top-0 left-0 h-screen w-screen flex items-center justify-center bg-black bg-opacity-50 z-[60] overflow-auto hidden px-6">            
-                  <div class="bg-white rounded-[30px] p-7 lg:p-[60px] animate-pop-up relative max-w-[840px] w-full" style={{ animationDuration: "0.3s" }}>
-                      <button class="text-primary font-black p-2.5 absolute top-4 right-4 lg:top-6 lg:right-7" hx-on:click={useScript(closeModal, modalId)}>
-                          <svg width="42" height="42" viewBox="0 0 42 42" class="fill-current h-7 w-7 lg:h-auto lg:w-auto" style={{color: hubspotForm.modal?.titleTextProps?.color || "black"}} xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 0.6875C16.9826 0.6875 13.0554 1.87881 9.71499 4.11077C6.37462 6.34274 3.77111 9.51512 2.23371 13.2267C0.696301 16.9384 0.294046 21.0225 1.07781 24.9628C1.86157 28.903 3.79615 32.5224 6.6369 35.3631C9.47766 38.2039 13.097 40.1384 17.0372 40.9222C20.9775 41.706 25.0616 41.3037 28.7733 39.7663C32.4849 38.2289 35.6573 35.6254 37.8892 32.285C40.1212 28.9446 41.3125 25.0174 41.3125 21C41.3068 15.6145 39.1649 10.4513 35.3568 6.64317C31.5487 2.83507 26.3855 0.693187 21 0.6875ZM28.3555 26.1445C28.5007 26.2897 28.6158 26.462 28.6944 26.6517C28.7729 26.8414 28.8134 27.0447 28.8134 27.25C28.8134 27.4553 28.7729 27.6586 28.6944 27.8483C28.6158 28.038 28.5007 28.2103 28.3555 28.3555C28.2103 28.5006 28.038 28.6158 27.8483 28.6944C27.6586 28.7729 27.4553 28.8134 27.25 28.8134C27.0447 28.8134 26.8414 28.7729 26.6517 28.6944C26.4621 28.6158 26.2897 28.5006 26.1445 28.3555L21 23.209L15.8555 28.3555C15.7103 28.5006 15.538 28.6158 15.3483 28.6944C15.1586 28.7729 14.9553 28.8134 14.75 28.8134C14.5447 28.8134 14.3414 28.7729 14.1517 28.6944C13.9621 28.6158 13.7897 28.5006 13.6445 28.3555C13.4994 28.2103 13.3842 28.038 13.3056 27.8483C13.2271 27.6586 13.1866 27.4553 13.1866 27.25C13.1866 27.0447 13.2271 26.8414 13.3056 26.6517C13.3842 26.462 13.4994 26.2897 13.6445 26.1445L18.791 21L13.6445 15.8555C13.3514 15.5623 13.1866 15.1646 13.1866 14.75C13.1866 14.3354 13.3514 13.9377 13.6445 13.6445C13.9377 13.3513 14.3354 13.1866 14.75 13.1866C15.1646 13.1866 15.5623 13.3513 15.8555 13.6445L21 18.791L26.1445 13.6445C26.2897 13.4994 26.4621 13.3842 26.6517 13.3056C26.8414 13.2271 27.0447 13.1866 27.25 13.1866C27.4553 13.1866 27.6586 13.2271 27.8483 13.3056C28.038 13.3842 28.2103 13.4994 28.3555 13.6445C28.5007 13.7897 28.6158 13.962 28.6944 14.1517C28.7729 14.3414 28.8134 14.5447 28.8134 14.75C28.8134 14.9553 28.7729 15.1586 28.6944 15.3483C28.6158 15.538 28.5007 15.7103 28.3555 15.8555L23.209 21L28.3555 26.1445Z"/>
-                          </svg>
-  
-                      </button>
-                      <div class="font-normal text-[32px] leading-[130%] w-full " style={{ ...hubspotForm.modal?.titleTextProps }} dangerouslySetInnerHTML={{__html: hubspotForm.modal?.title || ""}}/>
-                      <div class="mt-7 text-xl text-neutral font-medium leading-[120%] max-w-[700px] " style={{ ...hubspotForm.modal?.textProps }} dangerouslySetInnerHTML={{__html: hubspotForm.modal?.text || ""}}/>
-                      <HeroMedia media={hubspotForm?.modal?.media} />
-                      <div class="flex flex-wrap justify-center items-center gap-7 mt-7">
-                      {hubspotForm?.modal?.cta?.map((button) => {
-                        if (!button.href) return <div hx-on:click={useScript(closeModal, modalId)} class="cursor-pointer hover:scale-110 transition-transform">
-                          <div style='pointer-events: none;'><CTA {...button}/></div>
-                        </div>
-                        return <CTA {...button} />
-                        })}
-                      </div>
-                  </div>
-              </div>
-              <style dangerouslySetInnerHTML={{
+    <div id={modalId} class="emailconfirmadomodal fixed top-0 left-0 h-screen w-screen flex items-center justify-center bg-black bg-opacity-50 z-[60] overflow-auto hidden px-6">
+      <div class="bg-white rounded-[30px] p-7 lg:p-[60px] animate-pop-up relative max-w-[840px] w-full" style={{ animationDuration: "0.3s" }}>
+        <button class="text-primary font-black p-2.5 absolute top-4 right-4 lg:top-6 lg:right-7" hx-on:click={useScript(closeModal, modalId)}>
+          <svg width="42" height="42" viewBox="0 0 42 42" class="fill-current h-7 w-7 lg:h-auto lg:w-auto" style={{ color: hubspotForm.modal?.titleTextProps?.color || "black" }} xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 0.6875C16.9826 0.6875 13.0554 1.87881 9.71499 4.11077C6.37462 6.34274 3.77111 9.51512 2.23371 13.2267C0.696301 16.9384 0.294046 21.0225 1.07781 24.9628C1.86157 28.903 3.79615 32.5224 6.6369 35.3631C9.47766 38.2039 13.097 40.1384 17.0372 40.9222C20.9775 41.706 25.0616 41.3037 28.7733 39.7663C32.4849 38.2289 35.6573 35.6254 37.8892 32.285C40.1212 28.9446 41.3125 25.0174 41.3125 21C41.3068 15.6145 39.1649 10.4513 35.3568 6.64317C31.5487 2.83507 26.3855 0.693187 21 0.6875ZM28.3555 26.1445C28.5007 26.2897 28.6158 26.462 28.6944 26.6517C28.7729 26.8414 28.8134 27.0447 28.8134 27.25C28.8134 27.4553 28.7729 27.6586 28.6944 27.8483C28.6158 28.038 28.5007 28.2103 28.3555 28.3555C28.2103 28.5006 28.038 28.6158 27.8483 28.6944C27.6586 28.7729 27.4553 28.8134 27.25 28.8134C27.0447 28.8134 26.8414 28.7729 26.6517 28.6944C26.4621 28.6158 26.2897 28.5006 26.1445 28.3555L21 23.209L15.8555 28.3555C15.7103 28.5006 15.538 28.6158 15.3483 28.6944C15.1586 28.7729 14.9553 28.8134 14.75 28.8134C14.5447 28.8134 14.3414 28.7729 14.1517 28.6944C13.9621 28.6158 13.7897 28.5006 13.6445 28.3555C13.4994 28.2103 13.3842 28.038 13.3056 27.8483C13.2271 27.6586 13.1866 27.4553 13.1866 27.25C13.1866 27.0447 13.2271 26.8414 13.3056 26.6517C13.3842 26.462 13.4994 26.2897 13.6445 26.1445L18.791 21L13.6445 15.8555C13.3514 15.5623 13.1866 15.1646 13.1866 14.75C13.1866 14.3354 13.3514 13.9377 13.6445 13.6445C13.9377 13.3513 14.3354 13.1866 14.75 13.1866C15.1646 13.1866 15.5623 13.3513 15.8555 13.6445L21 18.791L26.1445 13.6445C26.2897 13.4994 26.4621 13.3842 26.6517 13.3056C26.8414 13.2271 27.0447 13.1866 27.25 13.1866C27.4553 13.1866 27.6586 13.2271 27.8483 13.3056C28.038 13.3842 28.2103 13.4994 28.3555 13.6445C28.5007 13.7897 28.6158 13.962 28.6944 14.1517C28.7729 14.3414 28.8134 14.5447 28.8134 14.75C28.8134 14.9553 28.7729 15.1586 28.6944 15.3483C28.6158 15.538 28.5007 15.7103 28.3555 15.8555L23.209 21L28.3555 26.1445Z" />
+          </svg>
+
+        </button>
+        <div class="font-normal text-[32px] leading-[130%] w-full " style={{ ...hubspotForm.modal?.titleTextProps }} dangerouslySetInnerHTML={{ __html: hubspotForm.modal?.title || "" }} />
+        <div class="mt-7 text-xl text-neutral font-medium leading-[120%] max-w-[700px] " style={{ ...hubspotForm.modal?.textProps }} dangerouslySetInnerHTML={{ __html: hubspotForm.modal?.text || "" }} />
+        <HeroMedia media={hubspotForm?.modal?.media} />
+        <div class="flex flex-wrap justify-center items-center gap-7 mt-7">
+          {hubspotForm?.modal?.cta?.map((button) => {
+            if (!button.href) return <div hx-on:click={useScript(closeModal, modalId)} class="cursor-pointer hover:scale-110 transition-transform">
+              <div style='pointer-events: none;'><CTA {...button} /></div>
+            </div>
+            return <CTA {...button} />
+          })}
+        </div>
+      </div>
+    </div>
+    <script defer dangerouslySetInnerHTML={{
+      __html: `
+    const intervalHubspotForm = setInterval(() => {
+      const getHubspotForm = document.getElementById("hubsportForm");
+      if (getHubspotForm) {
+        const getHubspotFormButton = getHubspotForm.querySelector(".hs-submit .actions input");
+        const getHubspotFormInput = getHubspotForm.querySelector(".hs-email");
+        const getHubspotFormCallback = getHubspotForm.querySelector(".emailconfirmadomodal");
+
+        if (getHubspotFormButton) {
+          getHubspotFormButton.addEventListener('click', function () {  
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              'event': 'clique',
+              'custom_section': "lp-komea-inicio:modal-email-confirmado",
+              'custom_type': "botao",
+              'custom_title': "receber-o-jornal"
+            });
+          });
+        }
+
+        if (getHubspotFormInput) {
+          getHubspotFormInput.addEventListener('click', function () {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              'event': 'interacao',
+              'custom_section': "lp-komea-inicio",
+              'custom_type': "campo",
+              'custom_title': "email"
+            });
+          });
+        }
+
+        if (getHubspotFormCallback) {
+          const observer = new MutationObserver(() => {
+            const isVisible = getComputedStyle(getHubspotFormCallback).display !== 'none' &&
+                              getComputedStyle(getHubspotFormCallback).visibility !== 'hidden' &&
+                              getComputedStyle(getHubspotFormCallback).opacity !== '0';
+
+            if (isVisible) {
+              window.dataLayer = window.dataLayer || [];
+              window.dataLayer.push({
+                'event':'callback',
+                'custom_section': 'lp-komea-inicio',
+                'custom_type': 'receber-jornal',
+                'custom_title':'sucesso'  
+              });
+
+              observer.disconnect();
+            }
+          });
+
+          observer.observe(getHubspotFormCallback, {
+            attributes: true,
+            attributeFilter: ['style', 'class'],
+          });
+        }
+
+        clearInterval(intervalHubspotForm);
+      }
+    }, 500);
+  `
+    }} />
+
+    <style dangerouslySetInnerHTML={{
       __html: `
                     .${hubspostFormId} .hs-form-private {
                         position: relative;
@@ -278,5 +342,6 @@ export default function HubspotForm(hubspotForm : Props) {
                     }
     `
     }} />
-          </div>
+
+  </div>
 }

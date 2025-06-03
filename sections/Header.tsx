@@ -26,13 +26,19 @@ const onLoad = (backgroundColor?: string, noScrollBackgroundColor?: string) => {
   globalThis.addEventListener("scroll", () => {
     if (headerContainer) {
       if (globalThis.scrollY > lastScrollValue && globalThis.scrollY > headerHeight) {
-        headerContainer.style.transform = 'translateY(-100%)';
+        headerContainer.style.top = '-100%';
         headerContainer.style.pointerEvents = "none";
       } else {
-        headerContainer.style.transform = 'translateY(0)'
+        headerContainer.style.top = '0';
         headerContainer.style.pointerEvents = "auto"
       }
       lastScrollValue = globalThis.scrollY;
+
+      if (globalThis.scrollY > 0 && headerContainer) {
+        headerContainer.style.background = backgroundColor || "transparent";
+      } else {
+        headerContainer.style.background = noScrollBackgroundColor || "transparent";
+      }
     }
   });
 };
@@ -184,7 +190,7 @@ export default function Header({ logo = {
       {headerMessage?.show && <div class="h-16" />}
       {campaignTimer?.show && <div class="h-[76px]" />}
       <div class="h-[92px] lg:h-28" style={{ height: headerWhiteSpace }} />
-      <div id="headerContainer" class="fixed top-0 left-0 w-full z-50 justify-center transition-transform duration-300 ease-in-out">
+      <div id="headerContainer" class="fixed top-0 left-0 w-full z-50 justify-center transition-all duration-500 ease-in-out">
 
         {headerMessage?.show && <div class="h-16 w-full bg-primary text-primary-content px-1 lg:px-11 py-2 flex items-center justify-center gap-1" style={{ background: headerMessage?.backgroundColor }}>
           <p class="text-xs lg:text-2xl text-center font-semibold leading-[120%] flex items-center justify-center">

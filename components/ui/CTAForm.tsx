@@ -1,17 +1,9 @@
 import { useScript } from "@deco/deco/hooks";
+import { RichText } from "apps/admin/widgets.ts";
 
 interface Props {
-    title?: string;
-    info?: string;
-    guaranteedModal?: {
-        title?: string;
-        subTitle?: string;
-    }
-    registerModal?: {
-        title?: string;
-        subTitle?: string;
-        buttonText?: string;
-    }
+    title?: RichText;
+    info?: RichText;
 }
 
 function CTAForm({ title, info }: Props) {
@@ -42,9 +34,9 @@ function CTAForm({ title, info }: Props) {
 
                 </button>
 
-                <h2 className="font-lektorat text-2xl lg:text-3xl text-[#00363A] font-bold text-center mb-6 lg:mb-10" dangerouslySetInnerHTML={{ __html: title ?? `Preencha o formulário para <br/> entrar na lista de espera` }} />
+                <h2 className="font-lektorat text-2xl lg:text-3xl text-[#00363A] font-bold text-center mb-5" dangerouslySetInnerHTML={{ __html: title ?? `Preencha o formulário para <br/> entrar na lista de espera` }} />
 
-                <div className="flex items-start gap-2 text-sm text-[#5F6E82] mb-6 lg:mb-10 text-center">
+                <div className="flex items-start gap-2 text-sm text-[#5F6E82] mb-5 text-center">
                     <p dangerouslySetInnerHTML={{
                         __html: info ?? `🐝 Importante: <br />
                         Para testar a KOMEA você precisa ter uma loja ativa na Loja Integrada. Se ainda não tem, fique tranquilo — vamos te direcionar para criar sua conta.`}} />

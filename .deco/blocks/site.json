@@ -16,6 +16,15 @@
     },
     {
       "__resolveType": "site/sections/CustomGTM.tsx"
+    },
+    {
+      "__resolveType": "site/sections/CTAForm.tsx"
+    },
+    {
+      "__resolveType": "site/sections/GuaranteedModal.tsx"
+    },
+    {
+      "__resolveType": "site/sections/RegisterModal.tsx"
     }
   ],
   "routes": [

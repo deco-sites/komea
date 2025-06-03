@@ -2,7 +2,6 @@ import { asset, Head } from "$fresh/runtime.ts";
 import { defineApp } from "$fresh/server.ts";
 import Theme from "../sections/Theme/Theme.tsx";
 import { Context } from "@deco/deco";
-import CTAForm, { GuaranteedModal, RegisterModal } from "site/components/ui/CTAForm.tsx";
 import { CSS } from "../static/formcss.ts"
 
 export default defineApp(async (_req, ctx) => {
@@ -153,9 +152,6 @@ export default defineApp(async (_req, ctx) => {
 
 
       `}} />
-            <CTAForm />
-            <GuaranteedModal />
-            <RegisterModal />
         </Head>
 
         {/* Rest of Preact tree */}

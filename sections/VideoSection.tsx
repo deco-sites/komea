@@ -5,7 +5,6 @@ import { useScript } from "@deco/deco/hooks";
 import CTA, { Props as CTAProps } from "site/components/ui/CTA.tsx";
 
 const onClick = (embed = false) => {
-  console.log("teste");
   const parent = event!.currentTarget as HTMLElement;
   const overlayDiv = parent.querySelector(".overlayDiv") as HTMLElement || undefined;
   const thumbnail = parent.querySelector(".videoThumbnail") as HTMLElement || undefined;
@@ -88,12 +87,12 @@ export default function ({ hideSection = false, title, titleTextProps, video, se
     "center": "",
     "bottom": "object-bottom"
   }
-  return <div style={{ ...sectionProps}} class="relative">
+  return <div style={{ ...sectionProps }} class="relative">
     <div class="max-w-[1280px] mx-auto flex flex-col items-center px-7 lg:px-0">
       {title && <div dangerouslySetInnerHTML={{ __html: title }} class="w-full mb-10 lg:mb-[60px]" style={{ ...titleTextProps }} />}
 
       <div class="relative rounded-[33px] overflow-hidden cursor-pointer flex justify-center group" hx-on:click={useScript(onClick, video?.use == "embed")}
-        style={{ width: video?.width, height: video?.height}}>
+        style={{ width: video?.width, height: video?.height }}>
         {video?.use == "video" && video?.src && <video width={"100%"} height={"100%"} autoPlay playsInline muted loading="lazy" loop
           class="object-cover mx-auto hidden"
           style={{ width: video.width || "1280px", height: video.height || "720px" }}>
@@ -109,7 +108,7 @@ export default function ({ hideSection = false, title, titleTextProps, video, se
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
         />}
 
-        {video?.thumbnailImage?.src && <Image 
+        {video?.thumbnailImage?.src && <Image
           src={video.thumbnailImage.src}
           alt={video.thumbnailImage.alt || "Video thumbnail"}
           width={video.thumbnailImage.width || 972}
@@ -128,7 +127,7 @@ export default function ({ hideSection = false, title, titleTextProps, video, se
         </div>}
       </div>
 
-      {bottomImage?.src && <Image 
+      {bottomImage?.src && <Image
         src={bottomImage.src}
         width={bottomImage.width || 260}
         height={bottomImage.height || 88}
@@ -136,7 +135,7 @@ export default function ({ hideSection = false, title, titleTextProps, video, se
         class="mt-[60px]"
       />}
 
-      {bottomText && <div dangerouslySetInnerHTML={{ __html: bottomText}} class="w-full mt-10 lg:mt-[60px]" style={{ ...bottomTextProps }} />}
+      {bottomText && <div dangerouslySetInnerHTML={{ __html: bottomText }} class="w-full mt-10 lg:mt-[60px]" style={{ ...bottomTextProps }} />}
     </div>
 
     {backgroundMedia?.color && <div style={{ background: backgroundMedia.color }} class="absolute top-0 left-0 h-full w-full -z-50" />}
@@ -146,12 +145,12 @@ export default function ({ hideSection = false, title, titleTextProps, video, se
       width={backgroundMedia.image.width || 1277}
       height={backgroundMedia.image.height || 630}
       class={`absolute -z-40 top-0 left-0 h-full w-full object-cover ${backgroundMediaPlacement[backgroundMedia.postition || 'center']}`}
-      style={{height: backgroundMedia.customHeight}}
+      style={{ height: backgroundMedia.customHeight }}
       loading={backgroundMedia.lcp ? "eager" : "lazy"}
     />}
     {backgroundMedia?.use == "video" && backgroundMedia.video && <video width={1280} height={720} autoPlay playsInline muted loading={backgroundMedia.lcp ? "eager" : "lazy"} loop
       class={`object-cover absolute -z-40 top-0 left-0 h-full w-full ${backgroundMediaPlacement[backgroundMedia.postition || 'center']}`}
-      style={{height: backgroundMedia.customHeight}}>
+      style={{ height: backgroundMedia.customHeight }}>
       <source src={backgroundMedia.video} type="video/mp4" />
     </video>}
   </div>

@@ -16,20 +16,21 @@ import * as $$$$$$7 from "./sections/Faq.tsx";
 import * as $$$$$$8 from "./sections/Footer.tsx";
 import * as $$$$$$9 from "./sections/GuaranteedModal.tsx";
 import * as $$$$$$10 from "./sections/Header.tsx";
-import * as $$$$$$22 from "./sections/hero-1.tsx";
-import * as $$$$$$23 from "./sections/hero-2.tsx";
+import * as $$$$$$23 from "./sections/hero-1.tsx";
+import * as $$$$$$24 from "./sections/hero-2.tsx";
 import * as $$$$$$11 from "./sections/Hero.tsx";
-import * as $$$$$$24 from "./sections/hero2.tsx";
+import * as $$$$$$25 from "./sections/hero2.tsx";
 import * as $$$$$$12 from "./sections/HeroV3.tsx";
 import * as $$$$$$13 from "./sections/ImageWithParagraph.tsx";
-import * as $$$$$$14 from "./sections/Logos.tsx";
-import * as $$$$$$15 from "./sections/MainHero.tsx";
-import * as $$$$$$16 from "./sections/RegisterModal.tsx";
-import * as $$$$$$17 from "./sections/RevealingText.tsx";
-import * as $$$$$$18 from "./sections/StickyImage.tsx";
-import * as $$$$$$19 from "./sections/Testimonials.tsx";
-import * as $$$$$$20 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$21 from "./sections/VideoSection.tsx";
+import * as $$$$$$14 from "./sections/KomeaWaitListFormModal.tsx";
+import * as $$$$$$15 from "./sections/Logos.tsx";
+import * as $$$$$$16 from "./sections/MainHero.tsx";
+import * as $$$$$$17 from "./sections/RegisterModal.tsx";
+import * as $$$$$$18 from "./sections/RevealingText.tsx";
+import * as $$$$$$19 from "./sections/StickyImage.tsx";
+import * as $$$$$$20 from "./sections/Testimonials.tsx";
+import * as $$$$$$21 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$22 from "./sections/VideoSection.tsx";
 
 const manifest = {
   "sections": {
@@ -44,20 +45,21 @@ const manifest = {
     "site/sections/Footer.tsx": $$$$$$8,
     "site/sections/GuaranteedModal.tsx": $$$$$$9,
     "site/sections/Header.tsx": $$$$$$10,
-    "site/sections/hero-1.tsx": $$$$$$22,
-    "site/sections/hero-2.tsx": $$$$$$23,
+    "site/sections/hero-1.tsx": $$$$$$23,
+    "site/sections/hero-2.tsx": $$$$$$24,
     "site/sections/Hero.tsx": $$$$$$11,
-    "site/sections/hero2.tsx": $$$$$$24,
+    "site/sections/hero2.tsx": $$$$$$25,
     "site/sections/HeroV3.tsx": $$$$$$12,
     "site/sections/ImageWithParagraph.tsx": $$$$$$13,
-    "site/sections/Logos.tsx": $$$$$$14,
-    "site/sections/MainHero.tsx": $$$$$$15,
-    "site/sections/RegisterModal.tsx": $$$$$$16,
-    "site/sections/RevealingText.tsx": $$$$$$17,
-    "site/sections/StickyImage.tsx": $$$$$$18,
-    "site/sections/Testimonials.tsx": $$$$$$19,
-    "site/sections/Theme/Theme.tsx": $$$$$$20,
-    "site/sections/VideoSection.tsx": $$$$$$21,
+    "site/sections/KomeaWaitListFormModal.tsx": $$$$$$14,
+    "site/sections/Logos.tsx": $$$$$$15,
+    "site/sections/MainHero.tsx": $$$$$$16,
+    "site/sections/RegisterModal.tsx": $$$$$$17,
+    "site/sections/RevealingText.tsx": $$$$$$18,
+    "site/sections/StickyImage.tsx": $$$$$$19,
+    "site/sections/Testimonials.tsx": $$$$$$20,
+    "site/sections/Theme/Theme.tsx": $$$$$$21,
+    "site/sections/VideoSection.tsx": $$$$$$22,
   },
   "apps": {
     "site/apps/deco/blog.ts": $$$$$$$$$$$0,

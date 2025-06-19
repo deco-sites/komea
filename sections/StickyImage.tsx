@@ -8,7 +8,6 @@ const onLoad = (rootId: string,) => {
   const sticky = parent.querySelector('.sticky') as HTMLElement;
   const stickyHeight = sticky.offsetHeight;
   const stickyMedia: NodeListOf<HTMLElement> = parent.querySelectorAll('.stickyMedia');
-  console.log(stickyMedia);
 
   let progressPercent = 0;
 

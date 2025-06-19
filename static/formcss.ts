@@ -1,5 +1,5 @@
 export const CSS = `
-#waitlist-form {
+#waitlist-form-old {
 .hs-form-field {
     color: #00363A;
     font-weight: 500;

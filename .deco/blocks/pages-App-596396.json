@@ -1316,6 +1316,9 @@
           }
         }
       ]
+    },
+    {
+      "__resolveType": "site/sections/KomeaWaitListFormModal.tsx"
     }
   ],
   "seo": {

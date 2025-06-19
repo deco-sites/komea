@@ -53,6 +53,10 @@ const openModalFunction = (modal: string, planId: string, customSection: string,
   if (modal == 'Komea wait list') {
     const form = document.getElementById("waitlist-form") as HTMLElement;
     form.classList.remove("hidden");
+
+    const komeaWaitListModal = document.getElementById("waitlist-form") as HTMLElement;
+    const nameInput = komeaWaitListModal.querySelector('input[name="name"]') as HTMLInputElement;
+    nameInput.focus();
   }
 
   if (customSection && customType && customTitle) {

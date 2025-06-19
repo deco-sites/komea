@@ -21,7 +21,7 @@ const onLoad = (rootId: string, lines: Line[]) => {
 
     lineElements.forEach((line, index) => {
       const disconsideredPercentage = eachLinePercentage * index;
-      const currentPorcentage = (progressPercent - disconsideredPercentage) * (index + lines.length);
+      const currentPorcentage = (progressPercent - disconsideredPercentage) * (lines.length);
       if (lines[index].justReveal) line.style.opacity = (currentPorcentage / 100).toString();
       else line.style.background = `linear-gradient(to right, ${lines[index].color} ${(currentPorcentage - 10)}%, transparent ${(currentPorcentage)}%)`;
       //if (lines[index].justReveal) line.style.opacity = (distanceFromParentTop - (windowHeight * index)).toString();

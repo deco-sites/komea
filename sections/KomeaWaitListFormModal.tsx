@@ -1,14 +1,15 @@
+import type { RichText } from "apps/admin/widgets.ts";
 import { useScript } from "@deco/deco/hooks";
 import { HtmlEscaped } from "@hono/hono/utils/html";
 import { isWindows } from "std/_util/os.ts";
 
-export {};
+// export {};
 
-declare global {
-  interface Window {
-    dataLayer: Record<string, any>[];
-  }
-}
+// declare global {
+//   interface Window {
+//     dataLayer: Record<string, any>[];
+//   }
+// }
 
 const openAndCloseDropdown = () => {
     const modal = document.getElementById("customerAdvisoryBoardModal") as HTMLElement;
@@ -369,7 +370,27 @@ export function CustomRadio({ name, value, type, custom_title }: {
               </svg>
   </>;
 }
-export default function CustomerAdvisoryBoardModal() {
+
+export interface TextProps {
+  /** @format color-input */
+  color?: string;
+  fontFamily?: string;
+  fontSize?: string;
+  fontWeight?: string;
+  letterSpacing?: string;
+  lineHeight?: string;
+}
+
+export interface Props {
+  title?: RichText;
+  titleTextProps?: TextProps;
+  text?: RichText;
+  textProps?: TextProps;
+  emailConsent?: RichText;
+  emailConsentTextProps?: TextProps;
+}
+
+export default function CustomerAdvisoryBoardModal({title, titleTextProps, text, textProps, emailConsent, emailConsentTextProps}:Props) {
     const labelClass = "mb-2 text-transparent group-focus-within:text-[#00363A] transition-colors text-xs";
     const inputClass = "rounded-lg outline-none border py-2 px-4 text-[#5F6E82] placeholder:text-[#CBCBC1] border-[#5F6E82] focus:border-[#00363A] w-full mb-1.5";
     const selectOptionClass = "px-2.5 py-2 hover:bg-[#00B7B5] hover:text-white cursor-pointer";
@@ -385,16 +406,10 @@ export default function CustomerAdvisoryBoardModal() {
 
 
       <div class="page1">
-        <h2 class="text-[#00363A] text-[32px] leading-none font-bold mb-5 text-center" style={{fontFamily: "Lektorat Display"}}>
-          Preencha o formulário para<br/>entrar na lista de espera
-        </h2>
+        <div class="text-[#00363A] text-[32px] leading-none font-bold mb-5 text-center" style={{...titleTextProps}} dangerouslySetInnerHTML={{__html: title || ""}}/>
 
-        <p class="text-center text-[#5F6E82] text-sm leading-none mb-5">
-          🐝 Importante:<br/> Para testar a KOMEA você precisa ter uma loja ativa na Loja<br/>
-          Integrada. Se ainda não tem, fique tranquilo — vamos<br/>
-          te direcionar para criar sua conta.
-        </p>
-        <p class="mb-2 ">Você já tem conta na Loja Integrada?</p>
+        <div class="text-center text-[#5F6E82] text-sm leading-none mb-5" style={{...textProps}} dangerouslySetInnerHTML={{__html: text || ""}}/>
+        <p class="mb-2 text-base text-[#00363A]">Você já tem conta na Loja Integrada?</p>
         <div class="mb-5">
           <div class="flex gap-5" hx-on:click={useScript(onKeyUp)}>
             <label class="flex gap-2">
@@ -439,10 +454,9 @@ export default function CustomerAdvisoryBoardModal() {
           <p class="error text-[#F57E77] text-xs hidden"/>
         </label>
 
-        <label class="flex gap-2 items-center text-sm leading-none text-[#5F6E82]">
+        <label class="flex gap-2 items-center text-sm leading-none">
           <CustomRadio name="email_subscription" type="checkbox" custom_title="aceito-recebimento"/>
-          <p>Aceito o recebimento de comunicações sobre<br/>
-          novidades e pesquisas da Loja Integrada</p>
+          <div style={{...emailConsentTextProps}} dangerouslySetInnerHTML={{__html: emailConsent || ""}}/>
         </label>
 
         <div class="flex w-full gap-5 justify-center mt-5">

@@ -430,7 +430,7 @@ export default function CustomerAdvisoryBoardModal() {
           <p class="error text-[#F57E77] text-xs hidden"/>
         </label>
 
-        <label class="flex gap-2 items-center">
+        <label class="flex gap-2 items-center text-sm leading-none text-[#5F6E82]">
           <CustomRadio name="email_subscription" type="checkbox" custom_title="aceito-recebimento"/>
           <p>Aceito o recebimento de comunicações sobre<br/>
           novidades e pesquisas da Loja Integrada</p>

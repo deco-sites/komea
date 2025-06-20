@@ -1,6 +1,15 @@
 import { useScript } from "@deco/deco/hooks";
 import { HtmlEscaped } from "@hono/hono/utils/html";
 import { isWindows } from "std/_util/os.ts";
+
+export {};
+
+declare global {
+  interface Window {
+    dataLayer: Record<string, any>[];
+  }
+}
+
 const openAndCloseDropdown = () => {
     const modal = document.getElementById("customerAdvisoryBoardModal") as HTMLElement;
     const form = modal.querySelector("form") as HTMLElement;

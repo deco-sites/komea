@@ -196,7 +196,7 @@ export default function Header({ logo = {
           <p class="text-xs lg:text-2xl text-center font-semibold leading-[120%] flex items-center justify-center">
             <div class="text-lg lg:text-2xl" dangerouslySetInnerHTML={{ __html: headerMessage.text || "" }} style={{ ...headerMessage.textProps }} />
             {headerMessage?.cta?.map(cta => (
-              <div class="flex items-center"><CTA customSection={"lp-komea"} customTitle={"waitlist-button"} customType={"header"} {...cta} /></div>
+              <div class="flex items-center"><CTA {...cta} /></div>
             ))}
           </p>
         </div>}
@@ -261,7 +261,7 @@ export default function Header({ logo = {
             <div class="items-center justify-between">
               <ul class="flex justify-end gap-7 flex-wrap">
                 {navigation?.buttons?.map(cta => (
-                  <div class="flex items-center"><CTA customSection={"lp-komea"} customTitle={"waitlist-button"} customType={"header"} {...cta} /></div>
+                  <div class="flex items-center"><CTA {...cta} /></div>
                 ))}
                 {!hideAsideMenu && <label htmlFor="mobile-drawer-nav" class={`flex btn btn-ghost drawer-button px-0 order-last ${asideMenuOnlyMobile && 'lg:hidden'}`}>
                   {/* <Icon id="Bars3" size={46} strokeWidth={0.1} class="text-primary fill-current" style={{ color: barsColor }} /> */}
@@ -287,7 +287,7 @@ export default function Header({ logo = {
                   </svg>
                 </label>
                 {navigation?.asideMenuButtons?.map(cta => (
-                  <div class="flex items-center"><CTA customSection={"lp-komea"} customTitle={"waitlist-button"} customType={"header"} {...cta} /></div>
+                  <div class="flex items-center"><CTA {...cta} /></div>
                 ))}
               </ul>
 

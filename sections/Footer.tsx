@@ -96,7 +96,7 @@ export default function Footer({ title, text, textProps, cta = [], ctaPlacement,
         {cta.length > 0 && <div class={`flex flex-wrap mt-10 ${placement[ctaPlacement || "left"]}`}>
           <div class="flex gap-4 relative">
             {cta.map(cta => (
-              <CTA customSection={"lp-komea"} customTitle={"waitlist-button"} customType={"footer"} {...cta} />
+              <CTA {...cta} />
             ))}
             {ctaFloatingImage?.src && <Image
               src={ctaFloatingImage.src}

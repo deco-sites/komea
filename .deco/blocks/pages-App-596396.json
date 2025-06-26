@@ -35,7 +35,12 @@
                   "glowColor1": "#ACB82E99",
                   "glowColor2": "#EEFC5880",
                   "size": "Small",
-                  "singleLine": true
+                  "singleLine": true,
+                  "gtmProps": {
+                    "customTitle": "seja-um-dos-primeiros-a-testar",
+                    "customType": "header",
+                    "customSection": "lp-komea"
+                  }
                 }
               ]
             },
@@ -76,7 +81,12 @@
                   },
                   "glowColor1": "#ACB82E99",
                   "glowColor2": "#EEFC5880",
-                  "openModal": "Komea wait list"
+                  "openModal": "Komea wait list",
+                  "gtmProps": {
+                    "customSection": "lp-komea",
+                    "customType": "header",
+                    "customTitle": "seja-um-dos-primeiros-a-testar"
+                  }
                 }
               ]
             },
@@ -163,7 +173,12 @@
                   "height": "48px",
                   "borderRadius": "100px"
                 },
-                "openModal": "Komea wait list"
+                "openModal": "Komea wait list",
+                "gtmProps": {
+                  "customTitle": "entre-na-lista-de-espera",
+                  "customType": "botao",
+                  "customSection": "lp-komea"
+                }
               }
             ],
             "ctaPlacement": "center",
@@ -251,6 +266,11 @@
                   "height": "48px",
                   "borderRadius": "100px",
                   "fontSize": "14px"
+                },
+                "gtmProps": {
+                  "customSection": "lp-komea",
+                  "customType": "botao",
+                  "customTitle": "entre-na-lista-de-espera"
                 }
               }
             ],
@@ -294,6 +314,11 @@
                 "src": "https://assets.decocache.com/komea/45481003-99d4-439c-adad-660c40eb43f1/play-button.svg",
                 "width": 40,
                 "height": 40
+              },
+              "gtmProps": {
+                "customType": "youtube:embbeded",
+                "customTitle": "Conheça a Komea",
+                "customSection": "lp-komea"
               }
             },
             "sectionProps": {
@@ -330,6 +355,11 @@
               },
               "playButton": {
                 "src": "https://assets.decocache.com/komea/45481003-99d4-439c-adad-660c40eb43f1/play-button.svg"
+              },
+              "gtmProps": {
+                "customType": "youtube:embbeded",
+                "customSection": "lp-komea",
+                "customTitle": "Conheça a Komea"
               }
             },
             "sectionProps": {
@@ -490,7 +520,12 @@
                 },
                 "glowColor1": "#ACB82E99",
                 "glowColor2": "#EEFC5880",
-                "openModal": "Komea wait list"
+                "openModal": "Komea wait list",
+                "gtmProps": {
+                  "customSection": "lp-komea",
+                  "customType": "botao",
+                  "customTitle": "seja-um-dos-primeiros-a-testar"
+                }
               }
             ],
             "ctaPlacement": "center",
@@ -541,7 +576,12 @@
                 },
                 "glowColor1": "#ACB82E99",
                 "glowColor2": "#EEFC5880",
-                "openModal": "Komea wait list"
+                "openModal": "Komea wait list",
+                "gtmProps": {
+                  "customSection": "lp-komea",
+                  "customType": "botao",
+                  "customTitle": "seja-um-dos-primeiros-a-testar"
+                }
               }
             ],
             "ctaPlacement": "center",
@@ -987,6 +1027,11 @@
                 "customProps": {
                   "height": "48px",
                   "borderRadius": "100px"
+                },
+                "gtmProps": {
+                  "customSection": "lp-komea",
+                  "customType": "botao",
+                  "customTitle": "seja-um-dos-primeiros-a-testar"
                 }
               }
             ],
@@ -1075,6 +1120,11 @@
                 "customProps": {
                   "height": "48px",
                   "borderRadius": "100px"
+                },
+                "gtmProps": {
+                  "customSection": "lp-komea",
+                  "customType": "botao",
+                  "customTitle": "seja-um-dos-primeiros-a-testar"
                 }
               }
             ],
@@ -1171,6 +1221,11 @@
                 "customProps": {
                   "height": "48px",
                   "borderRadius": "100px"
+                },
+                "gtmProps": {
+                  "customSection": "lp-komea",
+                  "customType": "footer",
+                  "customTitle": "entre-na-lista-de-espera"
                 }
               }
             ],
@@ -1207,21 +1262,21 @@
               {
                 "logo": {
                   "src": "https://assets.decocache.com/komea/056017e4-dad5-400e-8585-233be41564df/instagram-green-logo.svg",
-                  "alt": "Instagram logo"
+                  "alt": "Instagram"
                 },
                 "href": "https://www.instagram.com/lojaintegrada/"
               },
               {
                 "logo": {
                   "src": "https://assets.decocache.com/komea/91eab96f-c6a4-4472-8e32-47d8e707ee02/youtube-green-logo.svg",
-                  "alt": "youtube logo"
+                  "alt": "youtube"
                 },
                 "href": "https://www.youtube.com/@LojaIntegrada"
               },
               {
                 "logo": {
                   "src": "https://assets.decocache.com/komea/23a05d41-214c-404f-aa78-278d13ab1904/tiktok-green-logo.svg",
-                  "alt": "tik tok logo"
+                  "alt": "tik tok"
                 },
                 "href": "https://www.tiktok.com/@lojaintegrada"
               }
@@ -1252,6 +1307,11 @@
                 "customProps": {
                   "height": "48px",
                   "borderRadius": "100px"
+                },
+                "gtmProps": {
+                  "customTitle": "entre-na-lista-de-espera",
+                  "customType": "footer",
+                  "customSection": "lp-komea"
                 }
               }
             ],
@@ -1286,21 +1346,21 @@
               {
                 "logo": {
                   "src": "https://assets.decocache.com/komea/056017e4-dad5-400e-8585-233be41564df/instagram-green-logo.svg",
-                  "alt": "Instagram logo"
+                  "alt": "Instagram"
                 },
                 "href": "https://www.instagram.com/lojaintegrada/"
               },
               {
                 "logo": {
                   "src": "https://assets.decocache.com/komea/91eab96f-c6a4-4472-8e32-47d8e707ee02/youtube-green-logo.svg",
-                  "alt": "youtube logo"
+                  "alt": "youtube"
                 },
                 "href": "https://www.youtube.com/@LojaIntegrada"
               },
               {
                 "logo": {
                   "src": "https://assets.decocache.com/komea/23a05d41-214c-404f-aa78-278d13ab1904/tiktok-green-logo.svg",
-                  "alt": "tik tok logo"
+                  "alt": "tik tok"
                 },
                 "href": "https://www.tiktok.com/@lojaintegrada"
               }

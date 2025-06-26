@@ -4,7 +4,6 @@ import { HtmlEscaped } from "@hono/hono/utils/html";
 import { isWindows } from "std/_util/os.ts";
 
 // export {};
-
 // declare global {
 //   interface Window {
 //     dataLayer: Record<string, any>[];
@@ -127,7 +126,7 @@ const onLoad = () => {
         window.dataLayer.push({
             'event': 'clique',
             'custom_section': 'lp-komea:modal-formulario-lista-de-espera',
-            'custom_type': 'botao',
+            'custom_type': 'icone',
             'custom_title': 'fechar-modal'
         });
     }));

@@ -20,6 +20,12 @@ export interface CustomProps {
   fontWeight?: string;
 }
 
+export interface GTM {
+  customSection?: string;
+  customType?: string;
+  customTitle?: string;
+}
+
 /** @title {{text}} {{underlineText}}*/
 export interface Props {
   href?: string;
@@ -44,12 +50,10 @@ export interface Props {
   glowColor1?: string;
   /** @format color-input */
   glowColor2?: string;
-  customSection?: string;
-  customType?: string;
-  customTitle?: string;
+  gtmProps?: GTM;
 }
 
-const openModalFunction = (modal: string, planId: string, customSection: string, customType: string, customTitle: string) => {
+const openModalFunction = (modal: string, planId: string, gtmProps?: GTM) => {
   if (modal == 'Komea wait list') {
     const form = document.getElementById("waitlist-form") as HTMLElement;
     form.classList.remove("hidden");
@@ -59,18 +63,18 @@ const openModalFunction = (modal: string, planId: string, customSection: string,
     nameInput.focus();
   }
 
-  if (customSection && customType && customTitle) {
+  if (gtmProps?.customSection && gtmProps.customType && gtmProps.customTitle) {
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       'event': 'clique',
-      'custom_section': customSection,
-      'custom_type': customType,
-      'custom_title': customTitle
+      'custom_section': gtmProps.customSection,
+      'custom_type': gtmProps.customType,
+      'custom_title': gtmProps.customTitle
     });
   }
 };
 
-export default function CTA({ href = "", text, underlineText, textColor, glowColor1, glowColor2, backgroundColor, iconGap, borderColor, size = "Medium", type = "Button", singleLine = false, showIcon = false, openModal, createStorePlanId, customIcon, customProps, customSection, customTitle, customType }: Props) {
+export default function CTA({ href = "", text, underlineText, textColor, glowColor1, glowColor2, backgroundColor, iconGap, borderColor, size = "Medium", type = "Button", singleLine = false, showIcon = false, openModal, createStorePlanId, customIcon, customProps, gtmProps }: Props) {
   const sizeClasses = {
     "Large": "py-4 px-8 text-base font-semibold border",
     "Medium": "py-2 px-8 text-sm font-semibold leading-[171%] border",
@@ -86,7 +90,7 @@ export default function CTA({ href = "", text, underlineText, textColor, glowCol
   if (glowColor1 || glowColor2) boxShadow = `0px 4px 100px 0px ${glowColor1 || 'transparent'}, 0px 0px 10px 0px ${glowColor2 || 'transparent'}`
 
   return <a
-    hx-on:click={openModal && useScript(openModalFunction, openModal, createStorePlanId || '172', customSection || '', customType || '', customTitle || '')}
+    hx-on:click={openModal && useScript(openModalFunction, openModal, createStorePlanId || '172', gtmProps)}
     class={`${sizeClasses[size]} rounded-lg hover:scale-110 transition-transform cursor-pointer flex justify-center items-center gap-2.5 text-center ${singleLine && 'whitespace-nowrap'}`}
     style={type == "Button"
       ? { background: backgroundColor, color: textColor, borderColor, gap: iconGap, boxShadow, ...customProps }

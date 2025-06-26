@@ -134,7 +134,12 @@
                 "height": 546,
                 "src": "https://assets.decocache.com/komea/a5ababdd-fba2-4281-a3db-16c62b1b655b/video-thumbnail.svg"
               },
-              "height": "212px"
+              "height": "212px",
+              "gtmProps": {
+                "customTitle": "Conheça a Komea",
+                "customSection": "lp-komea-inicio",
+                "customType": "youtube:embbeded"
+              }
             },
             "bottomImage": {},
             "backgroundMedia": {
@@ -189,6 +194,11 @@
                 "width": 927,
                 "height": 546,
                 "src": "https://assets.decocache.com/komea/a5ababdd-fba2-4281-a3db-16c62b1b655b/video-thumbnail.svg"
+              },
+              "gtmProps": {
+                "customTitle": "Conheça a Komea",
+                "customType": "youtube:embbeded",
+                "customSection": "lp-komea-inicio"
               }
             },
             "bottomImage": {},

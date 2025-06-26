@@ -2,7 +2,13 @@ import type { ImageWidget, VideoWidget, HTMLWidget, RichText } from "apps/admin/
 import AnimateOnShow from "../components/ui/AnimateOnShow.tsx";
 import Image from "apps/website/components/Image.tsx";
 import { useScript } from "@deco/deco/hooks";
-import CTA, { Props as CTAProps } from "site/components/ui/CTA.tsx";
+import { Head } from "$fresh/runtime.ts";
+
+export interface GTM {
+  customSection?: string;
+  customType?: string;
+  customTitle?: string;
+}
 
 const onClick = (embed = false) => {
   const parent = event!.currentTarget as HTMLElement;
@@ -12,6 +18,7 @@ const onClick = (embed = false) => {
     const embedVideo = parent.querySelector("iframe") as HTMLIFrameElement;
     embedVideo.src += "&autoplay=1";
     embedVideo.classList.remove("hidden");
+
   } else {
     const video = parent.querySelector("video") as HTMLVideoElement;
     video.classList.remove("hidden");
@@ -22,6 +29,94 @@ const onClick = (embed = false) => {
   }
   thumbnail.classList.add("hidden");
   overlayDiv.classList.add("hidden");
+};
+
+declare global {
+  interface Window {
+    onYouTubeIframeAPIReady: () => void;
+    onPlayerStateChange: (event: any) => void;
+    YT: typeof YT;
+  }
+
+  var YT: {
+    Player: new (elementId: string, options: any) => any;
+    PlayerState: {
+      UNSTARTED: number;
+      ENDED: number;
+      PLAYING: number;
+      PAUSED: number;
+      BUFFERING: number;
+      CUED: number;
+    };
+  };
+}
+
+export {}; 
+
+const onLoad = (iframeId: string, gtmProps?: GTM) => {
+  console.log("Window loaded");
+   // Carrega a API do YouTube
+              const tag = document.createElement('script');
+              tag.src = "https://www.youtube.com/iframe_api";
+              document.head.appendChild(tag);
+
+              
+              let player: any;
+              
+              // Detecta mudanças de estado
+              window.onPlayerStateChange = function (event:any) {
+                if (event.data === YT.PlayerState.PAUSED) {
+                  console.log("Vídeo pausado");
+                  window.dataLayer = window.dataLayer || [];
+                  window.dataLayer.push({
+                      'event': 'video_pause',
+                      'custom_section': gtmProps?.customSection,
+                      'custom_type': gtmProps?.customType,
+                      'custom_title': gtmProps?.customTitle
+                  });
+                } else if (event.data === YT.PlayerState.PLAYING) {
+                  console.log("Vídeo em reprodução");
+                  window.dataLayer = window.dataLayer || [];
+                  window.dataLayer.push({
+                      'event': 'video_play',
+                      'custom_section': gtmProps?.customSection,
+                      'custom_type': gtmProps?.customType,
+                      'custom_title': gtmProps?.customTitle
+                  });
+                }
+              }
+              // Função chamada quando a API estiver pronta
+              window.onYouTubeIframeAPIReady = function () {
+                console.log("api ready");
+                player = new YT.Player(iframeId, {
+                  events: {
+                    'onStateChange': window.onPlayerStateChange
+                  }
+                });
+                let lastLoggedPercent = 0;
+  
+                const interval = setInterval(() => {
+                  if (player && typeof player.getCurrentTime === "function") {
+                    const currentTime = player.getCurrentTime();
+                    const duration = player.getDuration();
+                    if (duration > 0) {
+                      const percent = Math.floor((currentTime / duration) * 100);
+                      if (percent !== lastLoggedPercent) {
+                        lastLoggedPercent = percent;
+                        console.log(`Progresso: ${percent}%`);
+                        window.dataLayer = window.dataLayer || [];
+                          window.dataLayer.push({
+                            'event': 'video_progress',
+                            'custom_section': gtmProps?.customSection,
+                            'custom_type': gtmProps?.customType,
+                            'custom_title': `progresso ${percent}% - ${gtmProps?.customTitle}`
+                        });
+                      }
+                    }
+                  }
+                }, 1000); // verifica a cada segundo
+              }
+
 };
 
 export interface IImage {
@@ -66,6 +161,7 @@ export interface IVideo {
   use?: "video" | "embed";
   playButton?: IImage;
   thumbnailImage?: IImage;
+  gtmProps?: GTM;
 }
 
 export interface Props {
@@ -91,6 +187,7 @@ export default function ({ hideSection = false, title, titleTextProps, video, se
     <div class="max-w-[1280px] mx-auto flex flex-col items-center px-7 lg:px-0">
       {title && <div dangerouslySetInnerHTML={{ __html: title }} class="w-full mb-10 lg:mb-[60px]" style={{ ...titleTextProps }} />}
 
+
       <div class="relative rounded-[33px] overflow-hidden cursor-pointer flex justify-center group" hx-on:click={useScript(onClick, video?.use == "embed")}
         style={{ width: video?.width, height: video?.height }}>
         {video?.use == "video" && video?.src && <video width={"100%"} height={"100%"} autoPlay playsInline muted loading="lazy" loop
@@ -98,15 +195,20 @@ export default function ({ hideSection = false, title, titleTextProps, video, se
           style={{ width: video.width || "1280px", height: video.height || "720px" }}>
           <source src={video.src} type="video/mp4" />
         </video>}
-        {video?.use == "embed" && <iframe
-          width={"100%"}
-          height={"100%"}
-          src={video?.src}
-          frameborder="0"
-          class={`${video.thumbnailImage?.src && 'hidden'}`}
-          style={{ width: video.width || "1280px", height: video.height || "720px" }}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
-        />}
+        {video?.use == "embed" && <div>
+          <iframe
+            hx-on:load={useScript(onLoad, video.src || 'youtubePlayer')}
+            id={video.src || 'youtubePlayer'}
+            width={"100%"}
+            height={"100%"}
+            src={video?.src}
+            frameborder="0"
+            class={`${video.thumbnailImage?.src && 'hidden'}`}
+            style={{ width: video.width || "1280px", height: video.height || "720px" }}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
+          />
+        </div>
+        }
 
         {video?.thumbnailImage?.src && <Image
           src={video.thumbnailImage.src}

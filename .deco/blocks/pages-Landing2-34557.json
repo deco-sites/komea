@@ -6,7 +6,7 @@
       "__resolveType": "site/sections/Header.tsx",
       "campaignTimer": {},
       "logo": {
-        "src": "https://assets.decocache.com/komea/b352a0c5-16b9-4f6a-a952-bcae78f4cfd7/logo-komea.svg",
+        "src": "https://decoims.com/komea/b352a0c5-16b9-4f6a-a952-bcae78f4cfd7/logo-komea.svg",
         "width": 180,
         "height": 60,
         "alt": "komea logo"
@@ -66,7 +66,7 @@
             "__resolveType": "site/sections/Header.tsx",
             "campaignTimer": {},
             "logo": {
-              "src": "https://assets.decocache.com/komea/b352a0c5-16b9-4f6a-a952-bcae78f4cfd7/logo-komea.svg",
+              "src": "https://decoims.com/komea/b352a0c5-16b9-4f6a-a952-bcae78f4cfd7/logo-komea.svg",
               "width": 180,
               "height": 60
             },
@@ -144,7 +144,7 @@
             "sectionBackground": {
               "backgroundColor": "#D1CABD",
               "image": {
-                "src": "https://assets.decocache.com/komea/d87cfe74-e80f-43f9-a29e-1ff13dc6e230/yellow-circles-mobile.svg",
+                "src": "https://decoims.com/komea/d87cfe74-e80f-43f9-a29e-1ff13dc6e230/yellow-circles-mobile.svg",
                 "width": 1201,
                 "height": 773
               },
@@ -217,7 +217,7 @@
             },
             "media": {
               "image": {
-                "src": "https://assets.decocache.com/komea/ef0afe9d-7741-426d-bf9d-fcd24c625224/komea-mobile-image.svg",
+                "src": "https://decoims.com/komea/ef0afe9d-7741-426d-bf9d-fcd24c625224/komea-mobile-image.svg",
                 "width": 386,
                 "height": 545
               },
@@ -227,7 +227,7 @@
             "sectionBackground": {
               "backgroundColor": "#D1CABD",
               "image": {
-                "src": "https://assets.decocache.com/komea/3c8f8be3-85da-4991-a733-c377f03d079c/yellow-circles.svg",
+                "src": "https://decoims.com/komea/3c8f8be3-85da-4991-a733-c377f03d079c/yellow-circles.svg",
                 "width": 1201,
                 "height": 773
               },
@@ -261,10 +261,10 @@
               "width": "100%",
               "height": "227px",
               "thumbnailImage": {
-                "src": "https://assets.decocache.com/komea/a5ababdd-fba2-4281-a3db-16c62b1b655b/video-thumbnail.svg"
+                "src": "https://decoims.com/komea/a5ababdd-fba2-4281-a3db-16c62b1b655b/video-thumbnail.svg"
               },
               "playButton": {
-                "src": "https://assets.decocache.com/komea/45481003-99d4-439c-adad-660c40eb43f1/play-button.svg"
+                "src": "https://decoims.com/komea/45481003-99d4-439c-adad-660c40eb43f1/play-button.svg"
               }
             },
             "sectionProps": {
@@ -275,7 +275,7 @@
             "backgroundMedia": {
               "color": "#D1CABD",
               "image": {
-                "src": "https://assets.decocache.com/komea/e7b3a078-d7f7-4145-9aa1-ea26bacf8ff8/yellow-circles-mobile-2.svg",
+                "src": "https://decoims.com/komea/e7b3a078-d7f7-4145-9aa1-ea26bacf8ff8/yellow-circles-mobile-2.svg",
                 "width": 1261,
                 "height": 777
               },
@@ -297,10 +297,10 @@
               "width": "990px",
               "height": "558px",
               "thumbnailImage": {
-                "src": "https://assets.decocache.com/komea/a5ababdd-fba2-4281-a3db-16c62b1b655b/video-thumbnail.svg"
+                "src": "https://decoims.com/komea/a5ababdd-fba2-4281-a3db-16c62b1b655b/video-thumbnail.svg"
               },
               "playButton": {
-                "src": "https://assets.decocache.com/komea/45481003-99d4-439c-adad-660c40eb43f1/play-button.svg"
+                "src": "https://decoims.com/komea/45481003-99d4-439c-adad-660c40eb43f1/play-button.svg"
               }
             },
             "sectionProps": {
@@ -310,7 +310,7 @@
             "backgroundMedia": {
               "color": "#D1CABD",
               "image": {
-                "src": "https://assets.decocache.com/komea/66b297b8-28ba-4309-b97a-1af27f99ffa6/yellow-circles-2.svg",
+                "src": "https://decoims.com/komea/66b297b8-28ba-4309-b97a-1af27f99ffa6/yellow-circles-2.svg",
                 "width": 1261,
                 "height": 777
               },
@@ -534,13 +534,13 @@
               "backgroundColor": "linear-gradient(180deg, #012b2e , #00363A , #00363A , #002E31 );"
             },
             "image": {
-              "src": "https://assets.decocache.com/komea/019bd2bb-adae-443d-b14e-f8748ecfdf69/mobile-sticky-image.svg"
+              "src": "https://decoims.com/komea/019bd2bb-adae-443d-b14e-f8748ecfdf69/mobile-sticky-image.svg"
             },
             "folds": [
               {
                 "textPosition": "Right",
                 "icon": {
-                  "src": "https://assets.decocache.com/komea/f815710b-3faf-4a7a-8d42-6d9736c1c2a9/statistics-icon.svg",
+                  "src": "https://decoims.com/komea/f815710b-3faf-4a7a-8d42-6d9736c1c2a9/statistics-icon.svg",
                   "width": 40,
                   "height": 0
                 },
@@ -562,13 +562,13 @@
                   "fontSize": "14px"
                 },
                 "image": {
-                  "src": "https://assets.decocache.com/komea/019bd2bb-adae-443d-b14e-f8748ecfdf69/mobile-sticky-image.svg"
+                  "src": "https://decoims.com/komea/019bd2bb-adae-443d-b14e-f8748ecfdf69/mobile-sticky-image.svg"
                 }
               },
               {
                 "textPosition": "Left",
                 "icon": {
-                  "src": "https://assets.decocache.com/komea/f815710b-3faf-4a7a-8d42-6d9736c1c2a9/statistics-icon.svg",
+                  "src": "https://decoims.com/komea/f815710b-3faf-4a7a-8d42-6d9736c1c2a9/statistics-icon.svg",
                   "width": 40,
                   "height": 40
                 },
@@ -590,7 +590,7 @@
                   "fontSize": "14px"
                 },
                 "image": {
-                  "src": "https://assets.decocache.com/komea/019bd2bb-adae-443d-b14e-f8748ecfdf69/mobile-sticky-image.svg"
+                  "src": "https://decoims.com/komea/019bd2bb-adae-443d-b14e-f8748ecfdf69/mobile-sticky-image.svg"
                 },
                 "video": {},
                 "use": "image"
@@ -611,13 +611,13 @@
               "backgroundColor": "linear-gradient(180deg, #012b2e , #00363A , #00363A , #002E31 );"
             },
             "image": {
-              "src": "https://assets.decocache.com/komea/019bd2bb-adae-443d-b14e-f8748ecfdf69/mobile-sticky-image.svg"
+              "src": "https://decoims.com/komea/019bd2bb-adae-443d-b14e-f8748ecfdf69/mobile-sticky-image.svg"
             },
             "folds": [
               {
                 "textPosition": "Left",
                 "icon": {
-                  "src": "https://assets.decocache.com/komea/f815710b-3faf-4a7a-8d42-6d9736c1c2a9/statistics-icon.svg"
+                  "src": "https://decoims.com/komea/f815710b-3faf-4a7a-8d42-6d9736c1c2a9/statistics-icon.svg"
                 },
                 "title": "<p><span style=\"color: #ffffff\">Crie produtos</span></p><p><span>conversando</span></p>",
                 "titleTextProps": {
@@ -636,13 +636,13 @@
                   "lineHeight": "125%"
                 },
                 "image": {
-                  "src": "https://assets.decocache.com/komea/019bd2bb-adae-443d-b14e-f8748ecfdf69/mobile-sticky-image.svg"
+                  "src": "https://decoims.com/komea/019bd2bb-adae-443d-b14e-f8748ecfdf69/mobile-sticky-image.svg"
                 }
               },
               {
                 "textPosition": "Right",
                 "icon": {
-                  "src": "https://assets.decocache.com/komea/f815710b-3faf-4a7a-8d42-6d9736c1c2a9/statistics-icon.svg"
+                  "src": "https://decoims.com/komea/f815710b-3faf-4a7a-8d42-6d9736c1c2a9/statistics-icon.svg"
                 },
                 "title": "<p><span>Receba insight </span></p><p><span style=\"color: #ffffff\">direto no app</span></p>",
                 "titleTextProps": {
@@ -661,7 +661,7 @@
                   "lineHeight": "125%"
                 },
                 "image": {
-                  "src": "https://assets.decocache.com/komea/41c9bdc3-72cf-4c69-85b5-6b347a97619a/komea-mobile-image.svg"
+                  "src": "https://decoims.com/komea/41c9bdc3-72cf-4c69-85b5-6b347a97619a/komea-mobile-image.svg"
                 },
                 "video": {},
                 "use": "image"
@@ -684,7 +684,7 @@
               {
                 "icon": {
                   "placement": "Top right",
-                  "src": "https://assets.decocache.com/komea/f815710b-3faf-4a7a-8d42-6d9736c1c2a9/statistics-icon.svg",
+                  "src": "https://decoims.com/komea/f815710b-3faf-4a7a-8d42-6d9736c1c2a9/statistics-icon.svg",
                   "width": 44,
                   "height": 44
                 },
@@ -692,7 +692,7 @@
                 "cta": [],
                 "backgroundColor": "#1b4549",
                 "image": {
-                  "src": "https://assets.decocache.com/komea/6f22e27a-640e-4002-b458-783e8909189f/komea-carousel-image-1.svg"
+                  "src": "https://decoims.com/komea/6f22e27a-640e-4002-b458-783e8909189f/komea-carousel-image-1.svg"
                 },
                 "title": {
                   "text": "<p><span style=\"color: #f2f2f2\">Pergunte sobre os </span><span>dados das suas vendas</span></p>",
@@ -713,7 +713,7 @@
               {
                 "icon": {
                   "placement": "Top right",
-                  "src": "https://assets.decocache.com/komea/19278948-6f4c-401b-a532-de48a8aa116a/green-price-tag-icon.svg",
+                  "src": "https://decoims.com/komea/19278948-6f4c-401b-a532-de48a8aa116a/green-price-tag-icon.svg",
                   "width": 44,
                   "height": 44
                 },
@@ -721,7 +721,7 @@
                 "cta": [],
                 "backgroundColor": "#1b4549",
                 "image": {
-                  "src": "https://assets.decocache.com/komea/8eb8be48-6972-4833-9b67-983de80b3d04/komea-carousel-image-2.svg",
+                  "src": "https://decoims.com/komea/8eb8be48-6972-4833-9b67-983de80b3d04/komea-carousel-image-2.svg",
                   "height": 280,
                   "width": 362
                 },
@@ -744,7 +744,7 @@
               {
                 "icon": {
                   "placement": "Top right",
-                  "src": "https://assets.decocache.com/komea/77a45ee0-dc76-42ce-9f12-0bdcbd923814/orange-price-tag-icon.svg",
+                  "src": "https://decoims.com/komea/77a45ee0-dc76-42ce-9f12-0bdcbd923814/orange-price-tag-icon.svg",
                   "width": 44,
                   "height": 44
                 },
@@ -752,7 +752,7 @@
                 "cta": [],
                 "backgroundColor": "#1b4549",
                 "image": {
-                  "src": "https://assets.decocache.com/komea/6f22e27a-640e-4002-b458-783e8909189f/komea-carousel-image-1.svg"
+                  "src": "https://decoims.com/komea/6f22e27a-640e-4002-b458-783e8909189f/komea-carousel-image-1.svg"
                 },
                 "title": {
                   "text": "<p><span style=\"color: #f2f2f2\">Pergunte sobre os </span><span>dados das suas vendas</span></p>",
@@ -794,7 +794,7 @@
               {
                 "icon": {
                   "placement": "Top right",
-                  "src": "https://assets.decocache.com/komea/f815710b-3faf-4a7a-8d42-6d9736c1c2a9/statistics-icon.svg",
+                  "src": "https://decoims.com/komea/f815710b-3faf-4a7a-8d42-6d9736c1c2a9/statistics-icon.svg",
                   "width": 44,
                   "height": 44
                 },
@@ -802,7 +802,7 @@
                 "cta": [],
                 "backgroundColor": "#1b4549",
                 "image": {
-                  "src": "https://assets.decocache.com/komea/6f22e27a-640e-4002-b458-783e8909189f/komea-carousel-image-1.svg"
+                  "src": "https://decoims.com/komea/6f22e27a-640e-4002-b458-783e8909189f/komea-carousel-image-1.svg"
                 },
                 "title": {
                   "text": "<p><span style=\"color: #f2f2f2\">Pergunte sobre os </span><span>dados das suas vendas</span></p>",
@@ -823,7 +823,7 @@
               {
                 "icon": {
                   "placement": "Top right",
-                  "src": "https://assets.decocache.com/komea/19278948-6f4c-401b-a532-de48a8aa116a/green-price-tag-icon.svg",
+                  "src": "https://decoims.com/komea/19278948-6f4c-401b-a532-de48a8aa116a/green-price-tag-icon.svg",
                   "width": 44,
                   "height": 44
                 },
@@ -831,7 +831,7 @@
                 "cta": [],
                 "backgroundColor": "#1b4549",
                 "image": {
-                  "src": "https://assets.decocache.com/komea/8eb8be48-6972-4833-9b67-983de80b3d04/komea-carousel-image-2.svg",
+                  "src": "https://decoims.com/komea/8eb8be48-6972-4833-9b67-983de80b3d04/komea-carousel-image-2.svg",
                   "height": 280,
                   "width": 362
                 },
@@ -854,7 +854,7 @@
               {
                 "icon": {
                   "placement": "Top right",
-                  "src": "https://assets.decocache.com/komea/77a45ee0-dc76-42ce-9f12-0bdcbd923814/orange-price-tag-icon.svg",
+                  "src": "https://decoims.com/komea/77a45ee0-dc76-42ce-9f12-0bdcbd923814/orange-price-tag-icon.svg",
                   "width": 44,
                   "height": 44
                 },
@@ -862,7 +862,7 @@
                 "cta": [],
                 "backgroundColor": "#1b4549",
                 "image": {
-                  "src": "https://assets.decocache.com/komea/6f22e27a-640e-4002-b458-783e8909189f/komea-carousel-image-1.svg"
+                  "src": "https://decoims.com/komea/6f22e27a-640e-4002-b458-783e8909189f/komea-carousel-image-1.svg"
                 },
                 "title": {
                   "text": "<p><span style=\"color: #f2f2f2\">Pergunte sobre os </span><span>dados das suas vendas</span></p>",
@@ -955,7 +955,7 @@
                 "letterSpacing": "-0.3px"
               },
               "bulletPointsIcon": {
-                "src": "https://assets.decocache.com/komea/615b1b6b-1f76-4b73-bda0-43ee870521e7/yellow-power-icon.svg"
+                "src": "https://decoims.com/komea/615b1b6b-1f76-4b73-bda0-43ee870521e7/yellow-power-icon.svg"
               }
             },
             "cta": [
@@ -1042,7 +1042,7 @@
                 "letterSpacing": "-0.3px"
               },
               "bulletPointsIcon": {
-                "src": "https://assets.decocache.com/komea/615b1b6b-1f76-4b73-bda0-43ee870521e7/yellow-power-icon.svg"
+                "src": "https://decoims.com/komea/615b1b6b-1f76-4b73-bda0-43ee870521e7/yellow-power-icon.svg"
               }
             },
             "cta": [
@@ -1110,7 +1110,7 @@
       "ctaPlacement": "center",
       "media": {
         "image": {
-          "src": "https://assets.decocache.com/komea/f69a3164-25fe-4b1c-9e22-bf112ec11f1c/Big-Komea-logo.svg",
+          "src": "https://decoims.com/komea/f69a3164-25fe-4b1c-9e22-bf112ec11f1c/Big-Komea-logo.svg",
           "width": 1120,
           "height": 213
         },
@@ -1123,28 +1123,28 @@
       "socialMedias": [
         {
           "logo": {
-            "src": "https://assets.decocache.com/komea/056017e4-dad5-400e-8585-233be41564df/instagram-green-logo.svg",
+            "src": "https://decoims.com/komea/056017e4-dad5-400e-8585-233be41564df/instagram-green-logo.svg",
             "alt": "Instagram logo"
           },
           "href": "https://www.instagram.com/lojaintegrada/"
         },
         {
           "logo": {
-            "src": "https://assets.decocache.com/komea/91eab96f-c6a4-4472-8e32-47d8e707ee02/youtube-green-logo.svg",
+            "src": "https://decoims.com/komea/91eab96f-c6a4-4472-8e32-47d8e707ee02/youtube-green-logo.svg",
             "alt": "youtube logo"
           },
           "href": "https://www.youtube.com/@LojaIntegrada"
         },
         {
           "logo": {
-            "src": "https://assets.decocache.com/komea/23a05d41-214c-404f-aa78-278d13ab1904/tiktok-green-logo.svg",
+            "src": "https://decoims.com/komea/23a05d41-214c-404f-aa78-278d13ab1904/tiktok-green-logo.svg",
             "alt": "tik tok logo"
           },
           "href": "https://www.tiktok.com/@lojaintegrada"
         }
       ],
       "ctaFloatingImage": {
-        "src": "https://assets.decocache.com/komea/233398b3-ff44-47ca-9bd7-279a20c94257/bee.svg",
+        "src": "https://decoims.com/komea/233398b3-ff44-47ca-9bd7-279a20c94257/bee.svg",
         "horizontalPosition": "-16px",
         "verticalPosition": "-20px"
       }

@@ -24,7 +24,7 @@
               "src": "https://www.youtube.com/embed/pTd0Dwp73qg?si=NVAKqLSbpexsHBUo",
               "use": "embed",
               "playButton": {
-                "src": "https://assets.decocache.com/komea/45481003-99d4-439c-adad-660c40eb43f1/play-button.svg",
+                "src": "https://decoims.com/komea/45481003-99d4-439c-adad-660c40eb43f1/play-button.svg",
                 "width": 60,
                 "height": 60
               },
@@ -32,14 +32,14 @@
               "thumbnailImage": {
                 "width": 927,
                 "height": 546,
-                "src": "https://assets.decocache.com/komea/a5ababdd-fba2-4281-a3db-16c62b1b655b/video-thumbnail.svg"
+                "src": "https://decoims.com/komea/a5ababdd-fba2-4281-a3db-16c62b1b655b/video-thumbnail.svg"
               },
               "height": "212px"
             },
             "bottomImage": {},
             "backgroundMedia": {
               "image": {
-                "src": "https://assets.decocache.com/komea/cf49cd59-7e27-4caa-8cd4-fe44f4795e98/video-section-background.svg"
+                "src": "https://decoims.com/komea/cf49cd59-7e27-4caa-8cd4-fe44f4795e98/video-section-background.svg"
               },
               "lcp": true,
               "color": "#000000",
@@ -80,14 +80,14 @@
               "src": "https://www.youtube.com/embed/pTd0Dwp73qg?si=NVAKqLSbpexsHBUo",
               "use": "embed",
               "playButton": {
-                "src": "https://assets.decocache.com/komea/45481003-99d4-439c-adad-660c40eb43f1/play-button.svg"
+                "src": "https://decoims.com/komea/45481003-99d4-439c-adad-660c40eb43f1/play-button.svg"
               },
               "width": "927px",
               "height": "546px",
               "thumbnailImage": {
                 "width": 927,
                 "height": 546,
-                "src": "https://assets.decocache.com/komea/a5ababdd-fba2-4281-a3db-16c62b1b655b/video-thumbnail.svg"
+                "src": "https://decoims.com/komea/a5ababdd-fba2-4281-a3db-16c62b1b655b/video-thumbnail.svg"
               },
               "gtmProps": {
                 "customSection": "lp-komea-inicio",
@@ -97,7 +97,7 @@
             "bottomImage": {},
             "backgroundMedia": {
               "image": {
-                "src": "https://assets.decocache.com/komea/cf49cd59-7e27-4caa-8cd4-fe44f4795e98/video-section-background.svg"
+                "src": "https://decoims.com/komea/cf49cd59-7e27-4caa-8cd4-fe44f4795e98/video-section-background.svg"
               },
               "lcp": true,
               "color": "#000000",
@@ -138,14 +138,14 @@
             "sectionBackground": {
               "backgroundColor": "#000000",
               "image": {
-                "src": "https://assets.decocache.com/komea/41223b47-85ef-4ae1-a65d-b29194c57fb0/star-mobile-2.svg"
+                "src": "https://decoims.com/komea/41223b47-85ef-4ae1-a65d-b29194c57fb0/star-mobile-2.svg"
               },
               "use": "image",
               "postition": "top"
             },
             "media": {
               "image": {
-                "src": "https://assets.decocache.com/komea/b352a0c5-16b9-4f6a-a952-bcae78f4cfd7/logo-komea.svg",
+                "src": "https://decoims.com/komea/b352a0c5-16b9-4f6a-a952-bcae78f4cfd7/logo-komea.svg",
                 "width": 390,
                 "height": 163
               },
@@ -258,14 +258,14 @@
             "sectionBackground": {
               "backgroundColor": "#000000",
               "image": {
-                "src": "https://assets.decocache.com/komea/f6983b02-8aa1-4987-9675-45db863d6069/Star-8.svg"
+                "src": "https://decoims.com/komea/f6983b02-8aa1-4987-9675-45db863d6069/Star-8.svg"
               },
               "use": "image",
               "postition": "top"
             },
             "media": {
               "image": {
-                "src": "https://assets.decocache.com/komea/b352a0c5-16b9-4f6a-a952-bcae78f4cfd7/logo-komea.svg",
+                "src": "https://decoims.com/komea/b352a0c5-16b9-4f6a-a952-bcae78f4cfd7/logo-komea.svg",
                 "width": 260,
                 "height": 87
               },
